@@ -3,8 +3,6 @@
 
 <?php $this->start('main_content') ?>
 
-	<p>Vous avez atteint le Profil. Bravo.</p>
-
 	<table class="table">
 		<thead>
 			<tr>
