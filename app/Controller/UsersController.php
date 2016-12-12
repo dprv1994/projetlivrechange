@@ -79,7 +79,31 @@ class UsersController extends Controller
 		$data = [
 			'user' => $user, //
 		];
-		$this->show('default/user/profil', $data);
+		$this->show('default/front/profil', $data);
+		}
+	}
+
+	/**
+	 *Affiche le profil d'un membre sélectionné en BACK
+	 *@param int $id l'id du membre
+	 * Page de profil
+	**/
+	public function profilBack($id)
+	{
+		//Si l'internaute accède à la page sans id, on le redirige vers la page 404
+		if (!is_numeric($id) || empty($id)) {
+			$this->showNotFound();
+		}
+		else{
+		//Instancie la classe "UserModel" qui permet de sélectionné un utilisateur
+		$UsersModel = new UsersModel();
+		$user = $UsersModel->find($id);//$id correspond à l'id en URL
+
+		//Permet de gérer l'affichage
+		$data = [
+			'user' => $user, //
+		];
+		$this->show('default/admin/profilBack', $data);
 		}
 	}
 
