@@ -28,7 +28,7 @@
 				<td><?=$user['email'];?></td>
 				<td><?=$user['role'];?></td>
 				<td>
-				<!-- Créer un url vers le profil du membre -->
+				<!-- Url vers le profil du membre -->
 				<a href="<?=$this->url('profil', ['id' => $user['id']]);?>">
 				Voir le profil</a>
 				</td>

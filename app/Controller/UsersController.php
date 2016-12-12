@@ -84,7 +84,7 @@ class UsersController extends Controller
 	}
 
 	/**
-	 *Affiche le profil d'un membre sélectionné en BACK
+	 *EN BACK Affiche le profil d'un membre sélectionné 
 	 *@param int $id l'id du membre
 	 * Page de profil
 	**/
