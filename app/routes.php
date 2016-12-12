@@ -10,20 +10,12 @@
 		['GET|POST', '/back/login', 'Default#loginBack', 'back_login'],
 
 
-
+		// UserFront
 		['GET|POST', '/front/login', 'Users#login', 'user_login'],
 		['GET', '/front/profil/[i:id]', 'Users#profil', 'profil'],
 		['GET', '/front/list', 'Users#listAll', 'user_list'],
 		['GET|POST', '/front/delete[i:id]', 'Users#delete', 'user_delete'],
 		['GET|POST', '/front/signin', 'Users#signIn', 'user_signIn'],
-
-		// User
-		['GET|POST', '/user/login', 'Users#login', 'user_login'],
-		['GET', '/user/profil/[i:id]', 'Users#profil', 'profil'],
-		['GET', '/user/list', 'Users#listAll', 'user_list'],
-		['GET|POST', '/user/delete[i:id]', 'Users#delete', 'user_delete'],
-		['GET|POST', '/user/signin', 'Users#signIn', 'user_signIn'],
-
 
 		// Admin
 		['GET', '/admin/admin_main', 'Admin#admin_main', 'admin_main'],
