@@ -7,9 +7,8 @@
 	<div class="alert alert-danger">
 		<?=$errors;?>
 	</div>
+	<br>
 <?php endif; ?>
-
-	<p>Vous avez atteint le login. Bravo.</p>
 
 	<form method="post">
 		<label for="username">User:</label><br>

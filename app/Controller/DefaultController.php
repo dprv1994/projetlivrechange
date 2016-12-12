@@ -13,7 +13,7 @@ class DefaultController extends Controller
 	 */
 	public function home()
 	{	
-		$this->show('default/home');
+		$this->show('/default/home');
 	}
 
 	/**
@@ -40,6 +40,12 @@ class DefaultController extends Controller
 		$this->showNotFound();
 
 	}
+
+	public function loginBack()
+	{	
+		$this->show('/default/back/login');
+	}
+
 
 
 }
