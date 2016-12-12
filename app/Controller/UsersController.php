@@ -108,7 +108,7 @@ class UsersController extends Controller
 	 */
 	public function listAll()
 	{
-	//Instancie la classe "UserModel" qui permet de sélectionné plusieurs utilisateurs
+	//Instancie la classe "UserModel" qui permet de sélectionner plusieurs utilisateurs
 	$UsersModel = new UsersModel();
 	$users = $UsersModel->findAll();
 
