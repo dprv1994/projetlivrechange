@@ -8,14 +8,16 @@
 
 		['GET|POST', '/page/', 'Default#page', 'default_page'],
 
-
+		// User
 		['GET|POST', '/user/login', 'Users#login', 'user_login'],
 		['GET', '/user/profil/[i:id]', 'Users#profil', 'profil'],
 		['GET', '/user/list', 'Users#listAll', 'user_list'],
 		['GET|POST', '/user/delete[i:id]', 'Users#delete', 'user_delete'],
 		['GET|POST', '/user/signin', 'Users#signIn', 'user_signIn'],
 
-		['GET|POST', '/articles/add', 'Articles#add', 'articles_add'],
+
+		// Admin
+		['GET', '/admin/admin_main', 'Admin#admin_main', 'admin_main'],
 
 		//route Ajax
 		['GET|POST', '/ajax/add_user', 'Ajax#addUser', 'ajax_addUser'],
