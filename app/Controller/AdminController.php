@@ -50,14 +50,10 @@ Class AdminController extends Controller
 		//Si déjà connecté je le redirige
 		//Je le sors du !empty($_POST) pour que la redirection soit effective si un utilisateur et déjà connecté arrive sur le formulaire de connexion
 		if (!empty($this->getUser())) {
-			
-			$this->redirectToRoute('indexBack');
+			$this->redirectToRoute('admin_indexBack');
 		}
-		else{
-			$param = ['errors' => $errors];
-			$this->show('default/admin/login', $param);
-		}
-
-		$this->show('default/admin/login');
+		
+		$param = ['errors' => $errors];
+		$this->show('default/admin/login', $param);
 	}
 }

@@ -17,13 +17,13 @@
 		['GET|POST', '/front/signin', 'Users#signIn', 'user_signIn'],
 
 		// Admin
-		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'admin'],
 		['GET|POST', '/admin/login', 'Admin#login', 'login'],
+		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'admin_indexBack'],
 
 		//route Ajax
 		['GET|POST', '/ajax/add_user', 'Ajax#addUser', 'ajax_addUser'],
 		
-
+		// Autres
 		['GET|POST', '/cat/', 'Users#cat', 'cat'],
 		['GET', '/error/page404', 'Default#page404', 'page404'],
 	);
