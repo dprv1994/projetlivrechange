@@ -107,23 +107,6 @@ class UsersController extends Controller
 		}
 	}
 
-	/*
-	 * Page de cat
-	*/
-	public function cat()
-	{
-		$name = 'Mistigris';
-		$color = 'Gris';
-		$age = '2 ans';
-
-		$data = [
-			'name' => $name,
-			'color' => $color,
-			'age' => $age,
-			];
-
-		$this->show('default/cat', $data);
-	}
 
 	/**
 	 *Affiche tout les profil 
