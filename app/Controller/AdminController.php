@@ -56,4 +56,20 @@ Class AdminController extends Controller
 		$param = ['errors' => $errors];
 		$this->show('default/admin/login', $param);
 	}
+
+	public function logout()
+	{
+
+	if (isset($_GET['logout']) && $_GET['logout'] == 'yes') {
+	// Détruit les entrées de username et password de $_SESSION
+	unset($_SESSION['user']);
+    session_destroy();
+	// Redirige vers la page voulu
+	header('Location:login.php');
+	die();
+}
+
+
+
+	}
 }

@@ -18,6 +18,7 @@
 	                <li><a href="">Gérer vos utilisateurs</a></li>
 	                <li><a href=""> Lire les messages qui vous ont été envoyés dans la session "Contact"</a></li>
 	                <li><a href="">...</a></li>
+	                <li><a href="">Déconnexion</a></li>
 	            </ul>
 	            Merci de votre confiance !
        		</p>
