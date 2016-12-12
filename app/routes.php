@@ -2,8 +2,8 @@
 	
 	$w_routes = array(
 
-		//Default#home => Default correspond au nom du controller
-		//home correspond au nom de la méthode dans le controller
+		// Default#home => Default correspond au nom du controller
+		// home correspond au nom de la méthode dans le controller
 		['GET|POST', '/', 'Default#home', 'default_home'],
 
 		['GET|POST', '/page/', 'Default#page', 'default_page'],
@@ -18,10 +18,10 @@
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#login', 'login'],
 		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'admin_indexBack'],
-		['GET', '/admin/list', 'Users#listAll', 'user_list'],
 		['GET', '/admin/profilBack/[i:id]', 'Users#profilBack', 'profilBack'],
+		['GET', '/admin/list', 'Users#listAll', 'user_list'],
 
-		//route Ajax
+		// Route Ajax
 		['GET|POST', '/ajax/add_user', 'Ajax#addUser', 'ajax_addUser'],
 		
 		// Autres
