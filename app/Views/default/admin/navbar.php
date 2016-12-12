@@ -14,7 +14,7 @@
       		
       		    
       			<li><a href="">Infos</a></li>
-		        <li><a href="">Utilisateurs</a></li>
+		        <li><a href="list">Utilisateurs</a></li>
 		        <li><a href="">Messages</a></li>
 		        
 		        <li><a href="">Actus</a></li>

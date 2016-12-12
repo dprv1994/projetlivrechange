@@ -4,8 +4,13 @@
 
 <?php $this->start('main_content') ?>
 
+
+
 	<div class="container">
 		<?php if (!empty($user)): ?>
+
+			<!-- Inclure NAVBAR : soucis de liens href->404 si navbar incluse -->
+
 			<h2>Utilisateur : <?=$user['username']?></h2>
 
 			<ul>

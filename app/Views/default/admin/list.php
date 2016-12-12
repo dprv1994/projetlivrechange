@@ -2,7 +2,7 @@
 <?php $this->layout('layout', ['title' => 'Liste des utilisateurs ']) ?>
 
 <?php $this->start('main_content') ?>
-
+<?php include_once 'navbar.php'; ?>
 	<table class="table">
 		<thead>
 			<tr>
@@ -27,7 +27,7 @@
 				<td><?=$user['role'];?></td>
 				<td>
 				<!-- Url vers le profil du membre -->
-				<a href="<?=$this->url('profil', ['id' => $user['id']]);?>">
+				<a href="<?=$this->url('profilBack', ['id' => $user['id']]);?>">
 				Voir le profil</a>
 				</td>
 				<td>
