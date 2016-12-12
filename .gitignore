@@ -3,6 +3,3 @@ app/config.php
 /phpDocumentor.phar
 *.log
 vendor.zip
-app/routes.php
-app/routes.php
-*.php
