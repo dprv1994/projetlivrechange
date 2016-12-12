@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="admin_main.php">LivrEchange</a>
+			<a class="navbar-brand" href="indexBack">LivrEchange</a>
 		</div>
 
 
