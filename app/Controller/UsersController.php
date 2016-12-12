@@ -114,7 +114,7 @@ class UsersController extends Controller
 
 	//Permet de gérer l'affichage
 	$data = ['users' => $users];
-	$this->show('default/user/list', $data);
+	$this->show('default/front/list', $data);
 
 	}
 /*
