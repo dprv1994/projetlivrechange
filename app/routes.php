@@ -9,6 +9,9 @@
 		['GET|POST', '/page/', 'Default#page', 'default_page'],
 		['GET|POST', '/back/login', 'Default#loginBack', 'back_login'],
 
+
+
+		// UserFront
 		['GET|POST', '/front/login', 'Users#login', 'user_login'],
 		['GET', '/front/profil/[i:id]', 'Users#profil', 'profil'],
 		['GET', '/front/list', 'Users#listAll', 'user_list'],
