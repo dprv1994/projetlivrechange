@@ -41,9 +41,9 @@ class DefaultController extends Controller
 
 	}
 
-	public function loginBack()
+	public function login()
 	{	
-		$this->show('/default/back/login');
+		$this->show('/default/admin/login');
 	}
 
 

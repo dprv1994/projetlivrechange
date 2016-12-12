@@ -7,7 +7,7 @@
 		['GET|POST', '/', 'Default#home', 'default_home'],
 
 		['GET|POST', '/page/', 'Default#page', 'default_page'],
-		['GET|POST', '/back/login', 'Default#loginBack', 'back_login'],
+		
 
 		// UserFront
 		['GET|POST', '/front/login', 'Users#login', 'user_login'],
@@ -17,7 +17,8 @@
 		['GET|POST', '/front/signin', 'Users#signIn', 'user_signIn'],
 
 		// Admin
-		['GET', '/admin/admin_main', 'Admin#admin_main', 'admin_main'],
+		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'admin'],
+		['GET|POST', '/admin/login', 'Admin#login', 'login'],
 
 		//route Ajax
 		['GET|POST', '/ajax/add_user', 'Ajax#addUser', 'ajax_addUser'],
