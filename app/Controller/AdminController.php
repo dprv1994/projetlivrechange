@@ -16,6 +16,8 @@ Class AdminController extends Controller
 		$this->show('default/admin/indexBack');
 	}
 
+
+
 	public function login()
 	{
 
@@ -59,15 +61,12 @@ Class AdminController extends Controller
 
 	public function logout()
 	{
+		//Si $this->getUser() ne récupere aucun utilisateur redigirige vers la page de login
+		if (empty($this->getUser())) {
+			$this->redirectToRoute('login');
+		}
 
-	if (isset($_GET['logout']) && $_GET['logout'] == 'yes') {
-	// Détruit les entrées de username et password de $_SESSION
-	unset($_SESSION['user']);
-    session_destroy();
-	// Redirige vers la page voulu
-	header('Location:login.php');
-	die();
-}
+
 
 
 

@@ -1,6 +1,6 @@
 
 
-<?php $this->layout('layout', ['title' => 'Fiche de profil ']) ?>
+<?php $this->layout('layoutBack', ['title' => 'Fiche de profil ']) ?>
 
 <?php $this->start('main_content') ?>
 

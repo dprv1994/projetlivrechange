@@ -17,7 +17,9 @@
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#login', 'login'],
+		['GET|POST', '/admin/logout', 'Admin#logout', 'logout'],
 		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'admin_indexBack'],
+
 		['GET', '/admin/profilBack/[i:id]', 'Users#profilBack', 'profilBack'],
 		['GET', '/admin/list', 'Users#listAll', 'user_list'],
 
@@ -25,6 +27,5 @@
 		['GET|POST', '/ajax/add_user', 'Ajax#addUser', 'ajax_addUser'],
 		
 		// Autres
-		['GET|POST', '/cat/', 'Users#cat', 'cat'],
 		['GET', '/error/page404', 'Default#page404', 'page404'],
 	);

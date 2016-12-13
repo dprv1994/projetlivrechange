@@ -1,5 +1,5 @@
 
-<?php $this->layout('layout', ['title' => 'Connexion ']) ?>
+<?php $this->layout('layoutBack', ['title' => 'Connexion ']) ?>
 
 <?php $this->start('main_content') ?>
 
