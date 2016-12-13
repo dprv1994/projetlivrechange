@@ -2,10 +2,12 @@
 
 <?php $this->start('main_content') ?>
 	
-	<h2>BIENVENUE SUR LIVRECHANGE</h2>
+	<div id="">
+
+	<h1>BIENVENUE SUR LIVRECHANGE</h1>
 
 
-	<h4>1) Echanger</h4>
+	<h3>1) Echanger</h3>
 
 	<p>Votre bibliothèque déborde de livres que vous ne lirez plus?
 	Vous avez envie de découvrir un livre inattendu?
@@ -14,7 +16,7 @@
 
 	<p>------------------------</p>
 
-	<h4>2) Se rencontrer</h4>
+	<h3>2) Se rencontrer</h3>
 
 	<p>LivrEchange vous propose de rencontrer "dans la vraie vie" les propriétaires des livres qui vous intéressent.<br>
 	Aucun système de livraison n'est proposé sur notre site.<br>
@@ -23,7 +25,7 @@
 
 	<button>S'INSCRIRE</button>
 
-	<h4>3) Concept</h4>
+	<h3>3) Concept</h3>
 
 	<p>LivrEchange vous permet d'êter mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
 	Inscrivez-vous, remplissez votre profil, et partez à la recherche d'un échange intéressant !<br>
@@ -31,5 +33,6 @@
 	Il vous suffit de jeter un oeil à notre <a href="">carte des lieux</a> pour trouver le point de rendez-vous le plus proche de chez vous!<br>
 	Et pourquoi ne pas en profiter pour boire un bon café en profitant de votre nouveau livre? ;)</p>
 
+	</div>
 
 <?php $this->stop('main_content') ?>
