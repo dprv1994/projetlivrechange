@@ -33,6 +33,7 @@ h6 {
 }
 
 /* Logo et nom du site rajouté par laurent */
+
 #top-bar {
   max-width: 1260px;
   margin: 0 auto; 
@@ -57,8 +58,9 @@ h6 {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-/* jusqu'ici */
+  /* jusqu'ici */
 }
+
 
 
 /* Bouton accueil */
@@ -94,19 +96,28 @@ h6 {
 /* Boutons menu */
 
 li {
+  /* rajouté par laurent */
   list-style: none;
+}
+/* rajouté par laurent */
+.navbar-collapse ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+ 
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: black;
+  color: black;/* couleur modifiée par laurent */
   text-decoration: none;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: red;
+  color: red;/* couleur modifiée par laurent */
   outline: none;
 /* Fin boutons menu */
 }
@@ -149,25 +160,37 @@ li {
     font-size: 1.5em;
   }
 }
+
 footer {
   padding: 25px 0;
   align-items: center;
+  /* rejouté par laurent */
   max-width: 1260px;
   margin: 0 auto;
   background-color: #555555;
+
 }
+
 footer span.copyright {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
 }
+
 footer .contact{
   margin-bottom: 0;
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
 }
 
 /* BOUTONS RESEAUX SOCIAUX */
