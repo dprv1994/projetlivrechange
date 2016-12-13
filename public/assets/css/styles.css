@@ -30,6 +30,7 @@ h6 {
 .navbar-custom {
   background-color: #222222;
   border-color: transparent;
+  display: flex;
 }
 
 /* Logo et nom du site rajouté par laurent */
@@ -58,8 +59,9 @@ h6 {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  /* jusqu'ici */
 }
+/* jusqu'ici */
+
 
 
 
@@ -98,15 +100,16 @@ h6 {
 li {
   /* rajouté par laurent */
   list-style: none;
+  padding-left: 35px;
+
 }
 /* rajouté par laurent */
 .navbar-collapse ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
- 
- 
 }
+
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
