@@ -28,7 +28,7 @@
 	</section>
 
 
-	<button>S'INSCRIRE</button>
+	<a href="signin"><button>S'INSCRIRE</button></a>
 
 	<h3>3) Concept</h3>
 
