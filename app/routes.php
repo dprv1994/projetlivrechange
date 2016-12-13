@@ -8,14 +8,19 @@
 
 		
 		// UserFront
+
+		['GET|POST', '/signin', 'Users#signIn', 'user_signIn'],
+		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
+		['GET|POST', '/profiluser/[i:id]', 'Users#profilUser', 'profilUser'],
+
 		['GET|POST', '/register', 'Users#signIn', 'register'],
 		['GET|POST', '/loginuser', 'Users#loginuser', 'loginuser'],
 		['GET|POST', '/profiluser/[i:id]', 'Users#profilUser', 'profiluser'],
 		['GET', '/delete', 'Admin#delete', 'user_delete'],
 
 		// Admin
-		['GET|POST', '/admin/login', 'Admin#login', 'login'],
-		['GET|POST', '/admin/logout', 'Admin#logout', 'logout'],
+		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
+		['GET|POST', '/admin/logout', 'Admin#logOut', 'logout'],
 		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'admin_indexBack'],
 		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],
 		['GET', '/admin/list', 'Admin#listAll', 'user_list'],
