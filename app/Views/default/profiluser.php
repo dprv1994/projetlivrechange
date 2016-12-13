@@ -12,6 +12,7 @@
 			<h2>Mon profil</h2>
 
 			<ul>
+				<li>Pseudo : <?=$user['username'];?></li>
 				<li>Prénom : <?=$user['firstname'];?></li>
 				<li>Nom : <?=$user['lastname'];?></li>
 				<li>Email : <?=$user['email'];?></li>

@@ -1,7 +1,8 @@
-
 <?php $this->layout('layoutBack', ['title' => 'Liste des utilisateurs ']) ?>
 
 <?php $this->start('main_content') ?>
+<?php include_once 'navbar.php'; ?>
+
 	<table class="table">
 		<thead>
 			<tr>

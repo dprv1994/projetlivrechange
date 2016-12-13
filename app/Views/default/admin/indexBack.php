@@ -1,5 +1,3 @@
-
-
 <?php $this->layout('layoutBack', ['title' => 'Administration du Site']) ?>
 
 <?php $this->start('main_content') ?>
