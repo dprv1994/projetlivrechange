@@ -23,8 +23,7 @@
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/styles.css') ?>">
 </head>
 <body id="page-top" class="index">
-
-	
+    	
 		<header>
 
 			<div id="top-bar">
