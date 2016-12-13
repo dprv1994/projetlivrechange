@@ -12,16 +12,16 @@
 		<label for="pseudo">Nom:</label>
 		<input type="text" name="pseudo" id="pseudo">
 
-		<label for="pseudo">Prénom:</label>
-		<input type="text" name="p" id="pseudo">
+		<label for="firstname">Prénom:</label>
+		<input type="text" name="firstname" id="firstname">
 
 		<label for="email">email:</label>
 		<input type="email" name="email" id="email">
 
-		<label for="pseudo">Mot de passe:</label>
+		<label for="password">Mot de passe:</label>
 		<input type="password" name="password" id="password">
 
-		<input type="submit" name="register" value="Enregistrer">
+		<input type="submit"  value="Enregistrer">
 
 		
 	</form>
