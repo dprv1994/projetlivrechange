@@ -16,8 +16,6 @@ Class AdminController extends Controller
 		$this->show('default/admin/indexBack');
 	}
 
-
-
 	public function login()
 	{
 
@@ -87,4 +85,67 @@ Class AdminController extends Controller
 		}
 
 	}
+
+	/**
+	 *EN BACK Affiche le profil d'un membre sélectionné 
+	 *@param int $id l'id du membre
+	 * Page de profil
+	**/
+	public function profilBack($id)
+	{
+		//Si l'internaute accède à la page sans id, on le redirige vers la page 404
+		if (!is_numeric($id) || empty($id)) {
+			$this->showNotFound();
+		}
+		else{
+		//Instancie la classe "UserModel" qui permet de sélectionné un utilisateur
+		$UsersModel = new UsersModel();
+		$user = $UsersModel->find($id);//$id correspond à l'id en URL
+
+		//Permet de gérer l'affichage
+		$data = [
+			'user' => $user, //
+		];
+		$this->show('default/admin/profilBack', $data);
+		}
+	}
+
+
+	/**
+	 *Affiche tout les profil 
+	 *@param data table de user
+	 * Page de tout les profil
+	 */
+	public function listAll()
+	{
+	//Instancie la classe "UserModel" qui permet de sélectionner plusieurs utilisateurs
+	$UsersModel = new UsersModel();
+	$users = $UsersModel->findAll();
+
+	//Permet de gérer l'affichage
+	$data = ['users' => $users];
+	$this->show('default/admin/list', $data);
+
+	}
+	
+	/**
+	 *Affiche tout les profil 
+	 *@param data table de user
+	 * Page de tout les profil
+	 */
+	
+	public function delete($id)
+	{
+		if (!is_numeric($id) || empty($id)) {
+			$this->showNotFound();
+		}
+		else{
+			$UserDelete = new UsersModel();
+			$user = $UserDelete->delete($id);
+
+			$this->redirectToRoute('user_list');
+		}	
+	}
+	
+
 }

@@ -9,15 +9,19 @@
 	<div class="container">
 		<?php if (!empty($user)): ?>
 
-			<!-- Inclure NAVBAR : soucis de liens href ==> erreur404 si navbar incluse -->
-
-			<h2>Utilisateur : <?=$user['username']?></h2>
+			<h2>Mon profil</h2>
 
 			<ul>
-				<li><?=$user['firstname'];?></li>
-				<li><?=$user['lastname'];?></li>
-				<li><?=$user['email'];?></li>
-				<li><?=$user['role'];?></li>
+				<li>Pseudo : <?=$user['username'];?></li>
+				<li>Prénom : <?=$user['firstname'];?></li>
+				<li>Nom : <?=$user['lastname'];?></li>
+				<li>Email : <?=$user['email'];?></li>
+				<li>Rôle : <?=$user['role'];?></li>
+			</ul>
+
+			<p>Mes livres :</p>
+			<ul>
+				<li>Faire boucle foreach avec lien DB pour lister les livres de l'user</li>
 			</ul>
 
 		<?php else: ?>

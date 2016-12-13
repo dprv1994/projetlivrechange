@@ -1,6 +1,7 @@
 <?php $this->layout('layout', ['title' => 'loginUser']) ?>
 
 <?php $this->start('main_content'); ?>
+
 <h1>Page de connexion</h1>
 <br>
 	
@@ -11,7 +12,7 @@
 <?php endif; ?>
 
 
-	<p>Vous avez atteint le login Back.</p>
+	<p>Veuillez entrer vos identifiants pour vous connecter.</p>
 
 	<form method="post">
 
