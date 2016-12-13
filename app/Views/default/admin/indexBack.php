@@ -14,6 +14,7 @@
 	            <ul>
 	                <li><a href="">Gérer le contenu de votre site</a></li>
 	                <li><a href="list">Gérer vos utilisateurs</a></li>
+	                 <li><a href="addUser">Ajouter un nouvel utilisateur</a></li>
 	                <li><a href=""> Lire les messages qui vous ont été envoyés dans la session "Contact"</a></li>
 	                <li><a href="">...</a></li>
 	                <li><a href="">Déconnexion</a></li>

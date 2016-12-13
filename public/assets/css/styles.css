@@ -29,7 +29,7 @@ h6 {
 
 #wrapper {
     width: 100%;
-    max-width: 1200px; /*cette dimension a été choisie en fonction de mes images*/
+    max-width: 1260px; /*cette dimension a été choisie en fonction de mes images*/
     margin: 0 auto;
     background-color: white;/*couleur d'arrière plan du contenu principal du wrapper*/
      /*ombrages; 1ère valeur : axe X; 2ème valeur : axe Y; 3ème valeur "blur"(flou); 4ème valeur "spread distance", la distance sur laquelle le flou se diffuse; puis la couleur*/
@@ -44,8 +44,6 @@ h6 {
 /* Logo et nom du site rajouté par laurent */
 
 #top-bar {
-  max-width: 1260px;
-  margin: 0 auto; 
   padding-left: 50px;
   height: 150px;
   background-color: #555555;
@@ -176,8 +174,6 @@ footer {
   padding: 25px 0;
   align-items: center;
   /* rejouté par laurent */
-  max-width: 1300px;
-  margin: 0 auto;
   background-color: #555555;
 
 }
