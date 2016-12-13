@@ -8,18 +8,14 @@
 
 		['GET|POST', '/page/', 'Default#page', 'default_page'],
 		
-
 		// UserFront
 		['GET|POST', '/front/login', 'Users#login', 'user_login'],
-		['GET', '/front/profil/[i:id]', 'Users#profil', 'profil'],
-		['GET|POST', '/front/delete[i:id]', 'Users#delete', 'user_delete'],
 		['GET|POST', '/front/signin', 'Users#signIn', 'user_signIn'],
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#login', 'login'],
 		['GET|POST', '/admin/logout', 'Admin#logout', 'logout'],
 		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'admin_indexBack'],
-
 		['GET', '/admin/profilBack/[i:id]', 'Users#profilBack', 'profilBack'],
 		['GET', '/admin/list', 'Users#listAll', 'user_list'],
 

@@ -106,6 +106,7 @@ class UsersController extends Controller
 		$this->show('default/admin/profilBack', $data);
 		}
 	}
+	
 	/**
 	 *Affiche tout les profil 
 	 *@param data table de user
