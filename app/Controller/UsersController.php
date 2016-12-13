@@ -71,7 +71,7 @@ class UsersController extends Controller
 			$this->showNotFound();
 		}
 		else{
-		//Instancie la classe "UserModel" qui permet de sélectionné un utilisateur
+		//Instancie la classe "UserModel" qui permet de sélectionner un utilisateur
 		$UsersModel = new UsersModel();
 		$user = $UsersModel->find($id);//$id correspond à l'id en URL
 
