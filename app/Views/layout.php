@@ -27,8 +27,6 @@
 	<div class="container">
 		<header>
 
-			<h1><?= $this->e($title) ?></h1>
-
 			<div id="top-bar">
             	<div id="logo">Logo</div>
             	<div id="name-site">LivrEchange</div>
@@ -54,7 +52,7 @@
                         <a class="page-scroll" href="#about">Lieux d'échange</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Actu</a>
+                        <a class="page-scroll" href="#team">Actus</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Dons</a>
