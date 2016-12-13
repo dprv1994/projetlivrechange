@@ -25,14 +25,6 @@ class DefaultController extends Controller
 	}
 
 	/**
-	 * Page de profil
-	 */
-	public function profil()
-	{
-		$this->show('default/user/profil');
-	}
-
-	/**
 	 * Page 404
 	*/
 	public function notFound()
