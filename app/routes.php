@@ -15,7 +15,7 @@
 
 		['GET|POST', '/register', 'Users#signIn', 'register'],
 		['GET|POST', '/loginuser', 'Users#loginuser', 'loginuser'],
-		['GET|POST', '/profiluser/[i:id]', 'Users#profilUser', 'profiluser'],
+		['GET|POST', '/profiluser/[i:id]', 'Users#profilUser', 'profilUser'],
 		
 
 		// Admin
