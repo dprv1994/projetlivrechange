@@ -61,14 +61,30 @@ Class AdminController extends Controller
 
 	public function logout()
 	{
+
+		if (!empty($_POST)) {
+			$post = array_map('trim', array_map('strip_tags', $_POST));
+		
+			if (!empty($post['username'] && !empty($post['password']))) {
+
+				//l'utilisateur a bien rempli un mot de passe et un username
+				$authModel = new AuthentificationModel;
+				$idUser = $authModel->getLoggedUser($post['username'], $post['password']);
+
+				//On a un id utilisateur si le couple username/password est bon, sinon 0
+				if($idUser){
+					//Deconnecte L'utilisateur et peuple la session
+					$authModel->logUserOut($user);
+					$this->redirectToRoute('login');
+				}
+			}
+		}
+
 		//Si $this->getUser() ne récupere aucun utilisateur redigirige vers la page de login
+
 		if (empty($this->getUser())) {
 			$this->redirectToRoute('login');
 		}
-
-
-
-
 
 	}
 }

@@ -107,24 +107,6 @@ class UsersController extends Controller
 		}
 	}
 
-	/*
-	 * Page de cat
-	*/
-	public function cat()
-	{
-		$name = 'Mistigris';
-		$color = 'Gris';
-		$age = '2 ans';
-
-		$data = [
-			'name' => $name,
-			'color' => $color,
-			'age' => $age,
-			];
-
-		$this->show('default/cat', $data);
-	}
-
 	/**
 	 *Affiche tout les profil 
 	 *@param data table de user
@@ -152,31 +134,6 @@ class UsersController extends Controller
 
 	}
 
-/*
-*
-* Inscription utilisateur en PHP
-*
-*/
-/*	public function add()
-	{	
-		if (!empty($_POST)) {
-			
-			$data =[
-				'firstname' => $_POST['firstname'],
-				'lastname'	=> $_POST['lastname'],
-				'username'		=> $_POST['username'],
-				'email'		=> $_POST['email'],
-				'password'	=> password_hash($_POST['password'], PASSWORD_DEFAULT),
-				'role'		=> $_POST['role'],	
-			];
-	
-			$Insert = new UsersModel();
-			$Insert->insert($data);
-		}
-		
-		$this->show('default/user/add');		
-	}*/
-
 	public function delete($id)
 	{
 		if (!is_numeric($id) || empty($id)) {
@@ -186,7 +143,7 @@ class UsersController extends Controller
 			$UserDelete = new UsersModel();
 			$user = $UserDelete->delete($id);
 
-			$this->redirectToRoute('default_home');
+			$this->redirectToRoute('user_list');
 		}
 
 	}
