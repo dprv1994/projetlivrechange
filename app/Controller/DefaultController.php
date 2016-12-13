@@ -17,11 +17,11 @@ class DefaultController extends Controller
 	}
 
 	/**
-	 * Page 1
+	 * Page Inscription
 	 */
-	public function page()
+	public function pageInscription()
 	{
-		$this->show('default/page');
+		$this->show('default/pageinscription');
 	}
 
 	/**

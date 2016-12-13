@@ -63,7 +63,7 @@
                         <a class="page-scroll" href="#contact">Dons</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Se connecter</a>
+                        <a class="page-scroll" href="pageinscription">Se connecter</a>
                     </li>
                 </ul>
             </div>
