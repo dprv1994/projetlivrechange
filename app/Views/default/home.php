@@ -1,10 +1,12 @@
 <?php $this->layout('layout', ['title' => '']) ?>
 
 <?php $this->start('main_content') ?>
-	
-	<div id="">
 
-	<h1>BIENVENUE SUR LIVRECHANGE</h1>
+<main>
+	
+	<section id="zone1">
+
+		<h1>BIENVENUE SUR LIVRECHANGE</h1>
 
 
 	<h3>1) Echanger</h3>
@@ -14,7 +16,7 @@
 	Nous vous proposons le contrat suivant : 1 livre donné = 1 livre reçu !<br>
 	Composé uniquement de particuliers, notre site vous propose de lister les livres que vous souhaitez proposer à l'échange, ainsi que ceux que vous recherchez, afin de trouver le parfait troc pour vous!</p>
 
-	<p>------------------------</p>
+	
 
 	<h3>2) Se rencontrer</h3>
 
@@ -22,6 +24,9 @@
 	Aucun système de livraison n'est proposé sur notre site.<br>
 	Pourquoi? Dans une époque où les gens n'intéragissent principalement que par l'intermédiaire des machines, nous pensons qu'il est important de continuer à échanger "en direct"..<br>
 	C'est pourquoi nous vous proposons des lieux partenaires (cafés, bars..) qui vous permettront de retrouver facilement la personne avec qui vous avez rendez-vous, et qui vous offriront un cadre agréable pour discuter le temps de votre transaction.</p>
+
+	</section>
+
 
 	<button>S'INSCRIRE</button>
 
@@ -35,4 +40,5 @@
 
 	</div>
 
+</main>
 <?php $this->stop('main_content') ?>
