@@ -23,7 +23,7 @@
 	Pourquoi? Dans une époque où les gens n'intéragissent principalement que par l'intermédiaire des machines, nous pensons qu'il est important de continuer à échanger "en direct"..<br>
 	C'est pourquoi nous vous proposons des lieux partenaires (cafés, bars..) qui vous permettront de retrouver facilement la personne avec qui vous avez rendez-vous, et qui vous offriront un cadre agréable pour discuter le temps de votre transaction.</p>
 
-	<button>S'INSCRIRE</button>
+	<a href="signin"><button>S'INSCRIRE</button></a>
 
 	<h3>3) Concept</h3>
 
