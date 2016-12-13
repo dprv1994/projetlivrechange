@@ -21,6 +21,17 @@
 		<label for="password">Mot de passe:</label>
 		<input type="password" name="password" id="password">
 
+		<label for="picture">Avatar:</label>
+		<input type="file" name="picture" id="picture">
+
+		<label for="role">role:</label>
+		<select name="role">
+			<option>admin</option>
+			<option>modo</option>
+			<option>user</option>
+		</select>
+
+
 		<input type="submit"  value="Enregistrer">
 
 		
