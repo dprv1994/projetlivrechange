@@ -1,6 +1,18 @@
 <?php $this->layout('layout', ['title' => '']) ?>
 
 <?php $this->start('main_content') ?>
+
+<?php if(isset($errors) && !empty($errors)):?>
+	<div class="alert alert-danger">
+		<?=implode('<br>', $errors); ?>
+	</div>
+<?php endif; ?>
+
+<?php if(isset($success) && $success == true):?>
+	<div class="alert alert-success">
+		Votre article a bien été ajouté !
+	</div>
+<?php endif; ?>
 	
 		<h2>Page D'inscription</h2>
 		
