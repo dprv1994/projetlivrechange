@@ -24,7 +24,7 @@ Class AdminController extends Controller
 		$errors = null;
 
 		if (!empty($_POST)) {
-		$post = array_map('trim', array_map('strip_tags', $_POST));
+			$post = array_map('trim', array_map('strip_tags', $_POST));
 		
 
 			if (empty($post['username']) && empty($post['password'])) {

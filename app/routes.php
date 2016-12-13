@@ -6,11 +6,10 @@
 		// home correspond au nom de la méthode dans le controller
 		['GET|POST', '/', 'Default#home', 'default_home'],
 
-		['GET|POST', 'loginuser', 'Default#loginuser', 'loginuser'],
 		
 		// UserFront
-		['GET|POST', '/front/login', 'Users#login', 'user_login'],
 		['GET|POST', '/front/signin', 'Users#signIn', 'user_signIn'],
+		['GET|POST', '/loginuser', 'Users#loginuser', 'loginuser'],
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#login', 'login'],

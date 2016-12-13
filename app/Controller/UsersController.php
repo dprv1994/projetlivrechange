@@ -15,7 +15,7 @@ class UsersController extends Controller
 	 * Page de login
 	 *
 	**/
-	public function login()
+	public function loginuser()
 	{
 		$errors = null;
 
@@ -49,14 +49,14 @@ class UsersController extends Controller
 		//Je le sors du !empty($_POST) pour que la redirection soit effective si un utilisateur et déjà connecté arrive sur le formulaire de connexion
 		if (!empty($this->getUser())) {
 			
-			$this->redirectToRoute('articles_add');
+			$this->redirectToRoute('profiluser');
 		}
 		else{
 			$param = ['errors' => $errors];
-			$this->show('default/user/login', $param);
+			$this->show('default/loginuser', $param);
 		}
 
-		$this->show('default/user/login');
+		$this->show('default/loginuser');
 	}
 
 	/**

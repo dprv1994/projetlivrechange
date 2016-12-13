@@ -1,9 +1,31 @@
-<?php $this->layout('layoutBack', ['title' => 'Page n°404']) ?>
+<?php $this->layout('layout', ['title' => 'LoginUser']) ?>
 
 <?php $this->start('main_content'); ?>
-<h1>Mais où est-elle donc passée..?</h1>
+<h1></h1>
 <br>
-<!-- INTEGRER EN BACKGROUND L'IMAGE assets/img/404.jpg -->
-<p>Il semblerait que la page que vous recherchez ait été supprimée, désactivée ou déplacée.
+<p>Veuillez entrer vos identifiants pour vous connecter
 <br></p>
+<p>
+	
+<?php if (isset($errors) && !empty($errors)): ?>
+	<div class="alert alert-danger">
+		<?=$errors;?>
+	</div>
+<?php endif; ?>
+
+	<p>Vous avez atteint le login Back.</p>
+
+	<form method="POST">
+		<label for="username">Pseudo :</label><br>
+		<input type="text" id="username" name="username">
+
+		<br><br>
+		<label for="password">Mot de passe :</label><br>
+		<input type="password" id="password" name="password">
+
+		<br><br>
+		<input type="submit" value="Se connecter">
+	</form>
+
+</p>
 <?php $this->stop('main_content'); ?>
