@@ -9,8 +9,8 @@
 		<label for="username">Pseudo:</label>
 		<input type="text" name="username" id="username">
 
-		<label for="pseudo">Nom:</label>
-		<input type="text" name="pseudo" id="pseudo">
+		<label for="name">Nom:</label>
+		<input type="text" name="name" id="name">
 
 		<label for="firstname">Prénom:</label>
 		<input type="text" name="firstname" id="firstname">
