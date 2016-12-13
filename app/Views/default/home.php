@@ -26,8 +26,8 @@
 		<input type="password" id="password" name="password">
 		<br><br>
 
-		<input type="submit" value="Ajouter">
+		<input type="submit" value="S'inscrire">
 	</form>
-	
+
 
 <?php $this->stop('main_content') ?>

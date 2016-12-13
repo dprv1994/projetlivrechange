@@ -15,7 +15,7 @@
 
 	<p>Vous avez atteint le login Back.</p>
 
-	<form method="POST">
+	<form method="post">
 		<label for="username">Pseudo :</label><br>
 		<input type="text" id="username" name="username">
 

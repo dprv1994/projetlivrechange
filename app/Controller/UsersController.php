@@ -123,16 +123,6 @@ class UsersController extends Controller
 	$this->show('default/admin/list', $data);
 
 	}
-/*
-*
-* Inscription utilisateur en AJAX
-*
-*/
-	public function signIn()
-	{
-		$this->show('default/user/signin');
-
-	}
 
 	public function delete($id)
 	{
