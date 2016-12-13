@@ -15,7 +15,7 @@ class UsersController extends Controller
 	 * Page de login
 	 *
 	**/
-	public function loginuser()
+	public function loginUser()
 	{
 		$errors = null;
 
@@ -81,6 +81,13 @@ class UsersController extends Controller
 		];
 		$this->show('default/profiluser', $data);
 		}
+	}
+
+	public function signIn()
+	{
+
+
+
 	}
 }
 

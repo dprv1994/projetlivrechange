@@ -16,7 +16,7 @@ Class AdminController extends Controller
 		$this->show('default/admin/indexBack');
 	}
 
-	public function login()
+	public function logIn()
 	{
 
 		$errors = null;
@@ -57,7 +57,7 @@ Class AdminController extends Controller
 		$this->show('default/admin/login', $param);
 	}
 
-	public function logout()
+	public function logOut()
 	{
 
 		if (!empty($_POST)) {
