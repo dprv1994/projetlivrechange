@@ -52,7 +52,7 @@ class UsersController extends Controller
 		//Je le sors du !empty($_POST) pour que la redirection soit effective si un utilisateur et déjà connecté arrive sur le formulaire de connexion
 		if (!empty($this->getUser())) {
 			
-			$this->redirectToRoute('profiluser');
+			$this->redirectToRoute('profiluser/[i:id]');
 		}
 		else{
 			$param = ['errors' => $errors];
