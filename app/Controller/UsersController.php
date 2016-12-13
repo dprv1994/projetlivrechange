@@ -59,6 +59,13 @@ class UsersController extends Controller
 		$this->show('default/loginuser');
 	}
 
+	public function addUser()
+	{
+
+
+		
+	}
+
 	/**
 	 *Affiche le profil d'un membre sélectionné
 	 *@param int $id l'id du membre
