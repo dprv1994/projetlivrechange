@@ -16,13 +16,14 @@
 		['GET|POST', '/register', 'Users#signIn', 'register'],
 		['GET|POST', '/loginuser', 'Users#loginuser', 'loginuser'],
 		['GET|POST', '/profiluser/[i:id]', 'Users#profilUser', 'profiluser'],
-		['GET', '/delete', 'Admin#delete', 'user_delete'],
+		
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
 		['GET|POST', '/admin/logout', 'Admin#logOut', 'logout'],
 		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'admin_indexBack'],
 		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],
+		['GET', '/delete/[i:id]', 'Admin#delete', 'user_delete'],
 		['GET', '/admin/list', 'Admin#listAll', 'user_list'],
 
 		// Route Ajax
