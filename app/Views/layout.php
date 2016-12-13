@@ -44,19 +44,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#profil">Mon profil</a>
+                        <a class="page-scroll" href="">Mon profil</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#search">Recherche</a>
+                        <a class="page-scroll" href="">Recherche</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Lieux d'échange</a>
+                        <a class="page-scroll" href="">Lieux d'échange</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Actus</a>
+                        <a class="page-scroll" href="">Actus</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Dons</a>
+                        <a class="page-scroll" href="">Dons</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="loginuser">Se connecter</a>
