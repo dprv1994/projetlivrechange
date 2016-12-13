@@ -24,7 +24,7 @@
 </head>
 <body id="page-top" class="index">
 
-	<div class="container">
+	
 		<header>
 
 			<div id="top-bar">
@@ -34,6 +34,7 @@
 
 			<!-- Navigation -->
     	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed">
+            <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             	<div class="navbar-header page-scroll">
                 	<a class="navbar-brand page-scroll" href="">Accueil</a>
@@ -43,19 +44,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#services">Mon profil</a>
+                        <a class="page-scroll" href="#profil">Mon profil</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Recherche</a>
+                        <a class="page-scroll" href="#search">Recherche</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Lieux d'échange</a>
+                        <a class="page-scroll" href="#">Lieux d'échange</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Actus</a>
+                        <a class="page-scroll" href="#">Actus</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Dons</a>
+                        <a class="page-scroll" href="#">Dons</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="loginuser">Se connecter</a>
