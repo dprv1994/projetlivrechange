@@ -1,11 +1,8 @@
-<?php $this->layout('layout', ['title' => 'LoginUser']) ?>
+<?php $this->layout('layout', ['title' => '']) ?>
 
 <?php $this->start('main_content'); ?>
-<h1></h1>
+<h1>Page de connexion</h1>
 <br>
-<p>Veuillez entrer vos identifiants pour vous connecter
-<br></p>
-<p>
 	
 <?php if (isset($errors) && !empty($errors)): ?>
 	<div class="alert alert-danger">
@@ -13,9 +10,11 @@
 	</div>
 <?php endif; ?>
 
+
 	<p>Vous avez atteint le login Back.</p>
 
 	<form method="post">
+
 		<label for="username">Pseudo :</label><br>
 		<input type="text" id="username" name="username">
 
