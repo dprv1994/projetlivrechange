@@ -4,26 +4,33 @@
 
 	<h2>Ajouter un utlisateur</h2>
 
-	<form>
+	<form method="POST">
 		
-		<label for="username">Pseudo:</label>
-		<input type="text" name="username" id="username">
+		<label  for="firstname">Prénom:</label>
+		<input type="text" id="firstname" name="firstname">
+		<br><br>
 
-		<label for="name">Nom:</label>
-		<input type="text" name="name" id="name">
+		<label for="lastname">Nom:</label>
+		<input type="text" id="lastname" name="lastname">
+		<br><br>
 
-		<label for="firstname">Prénom:</label>
-		<input type="text" name="firstname" id="firstname">
+		<label for="username">Nom d'utilisateur:</label>
+		<input type="text" id="username" name="username">
+		<br><br>
 
-		<label for="email">email:</label>
-		<input type="email" name="email" id="email">
+		<label for="picture">Image:</label>
+		<input type="file" id="picture" name="picture" placeholder="Votre image">
+		<br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email">
+		<br><br>
 
 		<label for="password">Mot de passe:</label>
-		<input type="password" name="password" id="password">
+		<input type="password" id="password" name="password">
+		<br><br>
 
-		<label for="picture">Avatar:</label>
-		<input type="file" name="picture" id="picture">
-
+		
 		<label for="role">role:</label>
 		<select name="role">
 			<option>admin</option>
@@ -31,12 +38,13 @@
 			<option>user</option>
 		</select>
 
+		<input type="submit" value="S'inscrire">
 
-		<input type="submit"  value="Enregistrer">
-
+	
+		
 		
 	</form>
 
 
 
-<?php $this->end('main_content') ?>
+<?php $this->stop('main_content') ?>
