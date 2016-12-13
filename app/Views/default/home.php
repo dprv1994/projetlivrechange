@@ -2,7 +2,7 @@
 
 <?php $this->start('main_content') ?>
 
-<main>
+
 	
 	<h1>BIENVENUE SUR LIVRECHANGE</h1>
 
@@ -19,10 +19,10 @@
 
 			<h3>2) Se rencontrer</h3>
 
-			<p>LivrEchange vous propose de rencontrer "dans la vraie vie" les propriétaires des livres qui vous intéressent.<br>
-			Aucun système de livraison n'est proposé sur notre site.<br>
-			Pourquoi? Dans une époque où les gens n'intéragissent principalement que par l'intermédiaire des machines, nous pensons qu'il est important de continuer à échanger "en direct"..<br>
-			C'est pourquoi nous vous proposons des lieux partenaires (cafés, bars..) qui vous permettront de retrouver facilement la personne avec qui vous avez rendez-vous, et qui vous offriront un cadre agréable pour discuter le temps de votre transaction.</p>
+				<p>LivrEchange vous propose de rencontrer "dans la vraie vie" les propriétaires des livres qui vous intéressent.<br>
+				Aucun système de livraison n'est proposé sur notre site.<br>
+				Pourquoi? Dans une époque où les gens n'intéragissent principalement que par l'intermédiaire des machines, nous pensons qu'il est important de continuer à échanger "en direct"..<br>
+				C'est pourquoi nous vous proposons des lieux partenaires (cafés, bars..) qui vous permettront de retrouver facilement la personne avec qui vous avez rendez-vous, et qui vous offriront un cadre agréable pour discuter le temps de votre transaction.</p>
 
 		</section>
 
@@ -41,5 +41,5 @@
 
 		</section>
 
-</main>
+
 <?php $this->stop('main_content') ?>
