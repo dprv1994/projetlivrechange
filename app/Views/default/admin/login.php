@@ -9,7 +9,7 @@
 	</div>
 <?php endif; ?>
 
-	<p>Vous avez atteint le login Back.</p>
+	<p>Veuillez entrer vos identifiants pour vous connecter.</p>
 
 	<form method="POST">
 		<label for="username">User:</label><br>

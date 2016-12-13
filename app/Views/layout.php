@@ -36,26 +36,26 @@
     	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed">
             <!-- Brand and toggle get grouped for better mobile display -->
             	<div class="navbar-header page-scroll">
-                	<a class="navbar-brand page-scroll" href="">Accueil</a>
+                	<a class="navbar-brand page-scroll" href="/php/projetlivrechange/public/">Accueil</a>
             	</div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#services">Mon profil</a>
+                        <a class="page-scroll" href="">Mon profil</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Recherche</a>
+                        <a class="page-scroll" href="">Recherche</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Lieux d'échange</a>
+                        <a class="page-scroll" href="">Lieux d'échange</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Actus</a>
+                        <a class="page-scroll" href="">Actus</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Dons</a>
+                        <a class="page-scroll" href="">Dons</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="loginuser">Se connecter</a>
