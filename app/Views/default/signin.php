@@ -31,6 +31,8 @@
 			<br><br>
 
 			<input type="submit" value="S'inscrire">
+
+			<br><br>
 		</form>
 	
 

@@ -27,6 +27,14 @@ h6 {
   font-weight: 700;
 }
 
+#wrapper {
+    width: 100%;
+    max-width: 1200px; /*cette dimension a été choisie en fonction de mes images*/
+    margin: 0 auto;
+    background-color: white;/*couleur d'arrière plan du contenu principal du wrapper*/
+     /*ombrages; 1ère valeur : axe X; 2ème valeur : axe Y; 3ème valeur "blur"(flou); 4ème valeur "spread distance", la distance sur laquelle le flou se diffuse; puis la couleur*/
+}
+
 .navbar-custom {
   background-color: #222222;
   border-color: transparent;
