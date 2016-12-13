@@ -8,8 +8,8 @@
 			<p class="navbar-text navbar-left">
 				<span class="text-primary">Bonjour <strong><?=$w_user['username'];?></strong></span>
 			</p>
-
-    	<ul class="nav navbar-nav navbar-right">
+		<div id="nav-bar-back">
+    	<ul id="nav-bar-back">
 
       		
       		    
@@ -22,6 +22,7 @@
       			<li><a href="logout.php">Déconnexion</a></li>
 
     	</ul>
+    	</div>
 
   	</div>
 </nav>

@@ -24,3 +24,7 @@ h1 {
 h2 {
 	color: #66D9EF;
 }
+
+#nav-bar-back {
+	list-style: none;
+}
