@@ -16,15 +16,11 @@ a {
   color: #fed136;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
 }
 
 #wrapper {
