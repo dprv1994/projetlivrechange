@@ -6,16 +6,21 @@
 
 
 	<form method="post">
-	<label  for="firstname">Prénom:</label>
-	<input type="text" id="firstname" name="firstname">
-	<br><br>
 
-	<label for="lastname">Nom:</label>
+		<label  for="firstname">Prénom:</label>
+		<input type="text" id="firstname" name="firstname">
+		<br><br>
+
+		<label for="lastname">Nom:</label>
 		<input type="text" id="lastname" name="lastname">
 		<br><br>
 
 		<label for="username">Nom d'utilisateur:</label>
 		<input type="text" id="username" name="username">
+		<br><br>
+
+		<label for="picture">Image:</label>
+		<input type="file" id="picture" name="picture" placeholder="Votre image">
 		<br><br>
 
 		<label for="email">Email:</label>
