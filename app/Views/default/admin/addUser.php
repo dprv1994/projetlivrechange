@@ -1,4 +1,4 @@
-<?php $this->layout('layoutBack', ['title' => 'Fiche de profil ']) ?>
+<?php $this->layout('layoutBack', ['title' => 'Ajout d\'un utilisateur  ']) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -26,6 +26,7 @@
 		<input type="email" id="email" name="email">
 		<br><br>
 
+
 		<label for="password">Mot de passe:</label>
 		<input type="password" id="password" name="password">
 		<br><br>
@@ -41,8 +42,10 @@
 		<input type="submit" value="S'inscrire">
 
 	
-		
-		
+
+		<input type="submit"  value="Enregistrer">
+
+
 	</form>
 
 

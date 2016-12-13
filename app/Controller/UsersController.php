@@ -148,10 +148,10 @@ class UsersController extends Controller
 				 	'firstname' => $post['firstname'],
 				 	'lastname'	=> $post['lastname'],
 				 	'username'	=> $post['username'],
-				 	'picture'	=> $post['picture'],
+				 	'picture'	=> $_FILES['picture'],
 				 	'email'		=> $post['email'],
 				 	'password'	=> $authModel->hashPassword($post['password']),
-				 	'role'			=> 'user',
+				 	'role'		=> 'user',
 				 ]);
 
 				if ($insert) {
