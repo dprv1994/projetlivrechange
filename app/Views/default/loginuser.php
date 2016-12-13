@@ -13,8 +13,6 @@
 	</div>
 <?php endif; ?>
 
-	<p>Vous avez atteint le login Back.</p>
-
 	<form method="POST">
 		<label for="username">Pseudo :</label><br>
 		<input type="text" id="username" name="username">
