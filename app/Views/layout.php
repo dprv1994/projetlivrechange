@@ -36,7 +36,7 @@
             <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             	<div class="navbar-header page-scroll">
-                	<a class="navbar-brand page-scroll" href="">Accueil</a>
+                	<a class="navbar-brand page-scroll" href="/php/projetlivrechange/public/">Accueil</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

@@ -25,6 +25,8 @@
 
 		<br><br>
 		<input type="submit" value="Se connecter">
+
+		<br><br>
 	</form>
 
 </p>
