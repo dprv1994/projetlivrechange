@@ -19,9 +19,9 @@ class DefaultController extends Controller
 	/**
 	 * Page Inscription
 	 */
-	public function pageInscription()
+	public function loginuser()
 	{
-		$this->show('default/pageinscription');
+		$this->show('default/loginuser');
 	}
 
 	/**
