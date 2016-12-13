@@ -10,6 +10,7 @@
 		// UserFront
 		['GET|POST', '/front/signin', 'Users#signIn', 'user_signIn'],
 		['GET|POST', '/loginuser', 'Users#loginuser', 'loginuser'],
+		['GET', '/profiluser', 'Users#profilUser', 'profiluser'],
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#login', 'login'],

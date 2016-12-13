@@ -64,7 +64,7 @@ class UsersController extends Controller
 	 *@param int $id l'id du membre
 	 * Page de profil
 	**/
-	public function profil($id)
+	public function profilUser($id)
 	{
 		//Si l'internaute accède à la page sans id, on le redirige vers la page 404
 		if (!is_numeric($id) || empty($id)) {
@@ -79,7 +79,7 @@ class UsersController extends Controller
 		$data = [
 			'user' => $user, //
 		];
-		$this->show('default/front/profil', $data);
+		$this->show('default/profiluser', $data);
 		}
 	}
 
