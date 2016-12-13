@@ -39,10 +39,6 @@
 			<option>user</option>
 		</select>
 
-		<input type="submit" value="S'inscrire">
-
-	
-
 		<input type="submit"  value="Enregistrer">
 
 
