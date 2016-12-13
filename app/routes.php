@@ -8,7 +8,7 @@
 
 		
 		// UserFront
-		['GET|POST', '/front/signin', 'Users#signIn', 'user_signIn'],
+		['GET|POST', '/register', 'Users#signIn', 'register'],
 		['GET|POST', '/loginuser', 'Users#loginuser', 'loginuser'],
 		['GET|POST', '/profiluser/[i:id]', 'Users#profilUser', 'profiluser'],
 
