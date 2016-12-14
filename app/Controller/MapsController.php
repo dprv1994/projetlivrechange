@@ -3,7 +3,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
-use \W\Model\UsersModel; //as Users;
+use \W\Model\MapsModel; 
 use \W\Security\AuthentificationModel;
 
 
