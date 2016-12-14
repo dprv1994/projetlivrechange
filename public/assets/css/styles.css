@@ -256,3 +256,10 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
   outline: none;
+
+
+}
+#map {
+ 
+  height: 800px;
+}
