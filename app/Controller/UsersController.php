@@ -77,8 +77,8 @@ class UsersController extends Controller
 		}
 		else{
 		//Instancie la classe "UserModel" qui permet de sélectionner un utilisateur
-		$UsersModel = new UsersModel();
-		$user = $UsersModel->find($id);//$id correspond à l'id en URL
+		$userlogged = new Controller();
+		$user = $userlogged->getUser();//$id correspond à l'id en URL
 
 		//Permet de gérer l'affichage
 		$data = [

@@ -16,7 +16,6 @@
 				<li>Prénom : <?=$user['firstname'];?></li>
 				<li>Nom : <?=$user['lastname'];?></li>
 				<li>Email : <?=$user['email'];?></li>
-				<li>Rôle : <?=$user['role'];?></li>
 			</ul>
 
 			<p>Mes livres :</p>
