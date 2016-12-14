@@ -9,71 +9,77 @@ body {
   margin: 0;
   padding: 0;
   color: #392338;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 
 }
 
 a {
-  color: #392338;
+  color:  #392338;
+}
+
+a:hover {
+  color: #c1264e;
 }
 
 h1 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-align: center;/* rajouté par laurent */
+  margin-top: 50px;
+  color: #392338;
 }
 
 h3 {
   text-align: center;/* ici aussi */
-  
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
 
 h3::before {
   font-family: FontAwesome;
   content: "\f02d";
-  padding-right: 0.2em;
+  padding-right: 0.5em;
 }
 #wrapper {
     width: 100%;
     max-width: 1260px; /*cette dimension a été choisie en fonction de mes images*/
     margin: 0 auto;
-    background-color: white;/*couleur d'arrière plan du contenu principal du wrapper*/
+    background: url(../img/livre-ouvert.jpg);/*couleur d'arrière plan du contenu principal du wrapper*/
      /*ombrages; 1ère valeur : axe X; 2ème valeur : axe Y; 3ème valeur "blur"(flou); 4ème valeur "spread distance", la distance sur laquelle le flou se diffuse; puis la couleur*/
-}
+    background-size: cover;
+   }
 
 /* Logo et nom du site rajouté par laurent */
 
 #top-bar {
   padding-left: 50px;
   height: 150px;
+  line-height: 150px;
   color: #fff;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
   font-size: 1.6em;
-  background-color: #c1264e;
+  background-color: #523957;
 }
 
 #logo {
   height: 150px;
-  background-color: #c1264e;
-  color: #392338;
+  color: #c1264e;
 }
 
 #name-site {
-  flex: 1;
+  
   margin-left: 50px;
   height: 150px;
-  background-color: #ff947f;
-  color: #392338;
+  background-color: #523957;
+  color: #c1264e;
   /* Fin logo et nom du site */
 }
 #mainNav {
   max-width: 960px;
   margin: 0 auto;
-  box-shadow: 20px; 
+  border-radius: 8px; 
   background-color: #ffcfa4;
 }
 
@@ -82,7 +88,6 @@ h3::before {
 /* Bouton accueil */
 .navbar-custom .navbar-brand {
   color: #392338;/* couleur modifiée par laurent */
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
   text-decoration: none;/* rajouté par laurent */
   
 }
@@ -111,7 +116,7 @@ h3::before {
 li {
   /* rajouté par laurent */
   list-style: none;
-  /*padding-left: 35px;*/
+  
 }
 /* rajouté par laurent */
 .navbar-collapse ul {
@@ -183,43 +188,45 @@ li {
 
 .colonnes {
   width: 40%;
-  height: 400px;
+  height: 300px;
   text-align: justify;
   font-size: 1.2em;
   margin: auto;
  
 }
 
-.wxcbtn {
+.btnsubmit {
   text-align: center;
+  margin-top: 20px;
 }
-.navbutton {
+.linebuttons {
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   border-radius: 8px;
-  font-weight: bold;
   font-size: 30px;
-  color: white;
-  background-color: #382415;
+  color: #c1264e;
+  background-color: #523957;
   width: 300px;
   height: 70px;
+}
+
+.linebuttons:hover {
+  color: #ff947f;
 }
 
 #text {
   margin: auto;
   text-align: justify;
-  width: 70%;
+  width: 50%;
 }
 
-/*#concept {
-  text-align: center;
-}*/
 /* jusqu'ici */
 
 
 footer {
   padding: 25px 0;
   /* rejouté par laurent */
-  background-color: #ff947f;
+  background-color: #ffcfa4;
 
 }
 
@@ -229,6 +236,7 @@ footer span.copyright {
   text-transform: uppercase;
   text-transform: none;
   padding-left: 90px;
+  color: #392338;
 }
 
 footer #contact{
@@ -238,7 +246,6 @@ footer #contact{
   text-transform: uppercase;
   text-transform: none;
   text-align: center;
-
 }
 /* rajouté par laurent */
 .row {
@@ -258,13 +265,13 @@ ul.social-buttons {
 }
 ul.social-buttons li a {
   display: block;
-  background-color: #222222;
+  background-color: #ff947f;
   height: 40px;
   width: 40px;
   border-radius: 100%;
   font-size: 20px;
   line-height: 40px;
-  color: white;
+  color: #392338;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -274,7 +281,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fed136;
+  background-color: #c1264e;
 }
 .btn:focus,
 .btn:active,
