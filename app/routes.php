@@ -21,9 +21,6 @@
 		['GET', '/delete/[i:id]', 'Admin#delete', 'user_delete'],
 		['GET', '/admin/list', 'Admin#listAll', 'user_list'],
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
-
-		// Route Ajax
-		['GET|POST', '/ajax/add_user', 'Ajax#addUser', 'ajax_addUser'],
 		
 		// Autres
 		['GET', '/error/page404', 'Default#page404', 'page404'],
