@@ -7,19 +7,21 @@
 	<h1>BIENVENUE SUR LIVRECHANGE</h1>
 
 		<section id="zone1">
-
-			<h3>1) Echanger</h3>
 			<div id="container-colonnes">
 				<div id="colonne1">
+
+				<h3>1) Echanger</h3>
+			
 				<p>Votre bibliothèque déborde de livres que vous ne lirez plus?
 				Vous avez envie de découvrir un livre inattendu?
 				Nous vous proposons le contrat suivant : 1 livre donné = 1 livre reçu !<br>
 				Composé uniquement de particuliers, notre site vous propose de lister les livres que vous souhaitez proposer à l'échange, ainsi que ceux que vous recherchez, afin de trouver le parfait troc pour vous!</p>
 				</div>
 	
-
-			<h3>2) Se rencontrer</h3>
 				<div id="colonne2">
+
+				<h3>2) Se rencontrer</h3>
+				
 				<p>LivrEchange vous propose de rencontrer "dans la vraie vie" les propriétaires des livres qui vous intéressent.<br>
 				Aucun système de livraison n'est proposé sur notre site.<br>
 				Pourquoi? Dans une époque où les gens n'intéragissent principalement que par l'intermédiaire des machines, nous pensons qu'il est important de continuer à échanger "en direct"..<br>
@@ -29,7 +31,7 @@
 		</section>
 
 
-		<button>S'INSCRIRE</button>
+		<button class="btn" type="submit">S'INSCRIRE</button>
 
 		<section id="zone2">
 
