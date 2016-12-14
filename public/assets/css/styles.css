@@ -166,6 +166,10 @@ li {
   }
 }
 
+#container-colonne {
+  display: flex;
+}
+
 footer {
   padding: 25px 0;
   align-items: center;
