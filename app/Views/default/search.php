@@ -29,7 +29,7 @@
 				results.innerHTML += "<h5>Publisher:" + data.items[i].volumeInfo.publisher  + "</h5>"  
 				results.innerHTML += "<p>published Date:" + data.items[i].volumeInfo.publishedDate + "</p>"
 				results.innerHTML += "<p>Categories:" + data.items[i].volumeInfo.categories + "</p>"
-				results.innerHTML += "<p>img:" + '<img src="' + data.items[i].volumeInfo.imageLinks.thumbnail + '">' + "</p>"
+				results.innerHTML += "<p>Image:" + '<img src="' + data.items[i].volumeInfo.imageLinks.thumbnail + '">' + "</p>"
 			}
 		},
 

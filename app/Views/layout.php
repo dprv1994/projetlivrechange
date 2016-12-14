@@ -38,20 +38,20 @@
             <div class="container1">
             <!-- Brand and toggle get grouped for better mobile display -->
             	<div class="navbar-header page-scroll">
-                	<a class="navbar-brand page-scroll" href="/php/projetlivrechange/public/">Accueil</a>
+                	<a class="navbar-brand page-scroll" href="default_home">Accueil</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="">Mon profil</a>
+                        <a class="page-scroll" href="profiluser">Mon profil</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="">Recherche</a>
+                        <a class="page-scroll" href="search">Recherche</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="">Lieux d'échange</a>
+                        <a class="page-scroll" href="maps">Lieux d'échange</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="">Actus</a>
