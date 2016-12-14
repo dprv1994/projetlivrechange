@@ -24,6 +24,13 @@ h1 {
 
 h3 {
   text-align: center;/* ici aussi */
+  
+}
+
+h3::before {
+  font-family: FontAwesome;
+  content: "\f02d";
+  padding-right: 0.2em;
 }
 #wrapper {
     width: 100%;

@@ -11,14 +11,14 @@
 			<div id="container-colonnes">
 				<div class="colonnes">
 
-				<h3>1) Echanger</h3>
+				<h3>Echanger</h3>
 			
 				<p>Vous possédez des livres que vous ne lirez plus, qui prennent la poussière et vous posent un problème de stockage !<br>
 				Vous ne savez pas quoi en faire? Plutôt que de les jeter, notre site vous propose de les échanger entre passionnés de lecture, et par ce biais peut-être trouver le livre que vous souhaitez lire, vous évitant ainsi un nouvel investissement financier. Et de trouver le parfait troc pour vous !</p>
 				</div>
 
 				<div class="colonnes">
-				<h3>2) Se rencontrer</h3>
+				<h3>Se rencontrer</h3>
 				
 				<p>LivrEchange vous propose de rencontrer "dans la vraie vie" les propriétaires des livres qui vous intéressent.<br>
 				Pour cela nous avons sélectionné des lieux partenaires (cafés, bars..) qui vous permettront de retrouver facilement la personne avec qui vous avez rendez-vous, et qui vous offriront un cadre agréable pour discuter le temps de votre transaction.<br>
@@ -37,7 +37,7 @@
 		<br><br>
 		<section id="zone2">
 
-			<h3>3) Concept</h3>
+			<h3>Concept</h3>
 
 				<p id="concept">LivrEchange vous permet d'être mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
 				Inscrivez-vous, remplissez votre profil, et partez à la recherche de nouvelles lectures !<br>
