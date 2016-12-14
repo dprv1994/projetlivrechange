@@ -22,6 +22,7 @@
 		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'admin_indexBack'],
 		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],
 		['GET', '/delete/[i:id]', 'Admin#delete', 'user_delete'],
+		['GET', '/update/[i:id]', 'Admin#update', 'user_update'],
 		['GET', '/admin/list', 'Admin#listAll', 'user_list'],
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
 		
