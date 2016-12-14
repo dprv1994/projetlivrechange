@@ -4,7 +4,7 @@
 
 
 	
-	<h1>BIENVENUE SUR LIVRECHANGE</h1>
+	<h1>BIENVENUE SUR LivrEchange</h1>
 
 		<br><br>
 		<section id="zone1">

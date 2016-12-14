@@ -18,7 +18,6 @@ a {
 
 h1 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   text-align: center;/* rajouté par laurent */
 }
@@ -194,7 +193,6 @@ li {
 
 footer {
   padding: 25px 0;
-  align-items: center;
   /* rejouté par laurent */
   background-color: #555555;
 
@@ -205,16 +203,19 @@ footer span.copyright {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
+  padding-left: 90px;
 }
 
-footer .contact{
+footer #contact{
   margin-bottom: 0;
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
-}
+  text-align: center;
 
+}
+/* rajouté par laurent */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -227,6 +228,8 @@ footer .contact{
 
 ul.social-buttons {
   margin-bottom: 0;
+  text-align: center;
+
 }
 ul.social-buttons li a {
   display: block;
@@ -241,6 +244,7 @@ ul.social-buttons li a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  text-align: center;
 }
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
