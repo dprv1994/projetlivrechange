@@ -6,16 +6,15 @@
 	
 	<h1>BIENVENUE SUR LIVRECHANGE</h1>
 
+		<br><br>
 		<section id="zone1">
 			<div id="container-colonnes">
 				<div id="colonne1">
 
 				<h3>1) Echanger</h3>
 			
-				<p>Votre bibliothèque déborde de livres que vous ne lirez plus?
-				Vous avez envie de découvrir un livre inattendu?
-				Nous vous proposons le contrat suivant : 1 livre donné = 1 livre reçu !<br>
-				Composé uniquement de particuliers, notre site vous propose de lister les livres que vous souhaitez proposer à l'échange, ainsi que ceux que vous recherchez, afin de trouver le parfait troc pour vous!</p>
+				<p>Vous possédez des livres que vous ne lirez plus, qui prennent la poussière et vous posent un problème de stockage !<br>
+				Vous ne savez pas quoi en faire? Plutôt que de les jeter, notre site vous propose de les échanger entre passionnés de lecture, et par ce biais peut-être trouver le livre que vous souhaitez lire, vous évitant ainsi un nouvel investissement financier. Et de trouver le parfait troc pour vous !</p>
 				</div>
 	
 				<div id="colonne2">
@@ -23,23 +22,26 @@
 				<h3>2) Se rencontrer</h3>
 				
 				<p>LivrEchange vous propose de rencontrer "dans la vraie vie" les propriétaires des livres qui vous intéressent.<br>
+				Pour cela nous avons sélectionné des lieux partenaires (cafés, bars..) qui vous permettront de retrouver facilement la personne avec qui vous avez rendez-vous, et qui vous offriront un cadre agréable pour discuter le temps de votre transaction.<br>
 				Aucun système de livraison n'est proposé sur notre site.<br>
 				Pourquoi? Dans une époque où les gens n'intéragissent principalement que par l'intermédiaire des machines, nous pensons qu'il est important de continuer à échanger "en direct"..<br>
-				C'est pourquoi nous vous proposons des lieux partenaires (cafés, bars..) qui vous permettront de retrouver facilement la personne avec qui vous avez rendez-vous, et qui vous offriront un cadre agréable pour discuter le temps de votre transaction.</p>
+				</p>
 				</div>
 			</div>
 		</section>
 
 		<br><br>
-		<button class="btn" type="submit">S'INSCRIRE</button>
+		<button type="submit" class="navbutton" name="register">S'INSCRIRE</button>
+			
+		
 
 		<br><br>
 		<section id="zone2">
 
 			<h3>3) Concept</h3>
 
-				<p>LivrEchange vous permet d'être mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
-				Inscrivez-vous, remplissez votre profil, et partez à la recherche d'un échange intéressant !<br>
+				<p id="concept">LivrEchange vous permet d'être mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
+				Inscrivez-vous, remplissez votre profil, et partez à la recherche de nouvelles lectures !<br>
 				Grâce à notre partenariat avec de nombreux cafés locaux, retrouvez sans difficulté la personne avec qui vous devez échanger.<br>
 				Il vous suffit de jeter un oeil à notre <a href="">carte des lieux</a> pour trouver le point de rendez-vous le plus proche de chez vous!<br>
 

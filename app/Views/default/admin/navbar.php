@@ -18,8 +18,8 @@
 		        <li><a href="">Messages</a></li>
 		        
 		        <li><a href="">Actus</a></li>
-		        <li><a target="_blank" href="">Voir le site</a></li>
-      			<li><a href="logout.php">Déconnexion</a></li>
+		        <li><a target="_blank" href="../" id="logout">Voir le site</a></li>
+      			<li><a href="logout">Déconnexion</a></li>
 
     	</ul>
     	</div>

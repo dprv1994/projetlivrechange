@@ -20,13 +20,12 @@ h1 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  text-align: center;
+  text-align: center;/* rajouté par laurent */
 }
 
 h3 {
-  text-align: center;
+  text-align: center;/* ici aussi */
 }
-
 #wrapper {
     width: 100%;
     max-width: 1260px; /*cette dimension a été choisie en fonction de mes images*/
@@ -61,15 +60,12 @@ h3 {
   margin-left: 50px;
   /* Fin logo et nom du site */
 }
-.container {
+.container1 {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
 }
 /* jusqu'ici */
-
-
-
 
 /* Bouton accueil */
 .navbar-custom .navbar-brand {
@@ -107,6 +103,7 @@ li {
   /* rajouté par laurent */
   list-style: none;
   padding-left: 35px;
+
 
 }
 /* rajouté par laurent */
@@ -169,12 +166,25 @@ li {
     font-size: 1.5em;
   }
 }
-
+/* rajouté par laurent */
 #container-colonnes {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
+}
+
+.navbutton {
+  font-weight: bold;
+  height: 50px;
+  width: 120px;
+  font-size: 1em;
+  
+}
+
+#concept {
+  text-align: center;
+/* jusqu'ici */
 }
 
 
@@ -205,6 +215,7 @@ footer .contact{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
 
 }
 

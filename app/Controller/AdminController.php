@@ -62,10 +62,10 @@ Class AdminController extends Controller
 
 	public function logOut()
 	{
-		if (!empty($user)) {
+		if (isset($_GET['logout']) && $_GET['logout'] == 'yes') {
 			$authModel = new AuthentificationModel;
 
-			//Deconnecte L'utilisateur et peuple la session
+			//Deconnecte L'utilisateur 
 			$authModel->logUserOut($user);
 			
 			$this->$this->redirectToRoute('login');
