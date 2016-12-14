@@ -7,6 +7,17 @@
  <div id="map"></div><!--  La carte s affichera dans cette div "map" -->
 
 
+	  <form>
+	  		<label name="inputLatitude">latitude</label>
+	  		<input type="text" name="inputLatitude" id="inputLatitude">
+
+	  		<label name="inputLongitude">longitude</label>
+	  		<input type="text" name="inputLongitude" id="inputLongitude">
+
+	  		<input type="submit" name="envoyer">
+
+	  </form>
+
 <?php $this->stop('main_content') ?>
 
 
@@ -22,7 +33,7 @@
 			  	map = new google.maps.Map(document.getElementById('map'), {/* Ici on crée notre objet map*/
 				    center: {lat: 44.8404400, lng:-0.5805000}, // centrage de la carte à l'affichage
 				    zoom: 13 // niveau de zoom
-			  });
+			  	});
 				google.maps.event.addListener(map, 'click', function(event) {
 				    placeMarker(event.latLng);
 				  });
@@ -52,7 +63,7 @@
 
  	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe8QWWw2r23oo6rVQHCipJfMvvdrv8hRE&callback=initMap&region=FR">/* key = cle api google*/
     </script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe8QWWw2r23oo6rVQHCipJfMvvdrv8hRE&libraries=places"></script>
+    
 
 
 
