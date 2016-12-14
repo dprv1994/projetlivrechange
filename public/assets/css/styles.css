@@ -60,15 +60,12 @@ h3 {
   margin-left: 50px;
   /* Fin logo et nom du site */
 }
-.container {
+.container1 {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
 }
 /* jusqu'ici */
-
-
-
 
 /* Bouton accueil */
 .navbar-custom .navbar-brand {
@@ -106,6 +103,7 @@ li {
   /* rajouté par laurent */
   list-style: none;
   padding-left: 35px;
+
 
 }
 /* rajouté par laurent */
@@ -217,6 +215,7 @@ footer .contact{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
 
 }
 

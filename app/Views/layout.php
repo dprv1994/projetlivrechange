@@ -33,7 +33,7 @@
 
 			<!-- Navigation -->
     	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed">
-            <div class="container">
+            <div class="container1">
             <!-- Brand and toggle get grouped for better mobile display -->
             	<div class="navbar-header page-scroll">
                 	<a class="navbar-brand page-scroll" href="/projetlivrechange/public/">Accueil</a>
@@ -73,7 +73,7 @@
 		</section>
 
 		<footer>
-            <div class="container">
+            <div class="container2">
             <div class="row">
                 <div class="col-md-4">
                     <span class="copyright">Copyright &copy; LIVRECHANGE-2016</span>
@@ -87,8 +87,6 @@
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
-                        
-                   
                 </div>
                 <div class="col-md-4">
                     <div id="contact">
