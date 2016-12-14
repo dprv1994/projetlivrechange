@@ -33,15 +33,7 @@ class DefaultController extends Controller
 
 	}
 
-	/**
-	 * Page Maps
-	*/
-	public function maps()
-	{
-		$this->show('default/maps');
-
-	}
-
+	
 	/**
 	 * Page 404
 	*/
