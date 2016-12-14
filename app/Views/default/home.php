@@ -33,26 +33,12 @@
 
 			<h3>3) Concept</h3>
 
-				<p>LivrEchange vous permet d'êter mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
+				<p>LivrEchange vous permet d'être mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
 				Inscrivez-vous, remplissez votre profil, et partez à la recherche d'un échange intéressant !<br>
 				Grâce à notre partenariat avec de nombreux cafés locaux, retrouvez sans difficulté la personne avec qui vous devez échanger.<br>
 				Il vous suffit de jeter un oeil à notre <a href="">carte des lieux</a> pour trouver le point de rendez-vous le plus proche de chez vous!<br>
-<<<<<<< HEAD
+
 				Et pourquoi ne pas en profiter pour boire un bon café en profitant de votre nouveau livre? ;)</
 		</section>
-=======
-				Et pourquoi ne pas en profiter pour boire un bon café en profitant de votre nouveau livre? ;)</p>
-
-
-		</section>
-
->>>>>>> 2e1a1ba5503f5bd0ef3cdc25c061de1a240690e5
-	<p>LivrEchange vous permet d'être mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
-	Inscrivez-vous, remplissez votre profil, et partez à la recherche d'un échange intéressant !<br>
-	Grâce à notre partenariat avec de nombreux cafés locaux, retrouvez sans difficulté la personne avec qui vous devez échanger.<br>
-	Il vous suffit de jeter un oeil à notre <a href="">carte des lieux</a> pour trouver le point de rendez-vous le plus proche de chez vous!<br>
-	Et pourquoi ne pas en profiter pour boire un bon café en profitant de votre nouveau livre? ;)</p>
-
-
 
 <?php $this->stop('main_content') ?>
