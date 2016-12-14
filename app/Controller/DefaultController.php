@@ -32,7 +32,11 @@ class DefaultController extends Controller
 		$this->showNotFound();
 
 	}
+	public function maps()
+	{
+		$this->show('default/maps');
 
+	}
 
 
 }

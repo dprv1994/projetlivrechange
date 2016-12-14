@@ -4,6 +4,8 @@
 
 <?php $this->start('main_content') ?>
 
+ <div id="map"></div><!--  La carte s affichera dans cette div "map" -->
+
 
 <?php $this->stop('main_content') ?>
 
@@ -31,17 +33,14 @@
 				    marker.setPosition(location); //on change sa position
 				  }else{
 				    marker = new google.maps.Marker({ //on créé le marqueur
-				      position: <?php foreach ($marker as  $value) {
-				      	
-				      } ?>,
+				      position: location,
 				      map: map
 				    });
 				  }
 				  inputLatitude.value=location.lat();
 				  inputLongitude.value=location.lng();
-				}			
-			}
-
+				}
+			
 	  </script>
 
  

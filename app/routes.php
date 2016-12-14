@@ -13,6 +13,11 @@
 		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
 		['GET|POST', '/profilUser/[i:id]', 'Users#profilUser', 'profilUser'],
 
+		// maps
+
+		['GET|POST', '/maps','Default#maps', 'maps'],
+
+
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
 		['GET|POST', '/admin/logout', 'Admin#logOut', 'logout'],
