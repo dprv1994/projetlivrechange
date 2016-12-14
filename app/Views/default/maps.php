@@ -41,6 +41,7 @@
 				  inputLongitude.value=location.lng();
 				}
 			
+			}
 	  </script>
 
  

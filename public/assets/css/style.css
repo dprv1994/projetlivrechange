@@ -28,3 +28,5 @@ h2 {
 #nav-bar-back {
 	list-style: none;
 }
+
+#map { height: 50%; width: 50%; }

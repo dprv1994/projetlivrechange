@@ -22,7 +22,7 @@
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/styles.css') ?>">
-    <style>#map { height: 50%; width: 50%; }</style>
+ 
 </head>
 <body id="page-top" class="index">
     <div id="wrapper">
