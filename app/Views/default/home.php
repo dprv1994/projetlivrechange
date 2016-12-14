@@ -20,7 +20,7 @@
 				<div class="colonnes">
 				<h3>Se rencontrer</h3>
 				
-				<p>LivrEchange vous propose de rencontrer "dans la vraie vie" les propriétaires des livres qui vous intéressent.<br>
+				<p>Le but étant de vous permettre de rencontrer, par le biais de ce site, les propriétaires des livres qui vous intéressent.<br>
 				Pour cela nous avons sélectionné des lieux partenaires (cafés, bars..) qui vous permettront de retrouver facilement la personne avec qui vous avez rendez-vous, et qui vous offriront un cadre agréable pour discuter le temps de votre transaction.<br>
 				Aucun système de livraison n'est proposé sur notre site.<br>
 				Pourquoi? Dans une époque où les gens n'intéragissent principalement que par l'intermédiaire des machines, nous pensons qu'il est important de continuer à échanger "en direct"..<br>
@@ -30,14 +30,15 @@
 		</section>
 
 		<br><br>
+		<div class="wxcbtn">
 		<button type="submit" class="navbutton" name="register">S'INSCRIRE</button>
-			
+		</div>
 		
 
 		<br><br>
 		<section id="zone2">
 			<div class="colonne">
-				<h3>Concept</h3>
+				<h3>Notre démarche</h3>
 
 				<div id="text">
 				<p>LivrEchange vous permet d'être mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
@@ -45,7 +46,7 @@
 				Grâce à notre partenariat avec de nombreux cafés locaux, retrouvez sans difficulté la personne avec qui vous devez échanger.<br>
 				Il vous suffit de jeter un oeil à notre <a href="">carte des lieux</a> pour trouver le point de rendez-vous le plus proche de chez vous!<br>
 
-				Et pourquoi ne pas en profiter pour boire un bon café en profitant de votre nouveau livre?</p>
+				Et pourquoi ne pas en profiter pour boire un bon café en profitant de votre nouveau livre !</p>
 				</div>
 			</div>
 		</section>
