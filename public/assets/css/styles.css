@@ -189,6 +189,9 @@ li {
  
 }
 
+.wxcbtn {
+  text-align: center;
+}
 .navbutton {
   text-align: center;
   border-radius: 8px;

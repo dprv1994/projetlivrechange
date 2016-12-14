@@ -30,8 +30,9 @@
 		</section>
 
 		<br><br>
+		<div class="wxcbtn">
 		<button type="submit" class="navbutton" name="register">S'INSCRIRE</button>
-			
+		</div>
 		
 
 		<br><br>
@@ -45,7 +46,7 @@
 				Grâce à notre partenariat avec de nombreux cafés locaux, retrouvez sans difficulté la personne avec qui vous devez échanger.<br>
 				Il vous suffit de jeter un oeil à notre <a href="">carte des lieux</a> pour trouver le point de rendez-vous le plus proche de chez vous!<br>
 
-				Et pourquoi ne pas en profiter pour boire un bon café en profitant de votre nouveau livre?</p>
+				Et pourquoi ne pas en profiter pour boire un bon café en profitant de votre nouveau livre !</p>
 				</div>
 			</div>
 		</section>
