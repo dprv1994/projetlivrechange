@@ -33,6 +33,13 @@ class DefaultController extends Controller
 
 	}
 
+	/**
+	 * Page de recherche
+	 */
+	public function search()
+	{	
+		$this->show('/default/search');
+	}
 
 
 }

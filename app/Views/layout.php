@@ -46,7 +46,7 @@
                         <a class="page-scroll" href="">Mon profil</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="">Recherche</a>
+                        <a class="page-scroll" href="search">Recherche</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="">Lieux d'échange</a>
