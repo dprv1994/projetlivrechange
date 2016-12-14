@@ -181,16 +181,16 @@ li {
 }
 
 .colonnes {
-  width: 50%;
+  width: 40%;
   height: 400px;
   text-align: justify;
   font-size: 1.2em;
-  margin: 0 3em 0 3em;
+  margin: auto;
  
 }
 
 .navbutton {
-  padding: 0.5em 1em;
+  text-align: center;
   border-radius: 8px;
   font-weight: bold;
   font-size: 30px;
@@ -201,10 +201,9 @@ li {
 }
 
 #text {
-  display: inline-block;
+  margin: auto;
   text-align: justify;
-  width: 50%;
-  max-width: 
+  width: 70%;
 }
 
 /*#concept {

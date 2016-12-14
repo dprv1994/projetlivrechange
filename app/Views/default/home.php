@@ -37,7 +37,7 @@
 		<br><br>
 		<section id="zone2">
 			<div class="colonne">
-				<h3>Concept</h3>
+				<h3>Notre démarche</h3>
 
 				<div id="text">
 				<p>LivrEchange vous permet d'être mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
