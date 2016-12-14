@@ -69,10 +69,10 @@
 		</header>
 
 		<section>
-			<?= $this->section('main_content') ?>
-		</section>
+            <?= $this->section('main_content') ?>
+        </section>
 
-		<footer>
+        <footer>
             <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -93,13 +93,11 @@
                 </div>
             </div>
             </div>
-		</footer>
-	</div>
+        </footer>
+    </div>
     </div><!-- fin wrapper -->
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<?= $this->section('js') ?>
 	
 </body>
 </html>
