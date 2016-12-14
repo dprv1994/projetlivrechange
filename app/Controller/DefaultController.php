@@ -32,9 +32,22 @@ class DefaultController extends Controller
 		$this->showNotFound();
 
 	}
+
+	/**
+	 * Page Maps
+	*/
 	public function maps()
 	{
 		$this->show('default/maps');
+
+	}
+
+	/**
+	 * Page 404
+	*/
+	public function search()
+	{
+		$this->show('default/search');
 
 	}
 

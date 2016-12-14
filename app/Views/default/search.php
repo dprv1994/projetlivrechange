@@ -10,7 +10,7 @@
 
 	<div id="results"></div>
 
-<!-- SCRIPTS JQuery DE LA PAGE -->
+<!-- SCRIPTS JQuery DE LA PAGE POUR RECHERCHE LIVRE -->
 
 <script>
 	function bookSearch(){
@@ -43,7 +43,7 @@ document.getElementById('submit').addEventListener('click', bookSearch, false);
 	
 </script>
 
-
+<!-- ...................................APPEL A API GOOGLE BOOKS............................................... -->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script src="js/myscript.js"></script>
