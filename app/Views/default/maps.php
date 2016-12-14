@@ -4,6 +4,8 @@
 
 <?php $this->start('main_content') ?>
 
+
+
  <div id="map"></div><!--  La carte s affichera dans cette div "map" -->
 
 
@@ -11,11 +13,15 @@
 
 
 <?php $this->start('js') ?>
+
 	  <script type="text/javascript">
 	  		
 
+			
 			function initMap() {
 			  	
+			  	/* --------------AFFICHAGE DE LA MAP--------------- */
+
 			  	var map;
 			  	
 			  	map = new google.maps.Map(document.getElementById('map'), {/* Ici on crée notre objet map*/
@@ -23,49 +29,34 @@
 				    zoom: 13 // niveau de zoom
 			  	});
 				
-				var tMarker = [
-				  { lat : 44.837368,
-				    lon : -0.576144,
-				    title : 'Bordeaux'
-				  },
+			  	/* --------------AFFICHAGE DES MARQUEURS--------------- */
 
-				  { lat :45.767299,
-				    lon : 4.834329,
-				    title : 'Lyon'
-				  },
 
-				  {lat :43.297612,
-				   lon : 5.381042,
-				   title : 'Marseille'
-				  },
-				  
-				  {
-				    lat : 48.856667,
-				    lon :  2.350987,
-				    title : 'Paris'
-				  }
+				var locations = [
+					<?php foreach($markers as $marker): ?>
+						['<?=$marker['title'];?>', '<?=$marker['lat'];?>', '<?=$marker['lng'];?>'],
+					<?php endforeach; ?>
 				];
 
-				function createMarqueur( tab, map){
-				  var oLatLng, oMarker, data;
-				  var i, nb = tab.length;
-				 
-				  for( i = 0; i < nb; i++){
-				    data = tab[i];
-				    oLatLng = new google.maps.LatLng( data.lat, data.lon);
-				    oMarker = new google.maps.Marker({
-				      position : oLatLng,
-				      map : map,
-				      title : data.title
-				    });
-				  }
-				}	
-				createMarqueur( tMarker, map);
+				
+	             //Création de l'icone
+	             var myMarkerImage = new google.maps.Marker;
+	                  
+	             //Affichage du marqueur
+	             for(i=0;i<locations.length;i++) { 
+				 	marker = new google.maps.Marker({
+				 	position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+				 	map: map,
+					
+					});
+				};
+				  
+			
 
 			}
 	  </script>
 
- 
+
 
 
 

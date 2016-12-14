@@ -14,7 +14,7 @@
 		['GET|POST', '/search', 'Default#search', 'search_book'],
 
 		// maps
-		['GET|POST', '/maps','Maps#showMaps', 'maps'],
+		['GET|POST', '/maps','Maps#getMakers', 'maps'],
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
