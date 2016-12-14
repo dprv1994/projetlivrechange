@@ -20,13 +20,12 @@ h1 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  text-align: center;
+  text-align: center;/* rajouté par laurent */
 }
 
 h3 {
-  text-align: center;
+  text-align: center;/* ici aussi */
 }
-
 #wrapper {
     width: 100%;
     max-width: 1260px; /*cette dimension a été choisie en fonction de mes images*/
@@ -169,7 +168,7 @@ li {
     font-size: 1.5em;
   }
 }
-
+/* rajouté par laurent */
 #container-colonnes {
   display: flex;
   flex-direction: row;
@@ -187,7 +186,7 @@ li {
 
 #concept {
   text-align: center;
-
+/* jusqu'ici */
 }
 
 
