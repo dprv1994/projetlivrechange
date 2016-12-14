@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Lieux d\'échanges']) ?>
+<?php $this->layout('layout', ['title' => 'Recherche Livre']) ?>
 
 <?php $this->start('main_content') ?>
 
