@@ -28,14 +28,17 @@
 				    lon : -0.576144,
 				    title : 'Bordeaux'
 				  },
+
 				  { lat :45.767299,
 				    lon : 4.834329,
 				    title : 'Lyon'
 				  },
+
 				  {lat :43.297612,
 				   lon : 5.381042,
 				   title : 'Marseille'
 				  },
+				  
 				  {
 				    lat : 48.856667,
 				    lon :  2.350987,
