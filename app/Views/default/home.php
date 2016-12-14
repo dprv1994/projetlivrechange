@@ -9,16 +9,15 @@
 		<br><br>
 		<section id="zone1">
 			<div id="container-colonnes">
-				<div id="colonne1">
+				<div class="colonnes">
 
 				<h3>1) Echanger</h3>
 			
 				<p>Vous possédez des livres que vous ne lirez plus, qui prennent la poussière et vous posent un problème de stockage !<br>
 				Vous ne savez pas quoi en faire? Plutôt que de les jeter, notre site vous propose de les échanger entre passionnés de lecture, et par ce biais peut-être trouver le livre que vous souhaitez lire, vous évitant ainsi un nouvel investissement financier. Et de trouver le parfait troc pour vous !</p>
 				</div>
-	
-				<div id="colonne2">
 
+				<div class="colonnes">
 				<h3>2) Se rencontrer</h3>
 				
 				<p>LivrEchange vous propose de rencontrer "dans la vraie vie" les propriétaires des livres qui vous intéressent.<br>

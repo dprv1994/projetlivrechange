@@ -35,7 +35,7 @@
 
 			<!-- Navigation -->
     	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed">
-            <div class="container">
+            <div class="container1">
             <!-- Brand and toggle get grouped for better mobile display -->
             	<div class="navbar-header page-scroll">
                 	<a class="navbar-brand page-scroll" href="/php/projetlivrechange/public/">Accueil</a>
