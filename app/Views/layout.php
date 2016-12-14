@@ -29,7 +29,7 @@
 		<header>
 
 			<div id="top-bar">
-            	<div id="logo">Logo</div>
+            	<div id="logo"></div>
             	<div id="name-site">LivrEchange</div>
     		</div>
 
