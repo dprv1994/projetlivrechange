@@ -3,19 +3,19 @@
 namespace Controller;
 
 use \W\Controller\Controller;
-use \W\Model\MapsModel; 
 use \W\Security\AuthentificationModel;
+use Model\MapsModel; 
 
 
-
-	class MapsController{
+	class MapsController 
+	{
 
 	/**
 	* Page Maps
 	*/
 	public function showMaps()
 	{
-		$this->show('default/maps');
+		$this->show('/default/maps');
 
 	}
 
