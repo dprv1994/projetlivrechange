@@ -30,9 +30,10 @@
 			</div>
 		</section>
 
-
+		<br><br>
 		<button class="btn" type="submit">S'INSCRIRE</button>
 
+		<br><br>
 		<section id="zone2">
 
 			<h3>3) Concept</h3>
@@ -44,5 +45,7 @@
 
 				Et pourquoi ne pas en profiter pour boire un bon café en profitant de votre nouveau livre? ;)</
 		</section>
+
+		<br><br>
 
 <?php $this->stop('main_content') ?>
