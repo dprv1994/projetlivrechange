@@ -8,12 +8,13 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #392338;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
 a {
-  color: #fed136;
+  color: #392338;
 }
 
 h1 {
@@ -40,18 +41,11 @@ h3::before {
      /*ombrages; 1ère valeur : axe X; 2ème valeur : axe Y; 3ème valeur "blur"(flou); 4ème valeur "spread distance", la distance sur laquelle le flou se diffuse; puis la couleur*/
 }
 
-.navbar-custom {
-  background-color: #222222;
-  border-color: transparent;
-  display: flex;
-}
-
 /* Logo et nom du site rajouté par laurent */
 
 #top-bar {
   padding-left: 50px;
   height: 150px;
-  background-color: #555555;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -59,25 +53,35 @@ h3::before {
   justify-content: space-between;
   align-items: center;
   font-size: 1.6em;
+  background-color: #c1264e;
+}
+
+#logo {
+  height: 150px;
+  background-color: #c1264e;
+  color: #392338;
 }
 
 #name-site {
   flex: 1;
   margin-left: 50px;
+  height: 150px;
+  background-color: #ff947f;
+  color: #392338;
   /* Fin logo et nom du site */
 }
-.container1 {
-  max-width: 1000px;
+#mainNav {
+  max-width: 960px;
   margin: 0 auto;
-  display: flex;
-
+  box-shadow: 20px; 
+  background-color: #ffcfa4;
 }
 
 /* jusqu'ici */
 
 /* Bouton accueil */
 .navbar-custom .navbar-brand {
-  color: black;/* couleur modifiée par laurent */
+  color: #392338;/* couleur modifiée par laurent */
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
   text-decoration: none;/* rajouté par laurent */
   
@@ -86,13 +90,10 @@ h3::before {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: red;/* couleur modifiée par laurent */
+  color: #c1264e;/* couleur modifiée par laurent */
 /* fin bouton accueil*/
 }
-.navbar-custom .navbar-collapse {
-  border-color: rgba(255, 255, 255, 0.02);
 
-}
 .navbar-custom .navbar-toggle {
   background-color: #fed136;
   border-color: #fed136;
@@ -124,12 +125,12 @@ li {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: black;/* couleur modifiée par laurent */
+  color: #392338;/* couleur modifiée par laurent */
   text-decoration: none;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: red;/* couleur modifiée par laurent */
+  color: #c1264e;/* couleur modifiée par laurent */
   outline: none;
 /* Fin boutons menu */
 }
@@ -218,7 +219,7 @@ li {
 footer {
   padding: 25px 0;
   /* rejouté par laurent */
-  background-color: #555555;
+  background-color: #ff947f;
 
 }
 
