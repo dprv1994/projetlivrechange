@@ -6,8 +6,6 @@
 		// home correspond au nom de la méthode dans le controller
 		['GET|POST', '/', 'Default#home', 'default_home'],
 
-
-		
 		// UserFront
 
 		['GET|POST', '/signin', 'Users#signIn', 'user_signIn'],
@@ -16,9 +14,7 @@
 		['GET|POST', '/search', 'Default#search', 'search_book'],
 
 		// maps
-
-		['GET|POST', '/maps','Default#maps', 'maps'],
-
+		['GET|POST', '/maps','Maps#showMaps', 'maps'],
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],

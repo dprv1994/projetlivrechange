@@ -10,8 +10,8 @@ use \W\Security\AuthentificationModel;
 
 	class MapsController{
 
-		/**
-	 * Page Maps
+	/**
+	* Page Maps
 	*/
 	public function showMaps()
 	{
