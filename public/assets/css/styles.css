@@ -177,6 +177,19 @@ li {
   justify-content: space-around;
 }
 
+.navbutton {
+  font-weight: bold;
+  height: 50px;
+  width: 120px;
+  font-size: 1em;
+  
+}
+
+#concept {
+  text-align: center;
+
+}
+
 
 footer {
   padding: 25px 0;

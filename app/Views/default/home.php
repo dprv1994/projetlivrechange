@@ -6,6 +6,7 @@
 	
 	<h1>BIENVENUE SUR LIVRECHANGE</h1>
 
+		<br><br>
 		<section id="zone1">
 			<div id="container-colonnes">
 				<div id="colonne1">
@@ -31,14 +32,16 @@
 		</section>
 
 		<br><br>
-		<button class="btn" type="submit">S'INSCRIRE</button>
+		<button type="submit" class="navbutton" name="register">S'INSCRIRE</button>
+			
+		
 
 		<br><br>
 		<section id="zone2">
 
 			<h3>3) Concept</h3>
 
-				<p>LivrEchange vous permet d'être mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
+				<p id="concept">LivrEchange vous permet d'être mis en contact et d'échanger vos livres facilement avec les personnes de votre région !<br>
 				Inscrivez-vous, remplissez votre profil, et partez à la recherche d'un échange intéressant !<br>
 				Grâce à notre partenariat avec de nombreux cafés locaux, retrouvez sans difficulté la personne avec qui vous devez échanger.<br>
 				Il vous suffit de jeter un oeil à notre <a href="">carte des lieux</a> pour trouver le point de rendez-vous le plus proche de chez vous!<br>
