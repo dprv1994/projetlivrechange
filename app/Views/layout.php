@@ -26,8 +26,12 @@
 		<header>
 
 			<div id="top-bar">
+<<<<<<< HEAD
             	<div id="logo">Logo   
                 </div>
+=======
+            	<div id="logo"></div>
+>>>>>>> origin/master
             	<div id="name-site">LivrEchange</div>
     		</div>
 

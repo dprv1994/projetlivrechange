@@ -58,14 +58,26 @@ h3::before {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+<<<<<<< HEAD
   justify-content: space-around;
   font-size: 1.6em;
   background-color: #523957;
+=======
+  justify-content: space-between;
+  /*align-items: center;*/
+  font-size: 1.6em;
+  background: url(../img/logo.svg) no-repeat;
+>>>>>>> origin/master
 }
 
 #logo {
   height: 150px;
+<<<<<<< HEAD
   color: #c1264e;
+=======
+  
+  color: #392338;
+>>>>>>> origin/master
 }
 
 #name-site {
@@ -79,7 +91,11 @@ h3::before {
 #mainNav {
   max-width: 960px;
   margin: 0 auto;
+<<<<<<< HEAD
   border-radius: 8px; 
+=======
+  border-radius: 15px; 
+>>>>>>> origin/master
   background-color: #ffcfa4;
 }
 
@@ -204,8 +220,13 @@ li {
   text-align: center;
   border-radius: 8px;
   font-size: 30px;
+<<<<<<< HEAD
   color: #c1264e;
   background-color: #523957;
+=======
+  color: white;
+  background-color: #ffcfa4;
+>>>>>>> origin/master
   width: 300px;
   height: 70px;
 }
