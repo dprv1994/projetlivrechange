@@ -7,17 +7,6 @@
  <div id="map"></div><!--  La carte s affichera dans cette div "map" -->
 
 
-	  <form>
-	  		<label name="inputLatitude">latitude</label>
-	  		<input type="text" name="inputLatitude" id="inputLatitude">
-
-	  		<label name="inputLongitude">longitude</label>
-	  		<input type="text" name="inputLongitude" id="inputLongitude">
-
-	  		<input type="submit" name="envoyer">
-
-	  </form>
-
 <?php $this->stop('main_content') ?>
 
 
@@ -28,30 +17,48 @@
 			function initMap() {
 			  	
 			  	var map;
-			  	var geocoder;
-
+			  	
 			  	map = new google.maps.Map(document.getElementById('map'), {/* Ici on crée notre objet map*/
 				    center: {lat: 44.8404400, lng:-0.5805000}, // centrage de la carte à l'affichage
 				    zoom: 13 // niveau de zoom
 			  	});
-				google.maps.event.addListener(map, 'click', function(event) {
-				    placeMarker(event.latLng);
-				  });
+				
+				var tMarker = [
+				  { lat : 44.837368,
+				    lon : -0.576144,
+				    title : 'Bordeaux'
+				  },
+				  { lat :45.767299,
+				    lon : 4.834329,
+				    title : 'Lyon'
+				  },
+				  {lat :43.297612,
+				   lon : 5.381042,
+				   title : 'Marseille'
+				  },
+				  {
+				    lat : 48.856667,
+				    lon :  2.350987,
+				    title : 'Paris'
+				  }
+				];
+
+				function createMarqueur( tab, map){
+				  var oLatLng, oMarker, data;
+				  var i, nb = tab.length;
 				 
-				var marker;
-				function placeMarker(location) {
-				  if(marker){ //on vérifie si le marqueur existe
-				    marker.setPosition(location); //on change sa position
-				  }else{
-				    marker = new google.maps.Marker({ //on créé le marqueur
-				      position: location,
-				      map: map
+				  for( i = 0; i < nb; i++){
+				    data = tab[i];
+				    oLatLng = new google.maps.LatLng( data.lat, data.lon);
+				    oMarker = new google.maps.Marker({
+				      position : oLatLng,
+				      map : map,
+				      title : data.title
 				    });
 				  }
-				  inputLatitude.value=location.lat();
-				  inputLongitude.value=location.lng();
-				}
-			
+				}	
+				createMarqueur( tMarker, map);
+
 			}
 	  </script>
 
