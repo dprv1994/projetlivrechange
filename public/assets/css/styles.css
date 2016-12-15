@@ -4,11 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
+/* Partis d'un Bootstrap, que nous avons totalement modifié */
 @font-face{
   font-family: "master_of_break";
     src: url('../font/master_of_break.ttf');
 }
 
+/****** BODY ******/
 body {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +21,7 @@ body {
   background-color: #F7EBE1;
 }
 
+/****** LIENS ******/
 a {
   color: #FFCFA4;
 }
@@ -26,6 +30,7 @@ a:hover {
   color: #c1264e;
 }
 
+/****** h1/h2/h3... ******/
 h1 {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -45,14 +50,14 @@ h3::before {
   padding-right: 0.5em;
   color: #c1264e;
 }
+
+/****** WRAPPER ******/
 #wrapper {
   width: 100%;
-  max-width: 1260px; /*cette dimension a été choisie en fonction de mes images*/
+  max-width: 1260px;
   margin: 0 auto;
   background: white; /*couleur d'arrière plan du contenu principal du wrapper*/
-     /*ombrages; 1ère valeur : axe X; 2ème valeur : axe Y; 3ème valeur "blur"(flou); 4ème valeur "spread distance", la distance sur laquelle le flou se diffuse; puis la couleur*/
-    
-   }
+}
 
 #top-bar {
   padding-left: 50px;
@@ -120,13 +125,6 @@ h3::before {
   background-color: #fed136;
 }
 
-
-li {
-  
-  list-style: none;
-  
-}
-
 .navbar-collapse ul {
   display: flex;
   flex-direction: row;
@@ -142,6 +140,7 @@ li {
   text-decoration: none;
   margin-right: 1.5em;
   font-size: 1.2em;
+  list-style: none;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -160,6 +159,18 @@ li {
   color: white;
   background-color: #fec503;
 }
+
+/*****/
+#conteneur-accueil { /*conteneur de l'image d'arrière plan*/
+    background: url(../img/livre-ouvert-test.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
+    background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
+    height: 755px;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 2em;
+}
+/*****/
+
+
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -230,6 +241,7 @@ li {
   width: 50%;
 }
 
+/****** FOOTER ******/
 footer {
   padding: 25px 0;
   background-color: #513856;
@@ -296,6 +308,8 @@ ul.social-buttons li a:active {
 
 
 }
+
+/****** MAP ******/
 #map {
  
   height: 600px;
@@ -305,13 +319,4 @@ ul.social-buttons li a:active {
   border: 20px #c1264e ridge;
   border-radius: 10px;
   box-shadow: 10px 10px 10px #595959;
-}
-
-
-#conteneur-accueil { /*conteneur de l'image d'arrière plan*/
-    background: url(../img/livre-ouvert-test.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
-    background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
-    height: 755px;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-bottom: 2em;
 }
