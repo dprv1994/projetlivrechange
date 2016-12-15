@@ -43,10 +43,10 @@
 	             //Création de l'icone
 	            var image = {
 				  url: "<?=$this->assetUrl('img/logo.png');?>" ,
-				  size: new google.maps.Size(225, 157),
+				  size: new google.maps.Size(100, 100),
 				  origin: new google.maps.Point(0, 0),
 				  anchor: new google.maps.Point(17, 34),
-				  scaledSize: new google.maps.Size(50, 60)
+				  scaledSize: new google.maps.Size(40, 60),
 				};
 	            
 				    
@@ -59,7 +59,7 @@
 				   
 					
 				   });
-				    // Création infobulle  
+				 // Création infobulle  
 	            	var infowindow = new google.maps.InfoWindow();  
 
 					
