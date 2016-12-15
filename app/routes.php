@@ -19,7 +19,7 @@
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
 		['GET|POST', '/admin/logout', 'Admin#logOut', 'logout'],
-		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'admin_indexBack'],
+		['GET|POST', '/admin', 'Admin#indexBack', 'admin_indexBack'],
 		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],
 		['GET', '/delete/[i:id]', 'Admin#delete', 'user_delete'],
 		['GET', '/update/[i:id]', 'Admin#update', 'user_update'],
