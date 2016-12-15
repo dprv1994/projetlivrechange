@@ -28,8 +28,10 @@
 				results.innerHTML += "<h4>Authors:" + data.items[i].volumeInfo.authors  + "</h4>" 
 				results.innerHTML += "<h5>Publisher:" + data.items[i].volumeInfo.publisher  + "</h5>"  
 				results.innerHTML += "<p>published Date:" + data.items[i].volumeInfo.publishedDate + "</p>"
+				results.innerHTML += "<p>ISBN:" + data.items[i].industryIdentifiers.identifier + "</p>"
 				results.innerHTML += "<p>Categories:" + data.items[i].volumeInfo.categories + "</p>"
 				results.innerHTML += "<p>Image:" + '<img src="' + data.items[i].volumeInfo.imageLinks.thumbnail + '">' + "</p>"
+
 			}
 		},
 
