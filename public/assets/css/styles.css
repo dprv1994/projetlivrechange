@@ -61,29 +61,31 @@ h3::before {
   padding-left: 50px;
   height: 200px;
   line-height: 150px;
-  color: #c1264e;
+  color: #C1264E;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  font-size: 1.6em;
-  background-color: #523957;
+  font-size: 2em;
+ /* background-color: #523957;*/ 
 }
 
 #logo {
   height: 150px;
   width: 100px;
   background: url(../img/logo.svg) no-repeat;
-  margin-top: 1em;
+  margin-top: 14em;
+  margin-left: 5em;
 }
 
 #name-site {
   margin-left: 50px;
+  margin-right: 1em;
   height: 150px;
-  background-color: #523957;
+  /*background-color: #523957;*/
   font-family: "master_of_break", arial, sans-serif;
-  font-size: 3em;
-  margin-top: 0.4em;
+  font-size: 4em;
+  margin-top: 1.7em;
 
   
   /* Fin logo et nom du site */
@@ -307,4 +309,12 @@ ul.social-buttons li a:active {
 #map {
  
   height: 800px;
+}
+
+
+#conteneur-accueil { /*conteneur de l'image d'arrière plan*/
+    background: url(../img/livre-ouvert.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
+    background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
+    height: 755px;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

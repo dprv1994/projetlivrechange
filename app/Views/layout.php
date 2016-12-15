@@ -25,48 +25,48 @@
     <div id="wrapper">
 		<header>
 
+        <div id="conteneur-accueil">
+    			<!-- Navigation -->
+        	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed">
+                <div class="container1">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                	<div class="navbar-header page-scroll">
+                    	<a class="navbar-brand page-scroll" href="/projetlivrechange/public/">Accueil</a>
+                    </div>
 
-        <div id="top-bar">
-                <div id="logo">  
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="">Mon profil</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="search">Recherche</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="maps">Lieux d'échange</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="">Actus</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="">Dons</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="loginuser">Se connecter</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="name-site">LivrEchange</div>
-        </div>
-			<!-- Navigation -->
-    	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed">
-            <div class="container1">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            	<div class="navbar-header page-scroll">
-                	<a class="navbar-brand page-scroll" href="/projetlivrechange/public/">Accueil</a>
-                </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="">Mon profil</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="search">Recherche</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="maps">Lieux d'échange</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="">Actus</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="">Dons</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="loginuser">Se connecter</a>
-                    </li>
-                </ul>
+                <!-- /.navbar-collapse -->
+            	</div>
+            	<!-- /.container-fluid -->
+        	</nav>
+            <div id="top-bar">
+                    <div id="logo">  
+                    </div>
+                    <div id="name-site">LivrEchange</div>
             </div>
-            <!-- /.navbar-collapse -->
-        	</div>
-        	<!-- /.container-fluid -->
-    	</nav>
-
+        </div>
 		</header>
 
 		<section>
