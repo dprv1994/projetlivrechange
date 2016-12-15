@@ -22,7 +22,7 @@
 				<p>Le but étant de vous permettre de rencontrer, par le biais de ce site, les propriétaires des livres qui vous intéressent.<br>
 				Pour cela nous avons sélectionné des lieux partenaires (cafés, bars..) qui vous permettront de retrouver facilement la personne avec qui vous avez rendez-vous, et qui vous offriront un cadre agréable pour discuter le temps de votre transaction.<br>
 				Aucun système de livraison n'est proposé sur notre site.<br>
-				Pourquoi ? Dans une époque où les gens n'intéragissent principalement que par l'intermédiaire des machines, nous pensons qu'il est important de continuer à échanger "en direct"..<br>
+				Pourquoi? Dans une époque où les gens n'intéragissent principalement que par l'intermédiaire des machines, nous pensons qu'il est important de continuer à échanger "en direct"..<br>
 				</p>
 				</div>
 			</div>
