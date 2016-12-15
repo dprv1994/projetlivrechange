@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color:  #FFCFA4;
+  color: #FFCFA4;
 }
 
 a:hover {
@@ -147,6 +147,7 @@ li {
   color: #FF947F;/* couleur modifiée par laurent */
   text-decoration: none;
   margin-right: 1.5em;
+  font-size: 1.2em;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -175,7 +176,7 @@ li {
     border: none;
   }
   .navbar-custom .navbar-brand {
-    font-size: 2em;
+    font-size: 2.7em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
