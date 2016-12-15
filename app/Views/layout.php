@@ -25,13 +25,19 @@
     <div id="wrapper">
 		<header>
 
+
+        <div id="top-bar">
+                <div id="logo">  
+                </div>
+                <div id="name-site">LivrEchange</div>
+        </div>
 			<!-- Navigation -->
     	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed">
             <div class="container1">
             <!-- Brand and toggle get grouped for better mobile display -->
             	<div class="navbar-header page-scroll">
                 	<a class="navbar-brand page-scroll" href="/projetlivrechange/public/">Accueil</a>
-            </div>
+                </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -60,12 +66,6 @@
         	</div>
         	<!-- /.container-fluid -->
     	</nav>
-
-        <div id="top-bar">
-                <div id="logo">  
-                </div>
-                <div id="name-site">LivrEchange</div>
-        </div>
 
 		</header>
 

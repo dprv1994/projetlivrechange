@@ -16,11 +16,11 @@ body {
   padding: 0;
   color: #392338;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-
+  background-color: #F7EBE1;
 }
 
 a {
-  color:  #392338;
+  color:  #FFCFA4;
 }
 
 a:hover {
@@ -59,7 +59,7 @@ h3::before {
 
 #top-bar {
   padding-left: 50px;
-  height: 150px;
+  height: 200px;
   line-height: 150px;
   color: #c1264e;
   display: flex;
@@ -68,14 +68,13 @@ h3::before {
   justify-content: space-around;
   font-size: 1.6em;
   background-color: #523957;
-  
-
 }
 
 #logo {
   height: 150px;
   width: 100px;
   background: url(../img/logo.svg) no-repeat;
+  margin-top: 1em;
 }
 
 #name-site {
@@ -84,6 +83,7 @@ h3::before {
   background-color: #523957;
   font-family: "master_of_break", arial, sans-serif;
   font-size: 3em;
+  margin-top: 0.4em;
 
   
   /* Fin logo et nom du site */
@@ -91,29 +91,30 @@ h3::before {
 #mainNav {
   max-width: 1260px;
   margin: 0 auto;
-  background-color: #ffcfa4;
+  background-color: #C1264E;
 }
 
 /* jusqu'ici */
 
 /* Bouton accueil */
 .navbar-custom .navbar-brand {
-  color: #392338;/* couleur modifiée par laurent */
+  color: #FFCFA4;/* couleur modifiée par laurent */
   text-decoration: none;/* rajouté par laurent */
-  
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  margin-left: 1.5em;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #c1264e;/* couleur modifiée par laurent */
+  color:#523957;/* couleur modifiée par laurent */
 /* fin bouton accueil*/
 }
 
 .navbar-custom .navbar-toggle {
   background-color: #fed136;
   border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 12px;
@@ -141,12 +142,13 @@ li {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #392338;/* couleur modifiée par laurent */
+  color: #FF947F;/* couleur modifiée par laurent */
   text-decoration: none;
+  margin-right: 1.5em;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #c1264e;/* couleur modifiée par laurent */
+  color: #513856;/* couleur modifiée par laurent */
   outline: none;
 /* Fin boutons menu */
 }
@@ -215,14 +217,14 @@ li {
   text-align: center;
   border-radius: 8px;
   font-size: 30px;
-  color: #c1264e;
-  background-color: #523957;
+  color: #FFCFA4;
+  background-color: #C1264E;
   width: 300px;
   height: 70px;
 }
 
 .linebuttons:hover {
-  color: #ff947f;
+  color: #513856;
 }
 
 #text {
@@ -236,8 +238,8 @@ li {
 
 footer {
   padding: 25px 0;
-  /* rejouté par laurent */
-  background-color: #ffcfa4;
+  /* rajouté par laurent */
+  background-color: #513856;
 
 }
 
@@ -247,7 +249,7 @@ footer span.copyright {
   text-transform: uppercase;
   text-transform: none;
   padding-left: 90px;
-  color: #392338;
+  color: #FFCFA4;
 }
 
 footer #contact{

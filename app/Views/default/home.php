@@ -2,9 +2,8 @@
 
 <?php $this->start('main_content') ?>
 
-
 	
-	<h1>BIENVENUE SUR LivrEchange</h1>
+	<h1>COMMENT CA MARCHE?</h1>
 
 		<br><br>
 		<section id="zone1">
@@ -29,13 +28,13 @@
 			</div>
 		</section>
 
-		<br><br>
+		<br><br><br><br>
 		<div class="btnsubmit">
 		<button type="submit" class="linebuttons" name="register">S'INSCRIRE</button>
 		</div>
 		
 
-		<br><br>
+		<!-- <br><br>
 		<section id="zone2">
 			<div class="colonne">
 				<h3>Notre démarche</h3>
@@ -49,8 +48,8 @@
 				Et pourquoi ne pas en profiter pour boire un bon café en profitant de votre nouveau livre !</p>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<br><br>
+		<br><br><br><br>
 
 <?php $this->stop('main_content') ?>
