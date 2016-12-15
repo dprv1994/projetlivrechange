@@ -58,10 +58,10 @@
                         </ul>
                     </div>
                 </div><!-- fin div container1 -->
-            <div id="top-bar">
+            <!-- <div id="top-bar">
                 <div id="logo"></div>
                 <div id="name-site">LivrEchange</div>
-            </div>
+            </div> -->
 		</div><!-- fin div conteneur accueil -->
 		</header>
 
