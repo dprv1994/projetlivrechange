@@ -4,14 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
- /****** PARTI D'UN BOOTSTRAP, FINALEMENT COMPLETEMENT MODIFIE ******/
-
 @font-face{
   font-family: "master_of_break";
     src: url('../font/master_of_break.ttf');
 }
 
-/****** BODY ******/
 body {
   box-sizing: border-box;
   margin: 0;
@@ -21,7 +18,6 @@ body {
   background-color: #F7EBE1;
 }
 
-/****** LIENS ******/
 a {
   color: #FFCFA4;
 }
@@ -30,7 +26,6 @@ a:hover {
   color: #c1264e;
 }
 
-/****** H1/H2/H3... ******/
 h1 {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -50,24 +45,15 @@ h3::before {
   padding-right: 0.5em;
   color: #c1264e;
 }
-
-/****** WRAPPER ******/
 #wrapper {
   width: 100%;
-  max-width: 1260px;
+  max-width: 1260px; /*cette dimension a été choisie en fonction de mes images*/
   margin: 0 auto;
-<<<<<<< HEAD
-  background: white;
-}
-
-/****** TOP-BAR ******/
-=======
   background: white; /*couleur d'arrière plan du contenu principal du wrapper*/
      /*ombrages; 1ère valeur : axe X; 2ème valeur : axe Y; 3ème valeur "blur"(flou); 4ème valeur "spread distance", la distance sur laquelle le flou se diffuse; puis la couleur*/
     
    }
 
->>>>>>> origin/master
 #top-bar {
   padding-left: 50px;
   height: 10px;
@@ -81,9 +67,6 @@ h3::before {
  /* background-color: #523957;*/ 
 }
 
-<<<<<<< HEAD
-/****** NAV-BAR ******/
-=======
 #logo {
   height: 150px;
   width: 100px;
@@ -104,17 +87,12 @@ h3::before {
   
 
 }
->>>>>>> origin/master
 #mainNav {
   max-width: 1260px;
   margin: 0 auto;
   background-color: #C1264E;
 }
-<<<<<<< HEAD
-/* Bouton accueil */
-=======
 
->>>>>>> origin/master
 .navbar-custom .navbar-brand {
   color: #FFCFA4;
   text-decoration: none;
@@ -126,11 +104,6 @@ h3::before {
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
   color:#523957;
-<<<<<<< HEAD
-}
-
-/* Listes */
-=======
 
 }
 
@@ -154,7 +127,6 @@ li {
   
 }
 
->>>>>>> origin/master
 .navbar-collapse ul {
   display: flex;
   flex-direction: row;
@@ -170,7 +142,6 @@ li {
   text-decoration: none;
   margin-right: 1.5em;
   font-size: 1.2em;
-  list-style: none;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -189,8 +160,6 @@ li {
   color: white;
   background-color: #fec503;
 }
-
-/* RESPONSIVE */
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -220,10 +189,6 @@ li {
   }
 }
 
-<<<<<<< HEAD
-/****** MENU PRINCIPAL ******/
-=======
->>>>>>> origin/master
 #container-colonnes {
   display: flex;
   flex-direction: row;
@@ -239,7 +204,7 @@ li {
   margin: auto;
  
 }
-/* bouton */
+
 .btnsubmit {
   text-align: center;
   margin-top: 20px;
@@ -259,49 +224,12 @@ li {
   color: #513856;
 }
 
-/*#text {
+#text {
   margin: auto;
   text-align: justify;
   width: 50%;
-}*/
-
-
-
-/*.navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-size: 12px;
-}
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
 }
 
-<<<<<<< HEAD
-#logo {
-  height: 150px;
-  width: 100px;
-  background: url(../img/logo.svg) no-repeat;
-  margin-top: 14em;
-  margin-left: 5em;
-}
-
-#name-site {
-  margin-left: 50px;
-  margin-right: 1em;
-  height: 150px;
-  font-family: "master_of_break", arial, sans-serif;
-  font-size: 4em;
-  margin-top: 1.7em;
-}
-*/
-
-
-=======
->>>>>>> origin/master
 footer {
   padding: 25px 0;
   background-color: #513856;
