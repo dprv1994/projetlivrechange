@@ -18,7 +18,7 @@
 		        <li><a href="">Messages</a></li>
 		        
 		        <li><a href="">Actus</a></li>
-		        <li><a target="_blank" href="../public/" id="logout">Voir le site</a></li>
+		        <li><a target="_blank" href="../" id="logout">Voir le site</a></li>
       			<li><a href="admin/logout">Déconnexion</a></li>
 
     	</ul>
