@@ -59,39 +59,7 @@ h3::before {
   background: white; /*couleur d'arrière plan du contenu principal du wrapper*/
 }
 
-#top-bar {
-  padding-left: 50px;
-  height: 10px;
-  line-height: 150px;
-  color: #C1264E;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: 2em;
- /* background-color: #523957;*/ 
-}
-
-#logo {
-  height: 150px;
-  width: 100px;
-  background: url(../img/logo.svg) no-repeat;
-  margin-top: 14em;
-  margin-left: 5em;
-}
-
-#name-site {
-  margin-left: 50px;
-  margin-right: 1em;
-  height: 150px;
-  /*background-color: #523957;*/
-  font-family: "master_of_break", arial, sans-serif;
-  font-size: 4em;
-  margin-top: 1.7em;
-
-  
-
-}
+/****** NAV-BAR ******/
 #mainNav {
   max-width: 1260px;
   margin: 0 auto;
@@ -160,17 +128,41 @@ h3::before {
   background-color: #fec503;
 }
 
-/*****/
-#conteneur-accueil { /*conteneur de l'image d'arrière plan*/
-    background: url(../img/livre-ouvert-test.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
-    background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
-    height: 755px;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-bottom: 2em;
+
+/* ANCIENNE TOPBAR
+
+#top-bar {
+  padding-left: 50px;
+  height: 10px;
+  line-height: 150px;
+  color: #C1264E;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 2em;
+ 
 }
-/*****/
 
+#logo {
+  height: 150px;
+  width: 100px;
+  background: url(../img/logo.svg) no-repeat;
+  margin-top: 14em;
+  margin-left: 5em;
+}
 
+#name-site {
+  margin-left: 50px;
+  margin-right: 1em;
+  height: 150px;
+  font-family: "master_of_break", arial, sans-serif;
+  font-size: 4em;
+  margin-top: 1.7em;
+}
+*/
+
+/****** RESPONSIVE ******/
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -200,6 +192,16 @@ h3::before {
   }
 }
 
+/****** ACCUEIL ******/
+#conteneur-accueil { /*conteneur de l'image d'arrière plan*/
+    background: url(../img/livre-ouvert-test.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
+    background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
+    height: 755px;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 2em;
+}
+
+/* Contenu accueil */
 #container-colonnes {
   display: flex;
   flex-direction: row;
@@ -215,7 +217,7 @@ h3::before {
   margin: auto;
  
 }
-
+/* bouton accueil */
 .btnsubmit {
   text-align: center;
   margin-top: 20px;
@@ -235,11 +237,12 @@ h3::before {
   color: #513856;
 }
 
+/* texte supplémentaire eventuel
 #text {
   margin: auto;
   text-align: justify;
   width: 50%;
-}
+}*/
 
 /****** FOOTER ******/
 footer {
@@ -267,6 +270,7 @@ footer #contact{
   text-align: center;
 }
 
+/* dispo colonnes */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -275,6 +279,7 @@ footer #contact{
 
 }
 
+/* boutons réseaux sociaux */
 ul.social-buttons {
   margin-bottom: 0;
   text-align: center;
