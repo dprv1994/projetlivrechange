@@ -12,7 +12,7 @@ use \W\View\Plates\PlatesExtensions;
 class MapsController extends Controller
 {
 
-		public function getMakers()
+		public function getMarkers()
 		{
 			$MapsModel = new MapsModel();
 			$markers = $MapsModel->findAll();
