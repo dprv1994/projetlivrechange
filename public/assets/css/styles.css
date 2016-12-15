@@ -3,6 +3,12 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+@font-face{
+  font-family: "master_of_break";
+    src: url('../font/master_of_break.ttf');
+}
+
 body {
   /* Modifié par laurent sauf font */
   box-sizing: border-box;
@@ -75,6 +81,9 @@ h3::before {
   margin-left: 50px;
   height: 150px;
   background-color: #523957;
+  font-family: "master_of_break", arial, sans-serif;
+  font-size: 3em;
+
   
   /* Fin logo et nom du site */
 }
