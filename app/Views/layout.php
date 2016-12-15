@@ -12,7 +12,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Custom Fonts -->
+    <!-- Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700" rel="stylesheet"> 
 
@@ -24,13 +24,6 @@
 <body id="page-top" class="index">
     <div id="wrapper">
 		<header>
-
-			<div id="top-bar">
-            	<div id="logo">  
-                </div>
-            	<div id="logo"></div>
-            	<div id="name-site">LivrEchange</div>
-    		</div>
 
 			<!-- Navigation -->
     	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed">
@@ -67,6 +60,13 @@
         	</div>
         	<!-- /.container-fluid -->
     	</nav>
+
+        <div id="top-bar">
+                <div id="logo">  
+                </div>
+                <div id="name-site">LivrEchange</div>
+        </div>
+
 		</header>
 
 		<section>
