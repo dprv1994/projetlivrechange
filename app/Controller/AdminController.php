@@ -4,7 +4,7 @@ namespace Controller;
 
 use \W\Controller\Controller;
 use \W\Model\UsersModel; //as Users;
-use \W\Security\AuthentificationModel;
+use Model\AdminModel; 
 
 // Si on utilise "respect/validation". Ne pas oublier de l'ajouter via composer
 use \Respect\Validation\Validator as v;
@@ -33,7 +33,7 @@ Class AdminController extends Controller
 			}
 			else{
 				//l'utilisateur a bien rempli un mot de passe et un username
-				$authModel = new AuthentificationModel;
+				$authModel = new AdminModel;
 				$idUser = $authModel->isValidLoginInfo($post['username'], $post['password']);
 
 				//On a un id utilisateur si le couple username/password est bon, sinon 0
@@ -63,7 +63,7 @@ Class AdminController extends Controller
 	public function logOut()
 	{
 		if (isset($_GET['logout']) && $_GET['logout'] == 'yes') {
-			$authModel = new AuthentificationModel;
+			$authModel = new AdminModel;
 
 			//Deconnecte L'utilisateur 
 			$authModel->logUserOut($user);
@@ -186,7 +186,7 @@ Class AdminController extends Controller
 
 			if (count($errors) === 0 ) {
 				 
-				 $authModel = new AuthentificationModel(); // Permet d'utiliser la fonction de hash de password
+				 $authModel = new AdminModel(); // Permet d'utiliser la fonction de hash de password
 
 				 //On instancie le modèle pour communiquer avec la BDD
 				 $UserModel = new UserModel();
