@@ -34,6 +34,7 @@
                     	<a class="navbar-brand page-scroll" href="/projetlivrechange/public/">Accueil</a>
                     </div>
 
+<<<<<<< HEAD
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -56,6 +57,19 @@
                             <a class="page-scroll" href="loginuser">Se connecter</a>
                         </li>
                     </ul>
+=======
+        <div id="top-bar">
+                <div id="logo">  
+                </div>
+                <div id="name-site">LivrEchange</div>
+        </div>
+			<!-- Navigation -->
+    	<nav id="mainNav" class="navbar navbar-default navbar-custom">
+            <div class="container1">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            	<div class="navbar-header page-scroll">
+                	<a class="navbar-brand page-scroll" href="/projetlivrechange/public/">Accueil</a>
+>>>>>>> origin/master
                 </div>
                 <!-- /.navbar-collapse -->
             	</div>

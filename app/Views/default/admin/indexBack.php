@@ -10,7 +10,7 @@
 			<h2>Bienvenue sur la session "administration" de votre site web !</h2>
 
 			<p>
-	            Vous êtes sur la page d'administration de votre site web.<br> Vous pouvez, à l'aide la barre de navigation en haut de page, gérer le contenu de votre site :
+	            Vous êtes sur la page d'administration de votre site web.<br> Vous pouvez, à l'aide de la barre de navigation en haut de page, gérer le contenu de votre site :
 	            <ul>
 	                <li><a href="">Gérer le contenu de votre site</a></li>
 	                <li><a href="list">Gérer vos utilisateurs</a></li>
