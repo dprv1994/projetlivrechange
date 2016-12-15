@@ -32,7 +32,7 @@
                 <div id="name-site">LivrEchange</div>
         </div>
 			<!-- Navigation -->
-    	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed">
+    	<nav id="mainNav" class="navbar navbar-default navbar-custom">
             <div class="container1">
             <!-- Brand and toggle get grouped for better mobile display -->
             	<div class="navbar-header page-scroll">
