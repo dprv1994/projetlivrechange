@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="indexBack">LivrEchange</a>
+			<a class="navbar-brand" href="admin/">LivrEchange</a>
 		</div>
 
 
@@ -14,11 +14,11 @@
       		
       		    
       			<li><a href="">Infos</a></li>
-		        <li><a href="list">Utilisateurs</a></li>
+		        <li><a href="admin/list">Utilisateurs</a></li>
 		        <li><a href="">Messages</a></li>
 		        
 		        <li><a href="">Actus</a></li>
-		        <li><a target="_blank" href="../" id="logout">Voir le site</a></li>
+		        <li><a target="_blank" href="../public/" id="logout">Voir le site</a></li>
       			<li><a href="logout">Déconnexion</a></li>
 
     	</ul>
