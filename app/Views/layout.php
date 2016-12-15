@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700" rel="stylesheet"> 
 
     <!-- Theme CSS -->
+    
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/styles.css') ?>">
  
 </head>
@@ -30,29 +31,36 @@
                 <div class="container1">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 	<div class="navbar-header page-scroll">
-                    	<a class="navbar-brand page-scroll" href="/php/projetlivrechange/public/">Accueil</a>
+                    	<a class="navbar-brand page-scroll" href="<?=$this->url('default_home')?>">Accueil</a>
                     </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
+
                             <li>
-                                <a class="page-scroll" href="">Mon profil</a>
+                                <a class="page-scroll" href="<?=$this->url('profilUser') ?>">Mon profil</a>
                             </li>
+
                             <li>
-                                <a class="page-scroll" href="search">Recherche</a>
+                                <a class="page-scroll" href="<?=$this->url('search_book')?>">Recherche</a>
                             </li>
+
                             <li>
-                                <a class="page-scroll" href="maps">Lieux d'échange</a>
+                            <a class="page-scroll" href="<?=$this->url('maps')?>">Lieux d\'échange</a>
+                        
                             </li>
+
                             <li>
-                                <a class="page-scroll" href="">Actus</a>
+                                <a class="page-scroll" href="<?=$this->url('')?>">Actus</a>
                             </li>
+
                             <li>
-                                <a class="page-scroll" href="">Dons</a>
+                                <a class="page-scroll" href="<?=$this->url('')?>">Dons</a>
                             </li>
+
                             <li>
-                                <a class="page-scroll" href="loginuser">Se connecter</a>
+                                <a class="page-scroll" href="<?=$this->url('loginUser')?>">Se connecter</a>
                             </li>
                         </ul>
                     </div>
@@ -76,9 +84,9 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>

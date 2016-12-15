@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="">LivrEchange</a>
+			<a class="navbar-brand" href="<?=$this->url('admin_indexBack')?>">LivrEchange</a>
 		</div>
 
 
@@ -13,13 +13,13 @@
 
       		
       		    
-      			<li><a href="">Infos</a></li>
-		        <li><a href="admin/list">Utilisateurs</a></li>
-		        <li><a href="">Messages</a></li>
+      			<li><a href="<?=$this->url('')?>">Infos</a></li>
+		        <li><a href="<?=$this->url('user_list')?>">Utilisateurs</a></li>
+		        <li><a href="<?=$this->url('')?>">Messages</a></li>
 		        
 		        <li><a href="">Actus</a></li>
-		        <li><a target="_blank" href="../" id="logout">Voir le site</a></li>
-      			<li><a href="admin/logout">Déconnexion</a></li>
+		        <li><a target="_blank" href="<?=$this->url('default_home')?>" id="logout">Voir le site</a></li>
+      			<li><a href="<?=$this->url('logout')?>">Déconnexion</a></li>
 
     	</ul>
     	</div>
