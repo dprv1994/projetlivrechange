@@ -56,10 +56,18 @@ h3::before {
   width: 100%;
   max-width: 1260px;
   margin: 0 auto;
+<<<<<<< HEAD
   background: white;
 }
 
 /****** TOP-BAR ******/
+=======
+  background: white; /*couleur d'arrière plan du contenu principal du wrapper*/
+     /*ombrages; 1ère valeur : axe X; 2ème valeur : axe Y; 3ème valeur "blur"(flou); 4ème valeur "spread distance", la distance sur laquelle le flou se diffuse; puis la couleur*/
+    
+   }
+
+>>>>>>> origin/master
 #top-bar {
   padding-left: 50px;
   height: 10px;
@@ -73,13 +81,40 @@ h3::before {
  /* background-color: #523957;*/ 
 }
 
+<<<<<<< HEAD
 /****** NAV-BAR ******/
+=======
+#logo {
+  height: 150px;
+  width: 100px;
+  background: url(../img/logo.svg) no-repeat;
+  margin-top: 14em;
+  margin-left: 5em;
+}
+
+#name-site {
+  margin-left: 50px;
+  margin-right: 1em;
+  height: 150px;
+  /*background-color: #523957;*/
+  font-family: "master_of_break", arial, sans-serif;
+  font-size: 4em;
+  margin-top: 1.7em;
+
+  
+
+}
+>>>>>>> origin/master
 #mainNav {
   max-width: 1260px;
   margin: 0 auto;
   background-color: #C1264E;
 }
+<<<<<<< HEAD
 /* Bouton accueil */
+=======
+
+>>>>>>> origin/master
 .navbar-custom .navbar-brand {
   color: #FFCFA4;
   text-decoration: none;
@@ -91,9 +126,35 @@ h3::before {
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
   color:#523957;
+<<<<<<< HEAD
 }
 
 /* Listes */
+=======
+
+}
+
+.navbar-custom .navbar-toggle {
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #fed136;
+}
+
+
+li {
+  
+  list-style: none;
+  
+}
+
+>>>>>>> origin/master
 .navbar-collapse ul {
   display: flex;
   flex-direction: row;
@@ -105,7 +166,7 @@ h3::before {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #FF947F;/* couleur modifiée par laurent */
+  color: #FF947F;
   text-decoration: none;
   margin-right: 1.5em;
   font-size: 1.2em;
@@ -113,9 +174,9 @@ h3::before {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #513856;/* couleur modifiée par laurent */
+  color: #513856;
   outline: none;
-/* Fin boutons menu */
+
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
@@ -159,7 +220,10 @@ h3::before {
   }
 }
 
+<<<<<<< HEAD
 /****** MENU PRINCIPAL ******/
+=======
+>>>>>>> origin/master
 #container-colonnes {
   display: flex;
   flex-direction: row;
@@ -216,6 +280,7 @@ h3::before {
   background-color: #fed136;
 }
 
+<<<<<<< HEAD
 #logo {
   height: 150px;
   width: 100px;
@@ -235,9 +300,10 @@ h3::before {
 */
 
 
+=======
+>>>>>>> origin/master
 footer {
   padding: 25px 0;
-  /* rajouté par laurent */
   background-color: #513856;
   margin-top: 2em;
 
@@ -260,7 +326,7 @@ footer #contact{
   text-transform: none;
   text-align: center;
 }
-/* rajouté par laurent */
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -268,8 +334,6 @@ footer #contact{
   justify-content: space-around;
 
 }
-
-/* BOUTONS RESEAUX SOCIAUX */
 
 ul.social-buttons {
   margin-bottom: 0;
@@ -310,9 +374,9 @@ ul.social-buttons li a:active {
   width: 700px;
    
   margin-left: 270px;
-  border: 3px #c1264e ridge;
-  border-radius: 8px;
-  box-shadow: 5px 5px 5px #272822;
+  border: 20px #c1264e ridge;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #595959;
 }
 
 

@@ -1,8 +1,9 @@
 <?php session_start();
 
-if (empty($_SESSION)) {
-	header('Location: admin/login');
-} ?>
+	if (empty($_SESSION)){
+		header('Location: admin/login');
+	} 
+?>
 
 <?php $this->layout('layoutBack', ['title' => 'Administration du Site']) ?>
 

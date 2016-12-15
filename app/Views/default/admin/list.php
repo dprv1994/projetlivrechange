@@ -1,3 +1,9 @@
+<?php session_start();
+ 	if (empty($_SESSION)) {
+		header('Location: admin/login');
+	} 
+	?>
+
 <?php $this->layout('layoutBack', ['title' => 'Liste des utilisateurs ']) ?>
 
 <?php $this->start('main_content') ?>
