@@ -32,6 +32,7 @@
 			  	/* --------------AFFICHAGE DES MARQUEURS--------------- */
 
 
+
 				var locations = [
 					<?php foreach($markers as $marker): ?>
 						['<?=$marker['title'];?>', '<?=$marker['lat'];?>', '<?=$marker['lng'];?>'],
@@ -51,13 +52,11 @@
 					});
 				};
 				  
-			
-
 			}
 	  </script>
 
 
-
+	  			<!-- .......................FIN DU SCRIPT MAPS................................... -->
 
 
 	<!-- ...................................APPEL A API GOOGLE MAPS............................................... -->
