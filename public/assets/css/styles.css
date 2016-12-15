@@ -321,7 +321,14 @@ ul.social-buttons li a:active {
   height: 600px;
   width: 700px;
   margin-left: 270px;
-  border: 20px green ridge;
+  border: 15px #E1214E solid;
   border-radius: 10px;
-  box-shadow: 10px 10px 10px #595959;
+  /*box-shadow: 10px 10px 10px #595959;*/
+}
+#map_text {
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0.8em;
+  color: #513856;
 }

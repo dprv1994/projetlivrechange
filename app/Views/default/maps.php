@@ -3,7 +3,12 @@
 <?php $this->layout('layout', ['title' => 'Lieux d\'échanges']) ?>
 
 <?php $this->start('main_content') ?>
+<div id="map_text">
+	<i class="fa fa-map-signs" aria-hidden="true"></i>
+<u>Carte des Lieux d'échange :</u> <i class="fa fa-users" aria-hidden="true"></i>
+</i>
 
+</div>
 
 
  <div id="map"></div><!--  La carte s affichera dans cette div "map" -->
