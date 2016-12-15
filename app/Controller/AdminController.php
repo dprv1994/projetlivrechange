@@ -218,4 +218,10 @@ Class AdminController extends Controller
 
 		$this->show('default/admin/addUser', $params);
 	}
+
+	public function updateUser()
+	{
+
+		
+	}
 }

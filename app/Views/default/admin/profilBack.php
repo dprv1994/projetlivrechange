@@ -25,6 +25,8 @@
 				L'utilisateur n'existe pas
 			</div>
 		<?php endif; ?>
+		<a href="update/[i:id]">Modifier</a>
+
 	</div>	
 
 <?php $this->stop('main_content') ?>
