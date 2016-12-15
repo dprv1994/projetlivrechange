@@ -174,10 +174,7 @@ class UsersController extends Controller
 		$this->show('default/signin', $params);
 	}
 
-	public function marker()
-	{
 
-	}
 
 }
 
