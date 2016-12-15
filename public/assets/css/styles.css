@@ -314,9 +314,9 @@ ul.social-buttons li a:active {
   width: 700px;
    
   margin-left: 270px;
-  border: 3px #c1264e ridge;
+  border: 20px #c1264e ridge;
   border-radius: 8px;
-  box-shadow: 5px 5px 5px #272822;
+  box-shadow: 10px 10px 10px #595959;
 }
 
 
