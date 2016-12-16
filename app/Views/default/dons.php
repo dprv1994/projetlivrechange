@@ -10,9 +10,9 @@
 	<br><br>
 
 	<div id="texte">
-		<p>RecycLivre est un site qui collecte -entre autres- les livres d'occasion dont vous souhaitez vous séparer. Ils interviennent dans différentes villes, et viennent les chercher chez vous gratuitement.
-		<br>Ils revendent les livres récoltés, afin de soutenir des programmes d'éducation dans des régions du monde qui en ont besoin. 
-		<br>Vous souhaitez faire don de vos vieux livres?
+		<p>RecycLivre est un site qui collecte -entre autres- les livres d'occasion dont vous souhaitez vous séparer.<br> Ils interviennent dans différentes villes, et viennent les chercher chez vous gratuitement.
+		<br>Ils revendent les livres récoltés, et reversent 10% de la vente afin de soutenir des programmes d'éducation dans des régions du monde qui en ont besoin. 
+		<br>
 	</div>
 
 	<br>

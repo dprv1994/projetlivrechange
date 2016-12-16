@@ -116,51 +116,6 @@ h3::before {
   outline: none;
 
 }
-/*.navbar-custom .navbar-nav > .active > a {
-  border-radius: 0;
-  color: white;
-  background-color: #fed136;
-
-}
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #fec503;
-}
-*/
-
-/* ANCIENNE TOPBAR
-
-#top-bar {
-  padding-left: 50px;
-  height: 10px;
-  line-height: 150px;
-  color: #C1264E;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: 2em;
- 
-}
-
-#logo {
-  height: 150px;
-  width: 100px;
-  background: url(../img/logo.svg) no-repeat;
-  margin-top: 14em;
-  margin-left: 5em;
-}
-
-#name-site {
-  margin-left: 50px;
-  margin-right: 1em;
-  height: 150px;
-  font-family: "master_of_break", arial, sans-serif;
-  font-size: 4em;
-  margin-top: 1.7em;
-}
-*/
 
 /****** RESPONSIVE ******/
 @media (min-width: 768px) {
@@ -240,6 +195,12 @@ h3::before {
 #section_main {
   text-align: center;
   font-size: 1.2em;
+}
+
+/****** div texte ******/
+#texte {
+  margin-right: 7em;
+  margin-left: 7em;
 }
 
 /****** FOOTER ******/
