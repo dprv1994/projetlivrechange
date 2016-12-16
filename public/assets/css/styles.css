@@ -19,6 +19,7 @@ body {
   color: #392338;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   background-color: #F7EBE1;
+  font-size: 1.5em;
 }
 
 /****** LIENS ******/
@@ -71,6 +72,7 @@ h3::before {
   text-decoration: none;
   font-family: "Roboto Condensed", Helvetica, Arial, cursive;
   margin-left: 1em;
+  font-size: 2.5em;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -80,6 +82,7 @@ h3::before {
 
 }
 
+/********** Menu burger ***********/
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
