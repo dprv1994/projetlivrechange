@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700" rel="stylesheet"> 
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/styles.css') ?>">
 </head>
 
 
