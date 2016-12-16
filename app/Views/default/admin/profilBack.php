@@ -11,18 +11,26 @@
 
 
 
-	<div class="container">
+	<div class="container-profil-back">
 		<?php if (!empty($user)): ?>
 
 			<!-- Inclure NAVBAR : soucis de liens href->404 si navbar incluse -->
 
 			<h2>Utilisateur : <?=$user['username']?></h2>
+			<h5><a href="<?=$this->url('user_update')?>"><i class="fa fa-cog" aria-hidden="true"></i>
+ OPTIONS</a></h5>
 
+			<h3>Informations :</h3>
 			<ul>
-				<li><?=$user['firstname'];?></li>
-				<li><?=$user['lastname'];?></li>
-				<li><?=$user['email'];?></li>
-				<li><?=$user['role'];?></li>
+				<li><strong>Prénom :</strong> <?=$user['firstname'];?></li>
+				<br>
+				<li><strong>Nom :</strong> <?=$user['lastname'];?></li>
+				<br>
+				<li><strong>Email :</strong> <?=$user['email'];?></li>
+				<br>
+				<li><strong>Rôle :</strong> <?=$user['role'];?></li>
+				<br>
+				<li><strong>Photo :</strong> <br><?=$user['picture'];?></li>
 			</ul>
 
 		<?php else: ?>
@@ -30,7 +38,7 @@
 				L'utilisateur n'existe pas
 			</div>
 		<?php endif; ?>
-		<a href="<?=$this->url('user_update')?>">Modifier</a>
+		
 
 	</div>	
 

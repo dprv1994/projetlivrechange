@@ -44,7 +44,7 @@ h1 {
   color: #392338;
 }
 
-h2, h3 {
+h2, h3, h5 {
   text-align: center;
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
@@ -227,6 +227,11 @@ footer #contact{
 #list_users{
 	margin-top: 4em;
 	margin-bottom: 4em;
+}
+
+/* profil user */
+.container-profil-back{
+	text-align: justify;
 }
 
 /* 404 */
