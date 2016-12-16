@@ -18,7 +18,7 @@ Class AdminController extends Controller
 	{
 
 		if (!empty($_SESSION)){
-			$this->show('admin_indexBack');
+			$this->redirectToRoute('profilBack');
 		}
 		else{ 
 			$this->redirectToRoute('login');
