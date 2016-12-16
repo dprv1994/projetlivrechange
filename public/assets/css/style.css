@@ -29,3 +29,12 @@ h2 {
 	list-style: none;
 }
 
+
+#mapupdate {
+ 
+  height: 800px;
+  max-width: 100%;
+  border: 15px #513856 solid;
+  border-radius: 10px;
+
+  /*box-shadow: 10px 10px 10px #595959;*/

@@ -24,7 +24,7 @@
 
 		// maps
 		['GET|POST', '/maps','Maps#getMarkers', 'maps'],
-
+		['GET|POST', '/admin/updateMaps', 'Maps#getMarkersBack', 'updateMaps'],
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
 		['GET|POST', '/admin/logout', 'Admin#logOut', 'logout'],

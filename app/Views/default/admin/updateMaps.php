@@ -1,11 +1,38 @@
 
-<?php $this->layout('layout', ['title' => 'Gestion de la carte google maps']) ?>
+<?php $this->layout('layoutBack', ['title' => 'Gestion de la carte google maps']) ?>
 
 <?php $this->start('main_content') ?>
 
 
 
- <div id="mapBack"></div><!--  La carte s affichera dans cette div "map" -->
+ 	<div id="mapupdate"></div><!--  La carte s affichera dans cette div "map" -->
+
+ 	<hr>
+
+ 	<h3>Liste des points d'échange</h3>
+
+ 	<!-- lISTE DES MARKERS -->
+
+ 	<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>title</th>
+					</tr>
+			</thead>
+
+			<tbody>
+				<?php foreach($markers as $marker): ?>
+				<tr>
+					<td><?=$marker['id'];?></td>
+					<td><?=$marker['title'];?></td>
+					<td><input type="submit" name="delete" value="Supprimer Marker"></td>
+				</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+
+
 
 
 <?php $this->stop('main_content') ?>
@@ -23,7 +50,7 @@
 
 			  	var map;
 			  	
-			  	map = new google.maps.Map(document.getElementById('map'), {/* Ici on crée notre objet map*/
+			  	map = new google.maps.Map(document.getElementById('mapupdate'), {/* Ici on crée notre objet map*/
 				    center: {lat: 44.8404400, lng:-0.5805000}, // centrage de la carte à l'affichage
 				    zoom: 13 // niveau de zoom
 			  	});
