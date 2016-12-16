@@ -1,40 +1,298 @@
-html, body {
-	font-family: Consolas, monaco, monospace;
-	background-color: #272822;
-	color: #F8F8F2;
+/*!
+ * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+
+.main_back{
+	text-align: justify;
 }
 
-.container {
-	margin: 50px;
+
+/* Partis d'un Bootstrap, que nous avons totalement modifié */
+@font-face{
+  font-family: "master_of_break";
+    src: url('../font/master_of_break.ttf');
 }
 
+/****** BODY ******/
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #392338;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  background-color: #F7EBE1;
+}
+
+/****** LIENS ******/
 a {
-	text-decoration: none;
-	color: #A6E22E;
+  color: #c1264e;
 }
 
 a:hover {
-	color: #F92672;
+  color: #680222;
 }
 
+/****** h1/h2/h3... ******/
 h1 {
-	color: #F92672;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  color: #392338;
 }
 
-h2 {
-	color: #66D9EF;
+h2, h3 {
+  text-align: center;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
 
-#nav-bar-back {
-	list-style: none;
+h3::before {
+  font-family: FontAwesome;
+  content: "\f02d";
+  padding-right: 0.5em;
+  color: #c1264e;
 }
 
+/****** WRAPPER ******/
+#wrapper {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  background: white; /*couleur d'arrière plan du contenu principal du wrapper*/
+}
 
-#mapupdate {
+/****** NAV-BAR ******/
+#mainNav {
+  max-width: 1260px;
+  margin: 0 auto;
+  background-color: #C1264E;
+}
+
+.navbar-custom .navbar-brand {
+  color: #FFCFA4;
+  text-decoration: none;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  margin-left: 1em;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color:#523957;
+
+}
+
+.navbar-custom .navbar-toggle {
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1em;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #fed136;
+}
+
+.navbar-collapse ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.navbar-custom .nav li a {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #FF947F;
+  text-decoration: none;
+  margin-right: 0.8em;
+  font-size: 1em;
+  list-style: none;
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color: #513856;
+  outline: none;
+
+}
+
+/****** @MEDIA - RESPONSIVE ******/
+@media (min-width: 768px) {
+  .navbar-custom {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2.7em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-custom.affix {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+/****** ACCUEIL ******/
+#conteneur-accueil { /*conteneur de l'image d'arrière plan*/
+    background: url(../img/livre-ouvert-test.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
+    background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
+    height: 755px;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 2em;
+}
+
+/* Contenu accueil */
+#container-colonnes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.colonnes {
+  width: 40%;
+  height: 300px;
+  text-align: justify;
+  margin: auto;
  
-  height: 800px;
-  max-width: 100%;
-  border: 15px #513856 solid;
-  border-radius: 10px;
+}
+/* bouton accueil */
+.btnsubmit {
+  text-align: center;
+  margin-top: 20px;
+}
+.linebuttons {
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 30px;
+  color: #FFCFA4;
+  background-color: #C1264E;
+  width: 300px;
+  height: 70px;
+}
 
+.linebuttons:hover {
+  color: #513856;
+}
+
+/****** SECTION PRINCIPALE******/
+#section_main {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/****** div texte ******/
+#texte {
+  margin-right: 7em;
+  margin-left: 7em;
+}
+
+/****** FOOTER ******/
+footer {
+  padding: 25px 0;
+  background-color: #513856;
+  margin-top: 2em;
+
+}
+
+footer span.copyright {
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+  padding-left: 90px;
+  color: #FFCFA4;
+}
+
+footer #contact{
+  margin-bottom: 0;
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* dispo colonnes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+/* boutons réseaux sociaux */
+ul.social-buttons {
+  margin-bottom: 0;
+  text-align: center;
+
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #ff947f;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: #392338;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #c1264e;
+}
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+
+
+}
+
+/****** MAP ******/
+#map {
+ 
+  height: 600px;
+  width: 700px;
+  margin-left: 270px;
+  border: 15px #E1214E solid;
+  border-radius: 10px;
   /*box-shadow: 10px 10px 10px #595959;*/
+}
+#map_text {
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0.8em;
+  color: #513856;
+}
