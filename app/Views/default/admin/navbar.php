@@ -13,9 +13,9 @@
 
       		
       		    
-      			<li><a href="<?=$this->url('')?>">Infos</a></li>
+      			<li><a href="">Infos</a></li>
 		        <li><a href="<?=$this->url('user_list')?>">Utilisateurs</a></li>
-		        <li><a href="<?=$this->url('')?>">Messages</a></li>
+		        <li><a href="">Messages</a></li>
 		        
 		        <li><a href="">Actus</a></li>
 		        <li><a target="_blank" href="<?=$this->url('default_home')?>" id="logout">Voir le site</a></li>

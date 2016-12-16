@@ -1,8 +1,8 @@
-<?php session_start(); 
+<?php 
 	if (empty($_SESSION)){
 		header('Location: admin/login');
 	} 
-	?>
+?>
 
 
 <?php $this->layout('layoutBack', ['title' => 'Fiche de profil ']) ?>
@@ -30,7 +30,7 @@
 				L'utilisateur n'existe pas
 			</div>
 		<?php endif; ?>
-		<a href="update/[i:id]">Modifier</a>
+		<a href="<?=$this->url('user_update')?>">Modifier</a>
 
 	</div>	
 

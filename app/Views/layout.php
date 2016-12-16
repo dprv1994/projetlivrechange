@@ -37,11 +37,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-
                             <li>
-                                <a class="page-scroll" href="<?=$this->url('profilUser') ?>">Mon profil</a>
-                            </li>
-
+                                <?php if (empty($_SESSION)): ?>
+                                    <a class="page-scroll" href="<?=$this->url('profilUser') ?>">Mon profil</a>
+                                <?php endif; ?>
                             <li>
                                 <a class="page-scroll" href="<?=$this->url('search_book')?>">Recherche</a>
                             </li>
@@ -52,11 +51,11 @@
                             </li>
 
                             <li>
-                                <a class="page-scroll" href="<?=$this->url('')?>">Actus</a>
+                                <a class="page-scroll" href="<?=$this->url('user_actu')?>">Actus</a> 
                             </li>
 
                             <li>
-                                <a class="page-scroll" href="<?=$this->url('')?>">Dons</a>
+                                <a class="page-scroll" target="_blank" href="https://www.recyclivre.com/donner-ses-livres.php">Dons</a>
                             </li>
 
                             <li>

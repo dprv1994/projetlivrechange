@@ -43,5 +43,10 @@ class DefaultController extends Controller
 
 	}
 
+	public function actu()
+		{
+			$this->show('default/actu');
+
+		}
 
 }

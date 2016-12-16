@@ -8,10 +8,12 @@
 	<br><br>
 	<input type="submit" id="submit" value="Rechercher">
 
+<?php $this->stop('main_content') ?>
+
 	<div id="results"></div>
 
 <!-- SCRIPTS JQuery DE LA PAGE POUR RECHERCHE LIVRE -->
-
+<?php $this->start('js') ?>
 <script>
 	function bookSearch(){
 	var search = document.getElementById('search').value
@@ -52,4 +54,5 @@ document.getElementById('submit').addEventListener('click', bookSearch, false);
 	<script src="js/myscript.js"></script>
 
 
-<?php $this->stop('main_content') ?>
+
+<?php $this->stop('js') ?>

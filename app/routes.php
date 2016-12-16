@@ -12,6 +12,7 @@
 		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
 		['GET|POST', '/profiluser/[i:id]', 'Users#profilUser', 'profilUser'],
 		['GET|POST', '/search', 'Default#search', 'search_book'],
+		['GET|POST', '/actu', 'Default#actu', 'user_actu'],
 
 		// maps
 		['GET|POST', '/maps','Maps#getMarkers', 'maps'],
