@@ -56,7 +56,7 @@
                             </li>
 
                             <li>
-                                <a class="page-scroll" target="_blank" href="<?=$this->url('dons')?>">Dons</a>
+                                <a class="page-scroll" href="<?=$this->url('dons')?>">Dons</a>
                             </li>
 
                             <li>
