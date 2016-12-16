@@ -25,10 +25,12 @@
 		// maps
 		['GET|POST', '/maps','Maps#getMarkers', 'maps'],
 		['GET|POST', '/admin/updateMaps', 'Maps#getMarkersBack', 'updateMaps'],
+		
 		// Admin
+		['GET|POST', '/admin', 'Admin#indexBack', 'admin_indexBack'],
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
 		['GET|POST', '/admin/logout', 'Admin#logOut', 'logout'],
-		['GET|POST', '/admin', 'Admin#indexBack', 'admin_indexBack'],
+		
 		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],
 		['GET', 	 '/admin/delete/[i:id]', 'Admin#delete', 'user_delete'],
 		['GET', 	 '/admin/update/[i:id]', 'Admin#updateUser', 'user_update'],
