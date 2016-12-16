@@ -117,7 +117,7 @@ h3::before {
 
 }
 
-/****** RESPONSIVE ******/
+/****** @MEDIA - RESPONSIVE ******/
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
