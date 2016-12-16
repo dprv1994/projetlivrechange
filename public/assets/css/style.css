@@ -154,7 +154,7 @@ h3::before {
 
 /****** ACCUEIL ******/
 #conteneur-accueil { /*conteneur de l'image d'arrière plan*/
-    background: url(../img/livre-ouvert-test.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
+    background: url(../img/livre-ouvert.jpg);
     background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
     height: 755px;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -295,4 +295,13 @@ ul.social-buttons li a:active {
   text-align: center;
   margin-bottom: 0.8em;
   color: #513856;
+}
+
+/****** 404 ******/
+#conteneur-accueil-404 { /*conteneur de l'image d'arrière plan*/
+    background: url(../img/404-livre-ouvert.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
+    background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
+    height: 755px;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 2em;
 }
