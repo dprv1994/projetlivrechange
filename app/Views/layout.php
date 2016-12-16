@@ -38,7 +38,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <?php if (empty($_SESSION)): ?>
+                                <?php if (!empty($_SESSION)): ?>
                                     <a class="page-scroll" href="<?=$this->url('profilUser') ?>">Mon profil</a>
                                 <?php endif; ?>
                             <li>
@@ -46,7 +46,7 @@
                             </li>
 
                             <li>
-                            <a class="page-scroll" href="<?=$this->url('maps')?>">Lieux d\'échange</a>
+                            <a class="page-scroll" href="<?=$this->url('maps')?>">Lieux d'échange</a>
                         
                             </li>
 

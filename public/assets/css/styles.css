@@ -70,7 +70,7 @@ h3::before {
   color: #FFCFA4;
   text-decoration: none;
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
-  margin-left: 1.5em;
+  margin-left: 1em;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -86,7 +86,7 @@ h3::before {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
-  font-size: 12px;
+  font-size: 1em;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
@@ -102,12 +102,12 @@ h3::before {
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 1px;
   color: #FF947F;
   text-decoration: none;
-  margin-right: 1.5em;
-  font-size: 1.2em;
+  margin-right: 1em;
+  font-size: 1em;
   list-style: none;
 }
 .navbar-custom .nav li a:hover,
@@ -116,7 +116,7 @@ h3::before {
   outline: none;
 
 }
-.navbar-custom .navbar-nav > .active > a {
+/*.navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
   background-color: #fed136;
@@ -127,7 +127,7 @@ h3::before {
   color: white;
   background-color: #fec503;
 }
-
+*/
 
 /* ANCIENNE TOPBAR
 
