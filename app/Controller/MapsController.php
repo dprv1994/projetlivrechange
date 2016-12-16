@@ -37,12 +37,12 @@ class MapsController extends Controller
 		public function deleteMarker()
 		{
 
-			if(isset($_POST['delete'])){
+			if(!empty($_POST['delete'])){
 
 				$destroyMarker = new MapsModel();
 				$destroy = $destroyMarker->delete($Marker['id']);
 
-				$this->redirectToRoute('default/admin/updateMaps');  
+				$this->show('default/admin/updateMaps');  
 			}
 		}
 		
