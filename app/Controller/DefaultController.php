@@ -67,7 +67,7 @@ class DefaultController extends Controller
 		$this->showNotFound();
 
 	}
-
+	
 	
 	
 
