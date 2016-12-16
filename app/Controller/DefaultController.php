@@ -52,6 +52,14 @@ class DefaultController extends Controller
 	}
 
 	/**
+	* Page de dons
+	*/
+	public function dons()
+	{
+		$this->show('default/dons');
+	}
+
+	/**
 	 * Page 404
 	*/
 	public function notFound()

@@ -19,6 +19,9 @@
 		// Actu
 		['GET|POST', '/actu', 'Default#actu', 'user_actu'],
 
+		// Dons
+		['GET', '/dons', 'Default#dons', 'dons'],
+
 		// maps
 		['GET|POST', '/maps','Maps#getMarkers', 'maps'],
 

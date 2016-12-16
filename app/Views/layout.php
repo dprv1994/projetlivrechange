@@ -56,7 +56,7 @@
                             </li>
 
                             <li>
-                                <a class="page-scroll" target="_blank" href="https://www.recyclivre.com/donner-ses-livres.php">Dons</a>
+                                <a class="page-scroll" target="_blank" href="<?=$this->url('dons')?>">Dons</a>
                             </li>
 
                             <li>
