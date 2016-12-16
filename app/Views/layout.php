@@ -46,8 +46,9 @@
                             </li>
 
                             <li>
-                            <a class="page-scroll" href="<?=$this->url('maps')?>">Lieux d'échange</a>
-                        
+                                <?php if (!empty($_SESSION)): ?>
+                                    <a class="page-scroll" href="<?=$this->url('maps')?>">Lieux d'échange</a>
+                                <?php endif; ?>  
                             </li>
 
                             <li>
@@ -59,7 +60,11 @@
                             </li>
 
                             <li>
-                                <a class="page-scroll" href="<?=$this->url('loginUser')?>">Se connecter</a>
+                                <?php if (empty($_SESSION)): ?>
+                                    <a class="page-scroll" href="<?=$this->url('loginUser')?>">Se connecter</a>
+                                <?php else : ?>
+                                    <a class="page-scroll" href="">Se deconnecter</a>
+                                    <?php endif; ?>
                             </li>
                         </ul>
                     </div>
