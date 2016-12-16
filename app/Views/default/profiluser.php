@@ -1,9 +1,8 @@
 
 
-<?php $this->layout('layout', ['title' => 'Fiche de profil ']) ?>
+<?php $this->layout('layout', ['title' => 'Votre profil ']) ?>
 
 <?php $this->start('main_content') ?>
-
 
 
 	<div class="container">

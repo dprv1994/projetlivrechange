@@ -76,13 +76,13 @@ class UsersController extends Controller
 			$this->showNotFound();
 		}
 		else{
-		//Instancie la classe "UserModel" qui permet de sélectionner un utilisateur
+		//Instancie la classe "Controller" qui permet de sélectionner un utilisateur
 		$userlogged = new Controller();
-		$user = $userlogged->getUser();//$id correspond à l'id en URL
+		$user = $userlogged->getUser($id);//$id correspond à l'id en URL
 
 		//Permet de gérer l'affichage
 		$data = [
-			'user' => $user, //
+			'user' => $user, 
 		];
 		$this->show('default/profilUser', $data);
 		}
