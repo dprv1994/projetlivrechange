@@ -69,7 +69,7 @@ h3::before {
 .navbar-custom .navbar-brand {
   color: #FFCFA4;
   text-decoration: none;
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, Arial, cursive;
   margin-left: 1em;
 }
 .navbar-custom .navbar-brand:hover,
@@ -80,17 +80,21 @@ h3::before {
 
 }
 
+.navbar-custom .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+
 .navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #ffcfa4;
+  border: none;
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  color: white;
+  color: #c1264e;
   font-size: 1em;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
+  background-color: #513856;
 }
 
 .navbar-collapse ul {
@@ -100,7 +104,7 @@ h3::before {
 }
 
 .navbar-custom .nav li a {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 1px;
@@ -115,6 +119,17 @@ h3::before {
   color: #513856;
   outline: none;
 
+}
+
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 0;
+  color: #513856;
+  background-color: #fed136;
+}
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #513856;
+  background-color: #fec503;
 }
 
 /****** RESPONSIVE ******/
