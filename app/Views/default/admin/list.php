@@ -22,7 +22,7 @@ Liste des utilisateurs</h2>
 					<th>#</th>
 					<th>Prénom</th>
 					<th>Nom</th>
-					<th>nom de l'utilisateur</th>
+					<th>Pseudonyme</th>
 					<th>Email</th>
 					<th>Rôle</th>
 					<th>Profil</th>

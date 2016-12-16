@@ -20,7 +20,8 @@
 			<h5><a href="<?=$this->url('user_update')?>"><i class="fa fa-cog" aria-hidden="true"></i>
  OPTIONS</a></h5>
 
-			<h3>Informations :</h3>
+			<h3><i class="fa fa-book" aria-hidden="true"></i>
+ Informations :</h3>
 			<ul>
 				<li><strong>Prénom :</strong> <?=$user['firstname'];?></li>
 				<br>

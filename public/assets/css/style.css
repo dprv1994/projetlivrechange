@@ -49,13 +49,6 @@ h2, h3, h5 {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
 
-h3::before {
-  font-family: FontAwesome;
-  content: "\f02d";
-  padding-right: 0.5em;
-  color: #c1264e;
-}
-
 /****** WRAPPER ******/
 #wrapper {
   width: 100%;
