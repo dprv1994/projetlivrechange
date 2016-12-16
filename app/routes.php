@@ -25,7 +25,7 @@
 		// maps
 		['GET|POST', '/maps','Maps#getMarkers', 'maps'],
 		['GET|POST', '/admin/updateMaps', 'Maps#getMarkersBack', 'updateMaps'],
-		/*['GET|POST', '/admin/delete/[i:id]', 'Maps#deleteMarker', 'marker_delete'],*/
+		['GET|POST', '/admin/delete/[i:id]', 'Maps#deleteMarker', 'marker_delete'],
 		// Admin
 		['GET|POST', '/admin', 'Admin#indexBack', 'admin_indexBack'],
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],

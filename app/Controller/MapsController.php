@@ -42,7 +42,7 @@ class MapsController extends Controller
 				
 				else{
 				$destroyMarker = new MapsModel();
-				$destroy = $destroyMarker->delete($Marker['id']);
+				$destroy = $destroyMarker->delete($marker['id']);
 
 				$this->redirectToRoute('default/admin/updateMaps');  
 			}

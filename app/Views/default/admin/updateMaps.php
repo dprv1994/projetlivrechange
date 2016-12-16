@@ -28,8 +28,8 @@
 				<tr>
 					<td><?=$marker['id'];?></td>
 					<td><?=$marker['title'];?></td>
-					<td><a href="<?=$this->url('deleteMarker', ['id' => $marker['id']]);?>">
-				Effacer le profil</a></td>
+					<td><a href="<?=$this->url('marker_delete', ['id' => $marker['id']]);?>">
+				Effacer le marker</a></td>
 				</tr>
 				<?php endforeach; ?>
 			</tbody>
