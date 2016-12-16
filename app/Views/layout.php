@@ -30,15 +30,38 @@
     			<!-- Navigation -->
         	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
                 <div class="container1">
-
+                <!-- Brand and toggle get grouped for better mobile display -->
                 <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>Menu
                 <i class="fa fa-bars"></i>
                 </button>
-                <!-- Brand and toggle get grouped for better mobile display -->
-                	<div class="navbar-header page-scroll">
+                    <div class="navbar-header page-scroll">
                     	<a class="navbar-brand page-scroll" href="<?=$this->url('default_home')?>">Accueil</a>
                     </div>
+
+                <!-- <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden active">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="">Mon profil</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="">Recherche</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="">Lieux d'échange</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="">Actus</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="">Dons</a>
+                        </li>
+                    </ul>
+                </div> -->
+                </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -79,6 +102,7 @@
                 <div id="logo"></div>
                 <div id="name-site">LivrEchange</div>
             </div> -->
+           </nav> 
 		</div><!-- fin div conteneur accueil -->
 		</header>
 
