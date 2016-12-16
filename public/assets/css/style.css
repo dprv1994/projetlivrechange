@@ -209,6 +209,22 @@ footer #contact{
 
 
 /****** Autres ******/
+/* login */
+#login {
+	background-color: white;
+	width: 20em;
+	height: 22em;
+	margin-top: 2em;
+	display: inline-block;
+
+}
+
+.log-txt {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+	color: #C1264E;
+}
+
 /* div texte */
 #texte {
   margin-right: 7em;
