@@ -118,7 +118,7 @@ h3::before {
 }
 
 /****** RESPONSIVE ******/
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
@@ -145,7 +145,7 @@ h3::before {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
-}*/
+}
 
 /****** ACCUEIL ******/
 #conteneur-accueil { /*conteneur de l'image d'arrière plan*/
@@ -292,9 +292,3 @@ ul.social-buttons li a:active {
   color: #513856;
 }
 
-@media screen and (max-width: 1260px){
-  #wrapper {
-    width: 100%;
-    max-width: 1260px;
-  }
-}
