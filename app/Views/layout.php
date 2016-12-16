@@ -38,7 +38,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <?php if (empty($_SESSION)): ?>
+                                <?php if (!empty($_SESSION)): ?>
                                     <a class="page-scroll" href="<?=$this->url('profilUser') ?>">Mon profil</a>
                                 <?php endif; ?>
                             <li>
@@ -46,8 +46,9 @@
                             </li>
 
                             <li>
-                            <a class="page-scroll" href="<?=$this->url('maps')?>">Lieux d\'échange</a>
-                        
+                                <?php if (!empty($_SESSION)): ?>
+                                    <a class="page-scroll" href="<?=$this->url('maps')?>">Lieux d\'échange</a>
+                                <?php endif; ?>
                             </li>
 
                             <li>
@@ -59,7 +60,11 @@
                             </li>
 
                             <li>
-                                <a class="page-scroll" href="<?=$this->url('loginUser')?>">Se connecter</a>
+                                <?php if (empty($_SESSION)): ?>
+                                    <a class="page-scroll" href="<?=$this->url('loginUser')?>">Se connecter</a>
+                                <?php else : ?>
+                                    <a class="page-scroll" href="<?=$this->url('logout')?>">Se deeconnecter</a>
+                                <?php endif; ?>
                             </li>
                         </ul>
                     </div>
