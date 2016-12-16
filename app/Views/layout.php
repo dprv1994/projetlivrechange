@@ -52,7 +52,7 @@
                             </li>
 
                             <li>
-                                <a class="page-scroll" href="<?=$this->url('user_actu')?>">Actus</a> 
+                                <a class="page-scroll" href="<?=$this->url('user_actu')?>">Actualités</a> 
                             </li>
 
                             <li>
