@@ -127,17 +127,17 @@ h3::before {
     transition: padding 0.3s;
     border: none;
   }
-  .navbar-custom .navbar-brand {
+  /*.navbar-custom .navbar-brand {
     font-size: 2.7em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-  }
-  .navbar-custom .navbar-nav > .active > a {
+  }*/
+  /*.navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
-  }
+  }*/
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: #222222;
     padding: 10px 0;
@@ -146,7 +146,7 @@ h3::before {
     font-size: 1.5em;
   }
 }
-
+*/
 /****** ACCUEIL ******/
 #conteneur-accueil { /*conteneur de l'image d'arrière plan*/
     background: url(../img/livre-ouvert.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */

@@ -30,6 +30,11 @@
     			<!-- Navigation -->
         	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
                 <div class="container1">
+
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>Menu
+                <i class="fa fa-bars"></i>
+                </button>
                 <!-- Brand and toggle get grouped for better mobile display -->
                 	<div class="navbar-header page-scroll">
                     	<a class="navbar-brand page-scroll" href="<?=$this->url('default_home')?>">Accueil</a>
