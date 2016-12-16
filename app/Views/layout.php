@@ -76,7 +76,7 @@
 		</div><!-- fin div conteneur accueil -->
 		</header>
 
-		<section>
+		<section id="section_main">
             <?= $this->section('main_content') ?>
         </section>
 
