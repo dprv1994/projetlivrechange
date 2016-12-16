@@ -11,8 +11,12 @@
 		['GET|POST', '/signin', 'Users#signIn', 'user_signIn'],
 		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
 		['GET|POST', '/profiluser/[i:id]', 'Users#profilUser', 'profilUser'],
+
+		// Books
 		['GET|POST', '/search', 'Default#search', 'search_book'],
 		['GET|POST', '/ajoutLivres', 'Default#ajoutLivres', 'add_book'],
+
+		// Actu
 		['GET|POST', '/actu', 'Default#actu', 'user_actu'],
 
 		// maps
