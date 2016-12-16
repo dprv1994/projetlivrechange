@@ -122,6 +122,50 @@ h3::before {
 
 }
 
+/****** ACCUEIL ******/
+
+
+/****** SECTION PRINCIPALE******/
+#section_main {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/****** FOOTER ******/
+footer {
+  padding: 25px 0;
+  background-color: #513856;
+  margin-top: 2em;
+
+}
+
+footer span.copyright {
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+  padding-left: 90px;
+  color: #FFCFA4;
+}
+
+footer #contact{
+  margin-bottom: 0;
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
 /****** @MEDIA - RESPONSIVE ******/
 @media (min-width: 768px) {
   .navbar-custom {
@@ -152,132 +196,6 @@ h3::before {
   }
 }
 
-/****** ACCUEIL ******/
-#conteneur-accueil { /*conteneur de l'image d'arrière plan*/
-    background: url(../img/livre-ouvert.jpg);
-    background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
-    height: 755px;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-bottom: 2em;
-}
-
-/* Contenu accueil */
-#container-colonnes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
-
-.colonnes {
-  width: 40%;
-  height: 300px;
-  text-align: justify;
-  margin: auto;
- 
-}
-/* bouton accueil */
-.btnsubmit {
-  text-align: center;
-  margin-top: 20px;
-}
-.linebuttons {
-  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-  border-radius: 8px;
-  font-size: 30px;
-  color: #FFCFA4;
-  background-color: #C1264E;
-  width: 300px;
-  height: 70px;
-}
-
-.linebuttons:hover {
-  color: #513856;
-}
-
-/****** SECTION PRINCIPALE******/
-#section_main {
-  text-align: center;
-  font-size: 1.2em;
-}
-
-/****** div texte ******/
-#texte {
-  margin-right: 7em;
-  margin-left: 7em;
-}
-
-/****** FOOTER ******/
-footer {
-  padding: 25px 0;
-  background-color: #513856;
-  margin-top: 2em;
-
-}
-
-footer span.copyright {
-  line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-transform: none;
-  padding-left: 90px;
-  color: #FFCFA4;
-}
-
-footer #contact{
-  margin-bottom: 0;
-  line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-transform: none;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-/* dispo colonnes */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-
-}
-
-/* boutons réseaux sociaux */
-ul.social-buttons {
-  margin-bottom: 0;
-  text-align: center;
-
-}
-ul.social-buttons li a {
-  display: block;
-  background-color: #ff947f;
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  font-size: 20px;
-  line-height: 40px;
-  color: #392338;
-  outline: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-}
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-  background-color: #c1264e;
-}
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-  outline: none;
-
-
-}
 
 /****** MAP ******/
 #mapupdate {
@@ -296,7 +214,15 @@ ul.social-buttons li a:active {
   color: #513856;
 }
 
-/****** 404 ******/
+
+/****** Autres ******/
+/* div texte */
+#texte {
+  margin-right: 7em;
+  margin-left: 7em;
+}
+
+/* 404 */
 #conteneur-accueil-404 { /*conteneur de l'image d'arrière plan*/
     background: url(../img/404-livre-ouvert.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
     background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
