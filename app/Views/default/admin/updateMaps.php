@@ -26,7 +26,8 @@
 				<tr>
 					<td><?=$marker['id'];?></td>
 					<td><?=$marker['title'];?></td>
-					<td><input type="submit" name="delete" value="Supprimer Marker"></td>
+					<td><a href="<?=$this->url('deleteMarker', ['id' => $marker['id']]);?>">
+				Effacer le profil</a></td>
 				</tr>
 				<?php endforeach; ?>
 			</tbody>
