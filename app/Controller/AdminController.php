@@ -67,7 +67,7 @@ Class AdminController extends Controller
 	}
 
 	public function logOut()
-	{
+	{	//Si la SESSION N'EST PAS VIDE 
 		if (!empty($_SESSION['user'])){
 			$authModel = new AdminModel;
 
@@ -76,6 +76,8 @@ Class AdminController extends Controller
 			
 			$this->show('default/admin/login');
 		}
+		//Si la SESSION EST VIDE 
+		$this->redirectToRoute('login');
 
 	}
 
