@@ -33,7 +33,7 @@
                 <div class="container1">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 	<div class="navbar-header page-scroll">
-                    	<a class="navbar-brand page-scroll" href="<?=$this->url('indexBack')?>">
+                    	<a class="navbar-brand page-scroll" href="<?=$this->url('admin_indexBack')?>">
                     	<i class="fa fa-user-secret" aria-hidden="true"></i>
 
                     	<strong><?=$w_user['username'];?></strong>
