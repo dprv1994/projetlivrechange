@@ -14,7 +14,9 @@
 
 			
 			<h2>Bienvenue sur la session "administration" de votre site web !</h2>
+			<br><br>
 
+			<div class="main_back">
 			<p>
 	            Vous êtes sur la page d'administration de votre site web.<br> Vous pouvez, à l'aide de la barre de navigation en haut de page, gérer le contenu de votre site :
 	            <ul>
@@ -25,8 +27,11 @@
 	                <li><a href="">...</a></li>
 	                <li><a href="">Déconnexion</a></li>
 	            </ul>
-	            Merci de votre confiance !
-       		</p>
+	      	</p>
+	        </div>
+	            <p>Merci de votre confiance !</p>
+       		
+
 
 		
 			<div class="alert alert-danger">
