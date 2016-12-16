@@ -1,6 +1,6 @@
-<?php session_start();
+<?php
  	if (empty($_SESSION)) {
-		header('Location: admin/login');
+		$this->url('login');
 	} 
 	?>
 

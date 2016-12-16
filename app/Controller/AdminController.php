@@ -16,7 +16,13 @@ Class AdminController extends Controller
 	*/
 	public function indexBack()
 	{
-		$this->show('default/admin/indexBack');
+
+		if (!empty($_SESSION)){
+			$this->show('admin_indexBack');
+		}
+		else{ 
+			$this->redirectToRoute('login');
+		}
 	}
 
 	public function logIn()
@@ -111,7 +117,15 @@ Class AdminController extends Controller
 
 	//Permet de gérer l'affichage
 	$data = ['users' => $users];
-	$this->show('default/admin/list', $data);
+	
+	if (!empty($_SESSION)){
+
+			$this->show('default/admin/list', $data);
+		}
+		else{ 
+			$this->redirectToRoute('login');
+		}
+	
 
 	}
 	
@@ -221,8 +235,12 @@ Class AdminController extends Controller
 
 	public function updateUser()
 	{
-
+		if (!empty($_SESSION)){
 		$this->show('default/admin/updateUser');
+		}
+		else{ 
+			$this->redirectToRoute('login');
+		}
 		
 	}
 }
