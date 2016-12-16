@@ -9,7 +9,6 @@
 
 <?php $this->start('main_content') ?>
 
-<?php include_once 'navbar.php'; ?>
 
 	<div class="container">
 
