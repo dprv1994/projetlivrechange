@@ -3,11 +3,13 @@
 
 <?php $this->start('main_content') ?>
 
-
+	<br><br>
 
  	<div id="mapupdate"></div><!--  La carte s affichera dans cette div "map" -->
+ 	<br>
 
  	<hr>
+ 	<br>
 
  	<h3>Liste des points d'échange</h3>
 
