@@ -26,15 +26,11 @@
 		<input type="file" id="picture" name="picture" placeholder="Votre image">
 		<br><br>
 
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email">
+		<label for="condition">Etat du Livre:</label>
+		<input type="text" id="condition" name="condition">
 		<br><br>
 
-		<label for="password">Mot de passe:</label>
-		<input type="password" id="password" name="password">
-		<br><br>
-
-		<input type="submit" value="S'inscrire">
+		<input type="submit" value="Ajouter">
 
 		<br><br>
 	</form>
