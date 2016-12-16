@@ -1,7 +1,7 @@
 <?php
 
 	if (empty($_SESSION)){
-		header('Location: admin/login');
+		header('Location: login');
 	} 
 ?>
 
