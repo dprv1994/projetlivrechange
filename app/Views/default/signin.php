@@ -15,8 +15,6 @@
 <?php endif; ?>
 	
 	<h2>Page D'inscription</h2>
-
-	<div id="resultAjax"></div>
 		
 	<form method="post">
 

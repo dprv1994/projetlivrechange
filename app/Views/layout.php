@@ -64,7 +64,7 @@
                                     <a class="page-scroll" href="<?=$this->url('loginUser')?>">Se connecter</a>
                                 <?php else : ?>
                                     <a class="page-scroll" href="">Se deconnecter</a>
-                                    <?php endif; ?>
+                                <?php endif; ?>
                             </li>
                         </ul>
                     </div>

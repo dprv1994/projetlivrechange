@@ -16,7 +16,7 @@
 				<li>Nom : <?=$user['lastname'];?></li>
 				<li>Email : <?=$user['email'];?></li>
 			</ul>
-
+			 <a href="<?=$this->url('add_book')?>">Se connecter</a>
 			<p>Mes livres :</p>
 			<ul>
 				<li>Faire boucle foreach avec lien DB pour lister les livres de l'user</li>

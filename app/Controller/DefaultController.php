@@ -25,6 +25,33 @@ class DefaultController extends Controller
 	}
 
 	/**
+	 * Page Recherche livre
+	*/
+	public function search()
+	{
+		$this->show('default/search');
+
+	}
+
+	/**
+	 * Page actualités
+	*/
+	public function actu()
+	{
+		$this->show('default/actu');
+
+	}
+
+	/**
+	 * Page ajout livres
+	*/
+	public function actu()
+	{
+		$this->show('default/actu');
+
+	}
+
+	/**
 	 * Page 404
 	*/
 	public function notFound()
@@ -34,19 +61,6 @@ class DefaultController extends Controller
 	}
 
 	
-	/**
-	 * Page 404
-	*/
-	public function search()
-	{
-		$this->show('default/search');
-
-	}
-
-	public function actu()
-		{
-			$this->show('default/actu');
-
-		}
+	
 
 }

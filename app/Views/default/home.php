@@ -30,7 +30,9 @@
 
 		<br><br><br><br>
 		<div class="btnsubmit">
+		<a href="<?=$this->url('user_signIn')?>">
 		<button type="submit" class="linebuttons" name="register">S'INSCRIRE</button>
+		</a>
 		</div>
 		
 
