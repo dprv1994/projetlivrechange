@@ -34,7 +34,7 @@ class MapsController extends Controller
 			$this->show('default/admin/updateMaps', $data); // envoie les données en paramètres 
 		
 		}
-		public function deleteMarker()
+		public function deleteMarker($id)
 		{
 			if (!is_numeric($id) || empty($id)) {
 					$this->showNotFound();
@@ -42,9 +42,9 @@ class MapsController extends Controller
 				
 				else{
 				$destroyMarker = new MapsModel();
-				$destroy = $destroyMarker->delete($marker['id']);
+				$destroy = $destroyMarker->delete($id);
 
-				$this->redirectToRoute('default/admin/updateMaps');  
+				$this->redirectToRoute('updateMaps');  
 			}
 		}
 		
