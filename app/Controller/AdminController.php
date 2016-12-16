@@ -62,13 +62,13 @@ Class AdminController extends Controller
 
 	public function logOut()
 	{
-		if (isset($_GET['logout']) && $_GET['logout'] == 'yes') {
+		if (!empty($_SESSION['user'])){
 			$authModel = new AdminModel;
 
 			//Deconnecte L'utilisateur 
-			$authModel->logUserOut($user);
+			$authModel->logUserOut($_SESSION['user']);
 			
-			$this->$this->redirectToRoute('login');
+			$this->show('default/admin/login');
 		}
 
 	}
@@ -222,6 +222,7 @@ Class AdminController extends Controller
 	public function updateUser()
 	{
 
+		$this->show('default/admin/updateUser');
 		
 	}
 }
