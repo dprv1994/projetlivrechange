@@ -212,7 +212,7 @@ h3::before {
   font-size: 1.2em;
 }
 
-/****** div texte ******/
+/* div texte */
 #texte {
   margin-right: 7em;
   margin-left: 7em;
