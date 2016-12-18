@@ -38,29 +38,6 @@
                     <div class="navbar-header page-scroll">
                     	<a class="navbar-brand page-scroll" href="<?=$this->url('default_home')?>">Accueil</a>
                     </div>
-
-                <!-- <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden active">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li class="">
-                            <a class="page-scroll" href="">Mon profil</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="">Recherche</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="">Lieux d'échange</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="">Actus</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="">Dons</a>
-                        </li>
-                    </ul>
-                </div> -->
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
