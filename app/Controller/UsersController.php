@@ -264,8 +264,6 @@ class UsersController extends Controller
 	{
 		$this->show('default/contact');
 	}
-	
-
 
 }
 

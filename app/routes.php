@@ -36,7 +36,7 @@
 		['GET|POST', '/admin/logout', 'Admin#logOut', 'logout'],
 		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'indexBack'],
 	
-		['GET|POST', '/admin/profilBack', 'Admin#profilBack', 'profilBack'],
+		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],
 		['GET', 	 '/admin/delete/[i:id]', 'Admin#delete', 'user_delete'],
 		['GET', 	 '/admin/update/[i:id]', 'Admin#updateUser', 'user_update'],
 		['GET', 	 '/admin/list', 'Admin#listAll', 'user_list'],
