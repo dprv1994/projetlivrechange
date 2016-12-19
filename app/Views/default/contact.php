@@ -22,10 +22,7 @@
     <br><br>
     
     <label for="object">Objet :</label>
-        <select name="selection">
-        <option value="Job Inquiry">Job Inquiry</option>
-        <option value="General Question">General Question</option>
-        </select>
+        <input id="object" type="text" name="object" placeholder="Titre de votre message...">
     <br><br>
       
      
