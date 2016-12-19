@@ -16,7 +16,7 @@
 	            <ul>
 	                <li><a href="list">Gérer vos utilisateurs</a></li>
 	                <li><a href="">Gérer le contenu de votre site</a></li>
-	                <li><a href="admin/updateMaps">Gérer votre carte Google maps</a></li>
+	                <li><a href="updateMaps">Gérer votre carte Google maps</a></li>
 	                <li><a href=""> Lire les messages qui vous ont été envoyés dans la session "Contact"</a></li>
 	            </ul>
 	      	</p>
