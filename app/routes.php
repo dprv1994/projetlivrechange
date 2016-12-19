@@ -5,7 +5,7 @@
 		// Default#home => Default correspond au nom du controller
 		// home correspond au nom de la méthode dans le controller
 		['GET|POST', '/', 'Default#home', 'default_home'],
-
+		
 		// UserFront
 
 		['GET|POST', '/signin', 'Users#signIn', 'user_signIn'],
@@ -13,6 +13,7 @@
 		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
 		['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
 		['GET|POST', '/ajoutlivres', 'Users#ajoutLivres', 'add_book'],
+		['GET|POST', '/contact', 'Users#contact', 'contact'],
 
 		// Books
 		['GET|POST', '/search', 'Default#search', 'search_book'],

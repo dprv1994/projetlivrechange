@@ -257,6 +257,13 @@ class UsersController extends Controller
 		
 	}
 
+	/**
+	 * Page Contact
+	 */
+	public function contact()
+	{
+		$this->show('default/contact');
+	}
 	
 
 
