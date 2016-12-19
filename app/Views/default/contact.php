@@ -18,12 +18,12 @@
                 <input id="email" type="email" name="email" placeholder="Ex : johndoe@gmail.com" />
         <br><br>
    
-        <label for="message">Message :</label>
-            <textarea id="message" name="message" placeholder="Votre message..."></textarea>
+            <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Votre message..."></textarea>
         <br><br>
     
-        <label for="object">Objet :</label>
-            <input id="object" type="text" name="object" placeholder="Titre de votre message...">
+            <label for="object">Objet :</label>
+                <input id="object" type="text" name="object" placeholder="Titre de votre message...">
         <br><br>
       
      
