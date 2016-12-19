@@ -30,6 +30,7 @@
 		['GET|POST', '/admin/updateMaps', 'Maps#getMarkersBack', 'updateMaps'],
 		['GET|POST', '/admin/deleteMarker/[i:id]', 'Maps#deleteMarker', 'marker_delete'],
 
+		
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
