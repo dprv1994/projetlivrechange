@@ -70,7 +70,7 @@
                                 <?php if (empty($_SESSION)): ?>
                                     <a class="page-scroll" href="<?=$this->url('loginUser')?>">Se connecter</a>
                                 <?php else : ?>
-                                    <a class="page-scroll" href="">Se deconnecter</a>
+                                    <a class="page-scroll" href="<?=$this->url('logoutUser')?>">Se deconnecter</a>
                                 <?php endif; ?>
                             </li>
                         </ul>

@@ -64,6 +64,21 @@ class UsersController extends Controller
 		$this->show('default/loginuser');
 	}
 
+	public function logOutUser()
+	{	//Si la SESSION N'EST PAS VIDE 
+		if (!empty($_SESSION)){
+			$authModel = new AuthentificationModel;
+
+			//Deconnecte L'utilisateur 
+			$authModel->logUserOut();
+			
+			$this->redirectToRoute('default_home');
+		}
+		//Si la SESSION EST VIDE 
+		$this->redirectToRoute('loginUser');
+
+	}
+
 	/**
 	 *Affiche le profil d'un membre sélectionné
 	 *@param int $id l'id du membre
@@ -72,13 +87,13 @@ class UsersController extends Controller
 	public function profilUser($id)
 	{
 		//Si l'internaute accède à la page sans id, on le redirige vers la page 404
-		if (!is_numeric($id) || empty($id)) {
+		if (empty($_SESSION)){
 			$this->showNotFound();
 		}
 		else{
 		//Instancie la classe "Controller" qui permet de sélectionner un utilisateur
-		$userlogged = new Controller();
-		$user = $userlogged->getUser($id);//$id correspond à l'id en URL
+		$userlogged = new AuthentificationModel();
+		$user = $userlogged->getLoggedUser($id);//$id correspond à l'id en URL
 
 		//Permet de gérer l'affichage
 		$data = [

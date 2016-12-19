@@ -10,7 +10,8 @@
 
 		['GET|POST', '/signin', 'Users#signIn', 'user_signIn'],
 		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
-		['GET|POST', '/profiluser/[i:id]', 'Users#profilUser', 'profilUser'],
+		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
+			['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
 
 		// Books
 		['GET|POST', '/search', 'Default#search', 'search_book'],

@@ -18,7 +18,7 @@ Class AdminController extends Controller
 	{
 
 		if (!empty($_SESSION)){
-			$this->redirectToRoute('admin_indexBack');
+			$this->redirectToRoute('profilBack');
 		}
 		else{ 
 			$this->redirectToRoute('login');
@@ -72,7 +72,7 @@ Class AdminController extends Controller
 			$authModel = new AdminModel;
 
 			//Deconnecte L'utilisateur 
-			$authModel->logUserOut($_SESSION['user']);
+			$authModel->logUserOut();
 			
 			$this->show('default/admin/login');
 		}
