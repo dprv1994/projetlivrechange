@@ -11,7 +11,7 @@
 		['GET|POST', '/signin', 'Users#signIn', 'user_signIn'],
 		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
 		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
-			['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
+		['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
 
 		// Books
 		['GET|POST', '/search', 'Default#search', 'search_book'],
@@ -27,13 +27,13 @@
 		['GET|POST', '/maps','Maps#getMarkers', 'maps'],
 		['GET|POST', '/admin/updateMaps', 'Maps#getMarkersBack', 'updateMaps'],
 		['GET|POST', '/admin/delete/[i:id]', 'Maps#deleteMarker', 'marker_delete'],
+
+
 		// Admin
-		['GET|POST', '/admin/', 'Admin#indexBack', 'admin_indexBack'],
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
 		['GET|POST', '/admin/logout', 'Admin#logOut', 'logout'],
+		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'indexBack'],
 	
-		
-
 		['GET|POST', '/admin/profilBack', 'Admin#profilBack', 'profilBack'],
 		['GET', 	 '/admin/delete/[i:id]', 'Admin#delete', 'user_delete'],
 		['GET', 	 '/admin/update/[i:id]', 'Admin#updateUser', 'user_update'],

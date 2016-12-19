@@ -11,19 +11,7 @@ use \Respect\Validation\Validator as v;
 
 Class AdminController extends Controller
 {
-	/**
-	* Page d'accueil de l'admin
-	*/
-	public function indexBack()
-	{
 
-		if (!empty($_SESSION)){
-			$this->redirectToRoute('profilBack');
-		}
-		else{ 
-			$this->redirectToRoute('login');
-		}
-	}
 
 	public function logIn()
 	{
@@ -59,7 +47,7 @@ Class AdminController extends Controller
 		//Si déjà connecté je le redirige
 		//Je le sors du !empty($_POST) pour que la redirection soit effective si un utilisateur et déjà connecté arrive sur le formulaire de connexion
 		if (!empty($this->getUser())) {
-			$this->redirectToRoute('admin_indexBack');
+			$this->redirectToRoute('indexBack');
 		}
 		
 		$param = ['errors' => $errors];
@@ -81,30 +69,38 @@ Class AdminController extends Controller
 
 	}
 
+	public function indexBack()
+	{	
+		if (empty($_SESSION)){
+			$this->show('default/admin/login');
+		}
+		else{
+			$this->show('default/admin/indexBack');
+		}
+	}
+
 	/**
 	 *EN BACK Affiche le profil d'un membre sélectionné 
-	 *@param int $id l'id du membre
 	 * Page de profil
 	**/
-	public function profilBack($id)
+	public function profilBack()
 	{
-		//Si l'internaute accède à la page sans id, on le redirige vers la page 404
+		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
 		if (empty($_SESSION)){
 			$this->showNotFound();
 		}
 		else{
-		//Instancie la classe "Controller" qui permet de sélectionner un utilisateur
-		$userlogged = new AdminModel();
-		$user = $userlogged->getLoggedUser($id);//$id correspond à l'id en URL
+			//Instancie la classe "Controller" qui permet de sélectionner un utilisateur
+			$userlogged = new AdminModel();
+			$user = $userlogged->getLoggedUser();//$id correspond à l'id en URL
 
-		//Permet de gérer l'affichage
-		$data = [
-			'user' => $user, 
-		];
-		$this->redirectToRoute('admin_indexBack');
+			//Permet de gérer l'affichage
+			$data = [
+				'user' => $user, 
+			];
+		$this->redirectToRoute('indexBack');
 		}
 	}
-
 
 	/**
 	 *Affiche tout les profil 

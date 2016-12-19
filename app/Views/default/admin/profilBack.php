@@ -1,9 +1,3 @@
-<?php 
-	if (empty($_SESSION)){
-		header('Location: admin/login');
-	} 
-?>
-
 
 <?php $this->layout('layoutBack', ['title' => 'Fiche de profil ']) ?>
 
