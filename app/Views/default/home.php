@@ -3,7 +3,7 @@
 <?php $this->start('main_content') ?>
 
 	
-	<h1>COMMENT ÇA MARCHE?</h1>
+	<h1>COMMENT ÇA MARCHE ?</h1>
 
 		<br><br>
 		<section id="zone1">
