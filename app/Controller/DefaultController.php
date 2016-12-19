@@ -41,16 +41,7 @@ class DefaultController extends Controller
 		$this->show('default/actu');
 
 	}
-
-	/**
-	 * Page ajout livres
-	*/
-	public function ajoutLivres()
-	{
-		$this->show('default/AjoutDeLivres');
-
-	}
-
+	
 	/**
 	* Page de dons
 	*/

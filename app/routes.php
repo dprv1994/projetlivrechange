@@ -12,10 +12,11 @@
 		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
 		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
 		['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
+		['GET|POST', '/ajoutlivres', 'Users#ajoutLivres', 'add_book'],
 
 		// Books
 		['GET|POST', '/search', 'Default#search', 'search_book'],
-		['GET|POST', '/ajoutLivres', 'Default#ajoutLivres', 'add_book'],
+		
 
 		// Actu
 		['GET|POST', '/actu', 'Default#actu', 'user_actu'],
