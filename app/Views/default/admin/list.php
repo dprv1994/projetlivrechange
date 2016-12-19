@@ -48,7 +48,7 @@ Liste des utilisateurs</h2>
 					<a href="<?=$this->url('user_update', ['id' => $user['id']]);?>">
 					Modifier le profil</a>
 					</td>
-					<td>-
+					<td>
 					<!-- Créer un url pour effacer un membre -->
 					<a href="<?=$this->url('user_delete', ['id' => $user['id']]);?>">
 					Effacer le profil</a>

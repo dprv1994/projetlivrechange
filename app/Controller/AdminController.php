@@ -135,7 +135,8 @@ Class AdminController extends Controller
 	
 	public function delete($id)
 	{
-		if (!is_numeric($id) || empty($id)) {
+		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
+		if (empty($_SESSION)){
 			$this->showNotFound();
 		}
 		else{

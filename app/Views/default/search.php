@@ -18,6 +18,7 @@
 <?php $this->start('js') ?>
 
 <script>
+
 	function bookSearch(){
 	var search = document.getElementById('search').value
 	document.getElementById('results').innerHTML = ""
@@ -51,7 +52,6 @@ document.getElementById('submit').addEventListener('click', bookSearch, false);
 <!-- ...................................APPEL A API GOOGLE BOOKS............................................... -->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script src="js/myscript.js"></script>
 
 
 
