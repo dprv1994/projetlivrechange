@@ -179,7 +179,7 @@ img {
 
 /****** ACCUEIL ******/
 #conteneur-accueil { /*conteneur de l'image d'arrière plan*/
-    
+    height: 900px;
     /*font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     margin-bottom: 2em;
 }
