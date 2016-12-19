@@ -98,7 +98,7 @@ Class AdminController extends Controller
 			$data = [
 				'user' => $user, 
 			];
-		$this->redirectToRoute('indexBack');
+		$this->show('default/admin/profilBack', $data);
 		}
 	}
 
