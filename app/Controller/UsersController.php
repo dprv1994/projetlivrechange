@@ -106,15 +106,14 @@ class UsersController extends Controller
 	 *Méthode pour verifier l'inscritipon de l'utilisateur
 	 * Page d'inscription
 	**/
-
 	public function signIn()
 	{
 
-	$UsersModel = new UsersModel();
+		$UsersModel = new UsersModel();
 
-	$errors = [];
-	$post = [];
-	$success = false;
+		$errors = [];
+		$post = [];
+		$success = false;
 
 		if (!empty($_POST)) {
 			$post = array_map('trim', array_map('strip_tags',$_POST));
@@ -186,8 +185,8 @@ class UsersController extends Controller
 		];
 
 		$this->show('default/signin', $params);
+		
 	}
-
 	
 	/*
 	*
@@ -206,55 +205,38 @@ class UsersController extends Controller
 		if (!empty($_POST)) {
 			$post = array_map('trim', array_map('strip_tags',$_POST));
 		
-			if (!v::length(3, 25)->validate($post['firstname'])) {
-				$errors[] = 'Votre prénom doit faire entre 3 et 25 caractères';
+			if (!v::length(3, 25)->validate($post['title'])) {
+				$errors[] = 'Le titre doit faire entre 3 et 25 caractères';
 			}
 
-			if (!v::length(3, 25)->validate($post['lastname'])) {
-				$errors[] = 'Votre nom doit faire entre 3 et 25 caractères';
+			if (!v::length(3, 25)->validate($post['author'])) {
+				$errors[] = 'le nom de l\'auteur doit faire entre 3 et 25 caractères';
 			}
 
-			if (!v::length(4, 20)->validate($post['username'])) {
+			if (!v::length(4, 20)->validate($post['category'])) {
 				$errors[] = 'Votre nom d\'utilisateur doit faire entre 4 et 20 caractères';
-			}
-
-			//si l'username existe déjà en BDD renverra TRUE
-			if ($UsersModel->usernameExists($post['username'])) {
-				$errors[] = 'Le pseudo est déjà utilisé';
 			}
 
 			/*if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
 				$errors[] = 'L\'image n\'est pas valide';
 			}*/
 
-			if (!v::email()->validate($post['email'])) {
-				$errors[] = 'Votre e-mail n\'est pas valide';
-			}
-
-			//si l'email existe déjà en BDD renverra TRUE
-			if ($UsersModel->emailExists($post['email'])) {
-				$errors[] = 'L\'adresse email et déjà utilisé';
-			}
-
-			if (!v::length(7,null)->validate($post['password'])) {
+			if (!v::length(7,null)->validate($post['condition'])) {
 				$errors[] = 'Le mot de passe doit avoir au moins 7 caractères';
 			}
 
 			if (count($errors) === 0 ) {
 				 
-				 $authModel = new AuthentificationModel(); // Permet d'utiliser la fonction de hash de password
-
 				 //On instancie le modèle pour communiquer avec la BDD
 				 $UserModel = new UsersModel();
 
 				 $insert = $UserModel->insert( [
-				 	'firstname' => $post['firstname'],
-				 	'lastname'	=> $post['lastname'],
-				 	'username'	=> $post['username'],
+				 	'title'		=> $post['title'],
+				 	'author'	=> $post['author'],
+				 	'category'	=> $post['category'],
 				 	/*'picture'	=> $_FILES['picture'],*/
-				 	'email'		=> $post['email'],
-				 	'password'	=> $authModel->hashPassword($post['password']),
-				 	'role'		=> 'user',
+				 	'condition'		=> $post['condition'],
+				 	
 				 ]);
 
 				if ($insert) {
@@ -271,9 +253,11 @@ class UsersController extends Controller
 			'errors'  => $errors,
 			'success' => $success,
 		];
-
 		$this->show('default/ajoutlivres', $params);
+		
 	}
+
+	
 
 
 }

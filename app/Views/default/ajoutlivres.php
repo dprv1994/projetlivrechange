@@ -15,7 +15,7 @@
 		<input type="text" id="author" name="author">
 		<br><br>
 
-		<label for="category">catégorie :&nbsp;</label>
+		<label for="category">Catégories :&nbsp;</label>
 		<select name="category">
 			<option>Polar</option>
 			<option>Sci-fi</option>
