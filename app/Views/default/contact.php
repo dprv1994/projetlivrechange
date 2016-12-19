@@ -2,35 +2,37 @@
 
 <?php $this->start('main_content') ?>
 
-    <h1>POUR NOUS CONTACTER</h1>
-
-
-<form action="" method="post" class="STYLE-NAME">
     <h1>LAISSEZ-NOUS UN MESSAGE</h1>
-    <label>
-        <span>Votre Nom :</span>
-        <input id="name" type="text" name="name" placeholder="Your Full Name" />
-    </label>
+
+<br><br>
+<form method="post">
+
+
+    <label for="lastname">Nom :</label>
+        <input id="lastname" type="text" name="lastname" placeholder="Votre nom..." />
+    <br><br>
    
-    <label>
-        <span>Votre Email :</span>
-        <input id="email" type="email" name="email" placeholder="Valid Email Address" />
-    </label>
    
-    <label>
-        <span>Message :</span>
-        <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
-    </label>
-     <label>
-        <span>Objet :</span><select name="selection">
+    <label for="email">Email :</label>
+        <input id="email" type="email" name="email" placeholder="Ex : johndoe@gmail.com" />
+    <br><br>
+   
+    <label for="message">Message :</label>
+        <textarea id="message" name="message" placeholder="Votre message..."></textarea>
+    <br><br>
+    
+    <label for="object">Objet :</label>
+        <select name="selection">
         <option value="Job Inquiry">Job Inquiry</option>
         <option value="General Question">General Question</option>
         </select>
-    </label>    
-     <label>
-        <span>&nbsp;</span>
-        <input type="button" class="button" value="Envoyer" />
-    </label>    
+    <br><br>
+      
+     
+        <div class="btnsubmit">
+        <input type="submit" class="linebuttons" value="Envoyer" />
+        </div>
+    <br><br>
 </form>
 
 <?php $this->stop('main_content') ?>
