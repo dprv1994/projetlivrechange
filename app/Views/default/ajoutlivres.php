@@ -17,10 +17,10 @@
 
 		<label for="category">Catégories :&nbsp;</label>
 		<select name="category">
-			<option>Polar</option>
-			<option>Sci-fi</option>
-			<option>Romance</option>
-			<option>Biographie</option>
+			<option value="Polar">Polar</option>
+			<option value="SF">Sci-fi</option>
+			<option value="Romance">Romance</option>
+			<option value="Biographie">Biographie</option>
 		</select>
 
 		<label for="picture">Image :&nbsp;</label>

@@ -214,15 +214,15 @@ class UsersController extends Controller
 			}
 
 			if (!v::length(4, 20)->validate($post['category'])) {
-				$errors[] = 'Votre nom d\'utilisateur doit faire entre 4 et 20 caractères';
+				$errors[] = 'la catégories doit faire entre 4 et 20 caractères';
 			}
 
 			/*if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
 				$errors[] = 'L\'image n\'est pas valide';
 			}*/
 
-			if (!v::length(7,null)->validate($post['condition'])) {
-				$errors[] = 'Le mot de passe doit avoir au moins 7 caractères';
+			if (!v::length(3,null)->validate($post['condition'])) {
+				$errors[] = 'L\'etat du livre doit avoir au moins 3 caractères';
 			}
 
 			if (count($errors) === 0 ) {
