@@ -58,6 +58,12 @@ li {
   list-style: none;
 }
 
+img {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /****** WRAPPER ******/
 #wrapper {
   /*width: 100%;
@@ -173,10 +179,8 @@ li {
 
 /****** ACCUEIL ******/
 #conteneur-accueil { /*conteneur de l'image d'arrière plan*/
-    background: url(../img/livre-ouvert.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
-    background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
-    height: 755px;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    /*font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     margin-bottom: 2em;
 }
 
@@ -231,7 +235,7 @@ li {
 footer {
   padding: 25px 0;
   background-color: #513856;
-  margin-top: 2em;
+  /*margin-top: 2em;*/
 
 }
 
