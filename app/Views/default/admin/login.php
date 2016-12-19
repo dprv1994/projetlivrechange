@@ -24,5 +24,6 @@
 				<input type="submit" value="Se connecter">
 			</form>
 
-
+			<br><br>
+			
 <?php $this->stop('main_content') ?>

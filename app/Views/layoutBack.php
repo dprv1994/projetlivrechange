@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <meta name="description" content="">
     <meta name="author" content="">
     <title><?= $this->e($title) ?></title>
@@ -83,21 +83,23 @@
                     <div id="logo"></div>
                     <div id="name-site">LivrEchange</div>
                 </div> -->
+                </nav>
     		</div><!-- fin div conteneur accueil -->
     		</header>
     <?php endif; ?>
+
+    
 		<section id="section_main">
             <?= $this->section('main_content') ?>
         </section>
+    
 
         <footer>
-            <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; LivrEchange-2016</span>
-                </div>
+           
+            <span class="copyright">Copyright &copy; LivrEchange-2016</span>
+               
         </footer>
-    </div>
+    
     </div><!-- fin wrapper -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <?= $this->section('js') ?>

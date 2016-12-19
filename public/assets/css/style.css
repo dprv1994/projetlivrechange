@@ -55,6 +55,11 @@ h2, h3, h5 {
   max-width: 1260px;
   margin: 0 auto;
   background: white; /*couleur d'arrière plan du contenu principal du wrapper*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /****** NAV-BAR ******/
@@ -128,8 +133,7 @@ h2, h3, h5 {
 footer {
   padding: 25px 0;
   background-color: #513856;
-  margin-top: 2em;
-
+  
 }
 
 footer span.copyright {
@@ -137,7 +141,6 @@ footer span.copyright {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
-  padding-left: 90px;
   color: #FFCFA4;
 }
 
