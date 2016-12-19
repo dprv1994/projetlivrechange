@@ -84,7 +84,7 @@
 
             <header>
                 <div id="conteneur-accueil">
-                <img src="<?=$this->assetUrl('img/livre-ouvert.jpg');?>"
+                <img src="<?=$this->assetUrl('img/livre-ouvert.jpg');?>" class="img-responsive" alt="Responsive image">
                 </div>
             </header>
 

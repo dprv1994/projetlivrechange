@@ -58,12 +58,6 @@ li {
   list-style: none;
 }
 
-img {
-  max-width: 1260px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 label {
   padding-right: 1em;
 }
