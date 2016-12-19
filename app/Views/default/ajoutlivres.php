@@ -22,8 +22,9 @@
 			<option value="Romance">Romance</option>
 			<option value="Biographie">Biographie</option>
 		</select>
+		<br><br>
 
-		<label for="picture">Image :&nbsp;</label>
+		<label for="picture">Image :</label>
 		<input type="file" id="picture" name="picture" placeholder="Votre image">
 		<br><br>
 
