@@ -89,19 +89,19 @@ Class AdminController extends Controller
 	public function profilBack($id)
 	{
 		//Si l'internaute accède à la page sans id, on le redirige vers la page 404
-		if (!is_numeric($id) || empty($id)) {
+		if (empty($_SESSION)){
 			$this->showNotFound();
 		}
 		else{
-		//Instancie la classe "UserModel" qui permet de sélectionné un utilisateur
-		$UsersModel = new UsersModel();
-		$user = $UsersModel->find($id);//$id correspond à l'id en URL
+		//Instancie la classe "Controller" qui permet de sélectionner un utilisateur
+		$userlogged = new AdminModel();
+		$user = $userlogged->getLoggedUser($id);//$id correspond à l'id en URL
 
 		//Permet de gérer l'affichage
 		$data = [
-			'user' => $user, //
+			'user' => $user, 
 		];
-		$this->show('default/admin/profilBack', $data);
+		$this->redirectToRoute('admin_indexBack');
 		}
 	}
 

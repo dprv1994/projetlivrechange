@@ -84,7 +84,7 @@ class UsersController extends Controller
 	 *@param int $id l'id du membre
 	 * Page de profil
 	**/
-	public function profilUser($id)
+	public function profilUser()
 	{
 		//Si l'internaute accède à la page sans id, on le redirige vers la page 404
 		if (empty($_SESSION)){
