@@ -81,25 +81,24 @@ class UsersController extends Controller
 
 	/**
 	 *Affiche le profil d'un membre sélectionné
-	 *@param int $id l'id du membre
 	 * Page de profil
 	**/
 	public function profilUser()
 	{
-		//Si l'internaute accède à la page sans id, on le redirige vers la page 404
+		//Si l'internaute 
 		if (empty($_SESSION)){
 			$this->showNotFound();
 		}
 		else{
-		//Instancie la classe "Controller" qui permet de sélectionner un utilisateur
+		//Instancie la classe "AuthentificationModel" qui permet de sélectionner un utilisateur
 		$userlogged = new AuthentificationModel();
-		$user = $userlogged->getLoggedUser();//$id correspond à l'id en URL
+		$user = $userlogged->getLoggedUser();//getLoggedUser va attrappé les données de l'utilisateur loggé
 
 		//Permet de gérer l'affichage
 		$data = [
 			'user' => $user, 
 		];
-		$this->show('default/profilUser', $data);
+		$this->show('default/profilUser');
 		}
 	}
 
