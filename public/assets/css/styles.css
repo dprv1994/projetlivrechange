@@ -54,6 +54,10 @@ h3::before {
   color: #c1264e;
 }
 
+li {
+  list-style: none;
+}
+
 /****** WRAPPER ******/
 #wrapper {
   /*width: 100%;
