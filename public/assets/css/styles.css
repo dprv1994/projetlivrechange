@@ -179,7 +179,7 @@ label {
     margin-bottom: 2em;
 }
 
-/* Contenu accueil */
+/* Contenu section */
 #container-colonnes {
   display: flex;
   flex-direction: row;
@@ -187,13 +187,14 @@ label {
   justify-content: space-around;
 }
 
-.colonnes {
+.colonnes{
   width: 40%;
   height: 300px;
   text-align: justify;
   margin: auto;
  
 }
+
 /* bouton accueil */
 .btnsubmit {
   text-align: center;
