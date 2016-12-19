@@ -3,10 +3,13 @@
 <?php $this->start('main_content') ?>
 
 
-<label for="search">Recherche:</label>
-	<input type="text" id="search" name="search" placeholder="Title or Author">
+<label for="search" class="srch">Recherche :</label>
+	<input type="text" id="search" name="search" placeholder="Titre ou auteur du livre...">
 	<br><br>
-	<input type="submit" id="submit" value="Rechercher">
+	<div class="btnsubmit">
+	<input type="submit" class="linebuttons" value="Rechercher">
+	<div>
+	<br><br>
 
 <?php $this->stop('main_content') ?>
 

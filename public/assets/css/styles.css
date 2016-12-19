@@ -174,7 +174,7 @@ label {
 
 /****** ACCUEIL ******/
 #conteneur-accueil { /*conteneur de l'image d'arrière plan*/
-    height: 59em;
+    height: 59em;/* hauteur exprimée en em pour le responsive design */
     /*font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     margin-bottom: 2em;
 }
@@ -323,4 +323,14 @@ ul.social-buttons li a:active {
     height: 755px;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 2em;
+}
+
+#search {
+  width: 50%;
+  height: 2.5em;
+  padding-left: 0.5em;
+}
+
+.srch {
+  font-size: 1.3em;
 }
