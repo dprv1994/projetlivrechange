@@ -85,20 +85,20 @@ class UsersController extends Controller
 	**/
 	public function profilUser()
 	{
-		//Si l'internaute 
+		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
 		if (empty($_SESSION)){
 			$this->showNotFound();
 		}
 		else{
-		//Instancie la classe "AuthentificationModel" qui permet de sélectionner un utilisateur
-		$userlogged = new AuthentificationModel();
-		$user = $userlogged->getLoggedUser();//getLoggedUser va attrappé les données de l'utilisateur loggé
+			//Instancie la classe "Controller" qui permet de sélectionner un utilisateur
+			$userlogged = new AuthentificationModel();
+			$user = $userlogged->getLoggedUser();//$id correspond à l'id en URL
 
-		//Permet de gérer l'affichage
-		$data = [
-			'user' => $user, 
-		];
-		$this->show('default/profilUser');
+			//Permet de gérer l'affichage
+			$data = [
+				'user' => $user, 
+			];
+		$this->show('default/profiluser', $data);
 		}
 	}
 
