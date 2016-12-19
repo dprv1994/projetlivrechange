@@ -45,28 +45,35 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                	<a href=""><i class="fa fa-cogs" aria-hidden="true"></i> Infos</a>
+                                	<a href="">
+                                    <i class="fa fa-cogs" aria-hidden="true"> 
+                                    </i> Infos</a>
                                 </li>
     					        <li>
-    					        	<a href="<?=$this->url('user_list')?>"><i class="fa fa-user-plus" aria-hidden="true"></i>
-    Utilisateurs</a>
+    					        	<a href="<?=$this->url('user_list')?>">
+                                    <i class="fa fa-user-plus" aria-hidden="true">   
+                                    </i>Utilisateurs</a>
     					        </li>
     					        <li>
-    					        	<a href=""><i class="fa fa-envelope" aria-hidden="true"></i>
-    Messages</a>
+    					        	<a href="<?=$this->url('messages')?>">
+                                    <i class="fa fa-envelope" aria-hidden="true">
+                                    </i>Messages</a>
     					        </li>
     					        
     					        <li>
-    					        	<a href=""><i class="fa fa-globe" aria-hidden="true"></i>
-    Actus</a>
+    					        	<a href="<?=$this->url('actus')?>">
+                                    <i class="fa fa-globe" aria-hidden="true">   
+                                    </i>Actus</a>
     					        </li>
     					        <li>
-    					        	<a target="_blank" href="<?=$this->url('default_home')?>" id="logout"><i class="fa fa-search" aria-hidden="true"></i>
-    Voir le site</a>
+    					        	<a target="_blank" href="<?=$this->url('default_home')?>" id="logout">
+                                    <i class="fa fa-search" aria-hidden="true">
+                                    </i>Voir le site</a>
     					        </li>
     			      			<li>
-    			      				<a href="<?=$this->url('logout')?>"><i class="fa fa-sign-out" aria-hidden="true"></i>
-    Déconnexion</a>
+    			      				<a href="<?=$this->url('logout')?>">
+                                    <i class="fa fa-sign-out" aria-hidden="true">
+                                    </i>Déconnexion</a>
     			      			</li>
                             </ul>
                         </div>

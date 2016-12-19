@@ -30,18 +30,19 @@
 		['GET|POST', '/admin/updateMaps', 'Maps#getMarkersBack', 'updateMaps'],
 		['GET|POST', '/admin/deleteMarker/[i:id]', 'Maps#deleteMarker', 'marker_delete'],
 
-		
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
 		['GET|POST', '/admin/logout', 'Admin#logOut', 'logout'],
 		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'indexBack'],
-	
+
 		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],
 		['GET', 	 '/admin/delete/[i:id]', 'Admin#delete', 'user_delete'],
 		['GET', 	 '/admin/update/[i:id]', 'Admin#updateUser', 'user_update'],
 		['GET', 	 '/admin/list', 'Admin#listAll', 'user_list'],
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
+		['GET|POST', '/admin/messages', 'Admin#messages', 'messages'],
+		['GET|POST', '/admin/actus', 'Admin#actus', 'actus'],
 		
 		// Autres
 		['GET', '/error/page404', 'Default#page404', 'page404'],

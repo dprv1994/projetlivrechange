@@ -320,5 +320,25 @@ Class AdminController extends Controller
 			$this->redirectToRoute('login');
 		}	
 	}
+
+	/**
+	 * 
+	 * Page de messages reçu
+	**/
+	public function messages()
+	{
+		$this->show('default/admin/messages');
+
+	}
+
+	/**
+	 * 
+	 * Page de messages actus
+	**/
+	public function actus()
+	{
+		$this->show('default/admin/actus');
+
+	}
 }
 
