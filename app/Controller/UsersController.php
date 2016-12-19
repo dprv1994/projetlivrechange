@@ -93,7 +93,7 @@ class UsersController extends Controller
 		else{
 		//Instancie la classe "Controller" qui permet de sélectionner un utilisateur
 		$userlogged = new AuthentificationModel();
-		$user = $userlogged->getLoggedUser($id);//$id correspond à l'id en URL
+		$user = $userlogged->getLoggedUser();//$id correspond à l'id en URL
 
 		//Permet de gérer l'affichage
 		$data = [
