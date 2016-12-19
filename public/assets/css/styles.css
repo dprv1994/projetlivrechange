@@ -64,6 +64,14 @@ img {
   margin: 0 auto;
 }
 
+label {
+  padding-right: 1em;
+}
+
+input {
+  padding-right: 0.5em;
+}
+
 /****** WRAPPER ******/
 #wrapper {
   /*width: 100%;
@@ -211,7 +219,7 @@ img {
   font-size: 30px;
   color: #FFCFA4;
   background-color: #C1264E;
-  width: 300px;
+  width: 200px;
   height: 70px;
 }
 
