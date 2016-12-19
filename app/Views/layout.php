@@ -23,18 +23,16 @@
  
 </head>
 <body id="page-top" class="index">
-    <div id="wrapper">
-		<header>
-
-        <div id="conteneur-accueil">
+    
     			<!-- Navigation -->
         	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
                 <div class="container1">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>Menu
-                <i class="fa fa-bars"></i>
-                </button>
+                <div class="navbar-header page-scroll">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
                     <div class="navbar-header page-scroll">
                     	<a class="navbar-brand page-scroll" href="<?=$this->url('default_home')?>">Accueil</a>
                     </div>
@@ -81,12 +79,21 @@
                 <div id="name-site">LivrEchange</div>
             </div> -->
            </nav> 
-		</div><!-- fin div conteneur accueil -->
-		</header>
+		
+        <main id="wrapper">
 
-		<section id="section_main">
-            <?= $this->section('main_content') ?>
-        </section>
+            <header>
+                <div id="conteneur-accueil">
+                <img src="<?=$this->assetUrl('img/livre-ouvert.jpg');?>"
+                </div>
+            </header>
+
+            <section id="section_main">
+                <?= $this->section('main_content') ?>
+            </section>
+            
+        </main>
+		
 
         <footer>
             <div class="container">
