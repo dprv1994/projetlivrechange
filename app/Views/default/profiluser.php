@@ -43,7 +43,6 @@
 			</thead>
 
 			<tbody>
-				<?php if (!empty($books)): ?>
 					<?php foreach ($books as $book): ?>		
 						<tr>	
 							<td><?=$book['picture_book'];?>></td>
@@ -53,7 +52,6 @@
 							<td><?=$book['condition'];?></td>
 						</tr>
 					<?php endforeach; ?>
-				<?php endif; ?>
 			</tbody>
 		</table>
 		
