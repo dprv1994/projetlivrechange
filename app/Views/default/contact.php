@@ -3,8 +3,8 @@
 <?php $this->start('main_content') ?>
 
     
-
-    <h1 class="section-heading">Laissez-nous un message</h1>
+    
+    <h1> <i class="fa fa-paper-plane" aria-hidden="true"></i> Laissez-nous un message</h1>
                
     <section id="contact">
         <div class="container">
