@@ -231,10 +231,7 @@ label {
   margin-left: 7em;
 }
 
-.section-heading {
-  color: black;
-  padding-bottom: 50px;
-}
+/********* FORMULAIRE DE CONTACT *********/
 section#contact .form-group {
   margin-bottom: 25px;
 }
