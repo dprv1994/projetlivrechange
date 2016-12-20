@@ -278,11 +278,46 @@ class UsersController extends Controller
 					$errors[] = 'L\'image n\'est pas valide';
 				}
 
+				// Vérifie que l'image a bien été uploadée
+				if(!v::uploaded()->validate($_FILES['picture']['tmp_name'])){
+					$errors[] = 'Une erreur est survenue lors de l\'upload de l\'image';
+				}
+
 				if (!v::length(3,null)->validate($post['condition'])) {
 					$errors[] = 'L\'etat du livre doit avoir au moins 3 caractères';
 				}
 
 				if (count($errors) === 0 ) {
+
+					// dossier des images => /public/assets/upload/
+					// Créer le dossier des images si inexistant
+					if(!is_dir($fullFolderUpload)){
+						mkdir($fullFolderUpload, 0755);
+					}
+
+					$img = Image::make($_FILES['picture']['tmp_name']);
+
+					// On définit l'extension de l'image en fonction de son mimeType
+					switch($img->mime()){
+						case 'image/jpg':
+						case 'image/jpeg':
+							$extension = '.jpg';
+						break;
+						case 'image/png':
+							$extension = '.png';
+						break;
+						case 'image/gif':
+							$extension = '.gif';
+						break;
+
+				}
+
+				// Le nom de l'image + son extension
+				$imgName = uniqid('book_').$extension;
+				// On sauvegarde l'image 
+				$img->save($fullFolderUpload.$imgName);
+
+				$user = $this->getUser(); // contient l'utilisateur connecté
 						 
 					//On instancie le modèle pour communiquer avec la BDD
 					$UserModel = new UsersModel();
