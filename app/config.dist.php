@@ -22,7 +22,7 @@ $w_config = [
 	'site_name'	=> 'livrechange', 					// contiendra le nom du site
 
 	'upload_dir' => '/uploads/',					//Répertoire de stokage des images de profil
-	'upload_dir_book' => '/uploads/books/',					//Répertoire de stokage des images de livres		
+	'upload_dir_book' => '/uploads/books/',			//Répertoire de stokage des images de livres		
 ];
 
 require('routes.php');

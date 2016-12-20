@@ -18,7 +18,6 @@
 		['GET|POST', '/search', 'Book#search', 'search_book'],
 		['GET|POST', '/ajoutlivres', 'Book#ajoutLivres', 'add_book'],
 		
-
 		// Actu
 		['GET|POST', '/actu', 'Default#actu', 'user_actu'],
 
@@ -39,6 +38,7 @@
 		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],
 		['GET', 	 '/admin/delete/[i:id]', 'Admin#delete', 'user_delete'],
 		['GET', 	 '/admin/update/[i:id]', 'Admin#updateUser', 'user_update'],
+		
 		['GET', 	 '/admin/list', 'Admin#listAll', 'user_list'],
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
 		['GET|POST', '/admin/messages', 'Admin#messages', 'messages'],
