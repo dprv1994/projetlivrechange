@@ -57,8 +57,8 @@
     					        </li>
     					        
     					        <li>
-    					        	<a href=""><i class="fa fa-globe" aria-hidden="true"></i>
-    Actus</a>
+    					        	<a href="<?=$this->url('updateMaps')?>"><i class="fa fa-globe" aria-hidden="true"></i>
+    Map</a>
     					        </li>
     					        <li>
     					        	<a target="_blank" href="<?=$this->url('default_home')?>" id="logout"><i class="fa fa-search" aria-hidden="true"></i>
