@@ -171,7 +171,7 @@ label {
   background-color: #fec503;
 }
 
-/****** RESPONSIVE ******/
+/****** RESPONSIVE NAVBAR ******/
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -288,8 +288,6 @@ section#contact .text-danger {
 footer {
   padding: 25px 0;
   background-color: #513856;
-
-  
 }
 
 footer span.copyright {
@@ -391,4 +389,8 @@ ul.social-buttons li a:active {
 
 .srch {
   font-size: 1.3em;
+}
+
+#book {
+  text-align: left;
 }

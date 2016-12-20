@@ -20,7 +20,7 @@
 <br>
 <form method="post" enctype="multipart/form-data">
 
-		<label  for="title">Titre :&nbsp;</label>
+		<label  for="title" id="book">Titre :&nbsp;</label>
 		<input type="text" id="title" name="title">
 		<br><br>
 

@@ -49,6 +49,27 @@ h2, h3, h5 {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
 
+/* boutons */
+.btnsubmit {
+  text-align: center;
+  margin-top: 20px;
+}
+.linebuttons {
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 30px;
+  color: #FFCFA4;
+  background-color: #C1264E;
+  width: 200px;
+  height: 70px;
+}
+
+.linebuttons:hover {
+  color: #513856;
+}
+
+
 /****** WRAPPER ******/
 #wrapper {
   width: 100%;
