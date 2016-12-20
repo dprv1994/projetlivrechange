@@ -9,7 +9,6 @@
 	<div class="btnsubmit">
 		<input type="submit" class="linebuttons" value="Rechercher">
 	<div>
-	<br><br>
 
 
 <div id="results"></div>
@@ -36,6 +35,7 @@
 				results.innerHTML += "<p>published Date:" + data.items[i].volumeInfo.publishedDate + "</p>"
 				results.innerHTML += "<p>Categories:" + data.items[i].volumeInfo.categories + "</p>"
 				results.innerHTML += "<p>img:" + '<img src="' + data.items[i].volumeInfo.imageLinks.thumbnail + '">' + "</p>"
+				results.innerHTML += "<p>ISBN:" + data.items[i].volumeInfo.industryIdentifiers.identifier + "</p>"
 			}
 		},
 
