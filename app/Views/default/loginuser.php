@@ -24,8 +24,9 @@
 		<input type="password" id="password" name="password">
 
 		<br><br>
-		<input type="submit" value="Se connecter">
-
+			<div class="btnsubmit">
+				<button type="submit" class="linebuttons" name="register">CONNEXION</button>
+			</div>
 		<br><br>
 	</form>
 
