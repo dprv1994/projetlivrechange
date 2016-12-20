@@ -154,6 +154,8 @@ Class AdminController extends Controller
 		if (empty($_SESSION)){
 			$this->showNotFound();
 		}
+		else{
+			
 			$UsersModel = new UsersModel();
 
 			$errors = [];
