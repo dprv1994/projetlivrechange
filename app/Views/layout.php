@@ -92,7 +92,7 @@
                 <?= $this->section('main_content') ?>
             </section>
             
-        </main>
+        
 		
 
         <footer>
@@ -117,9 +117,9 @@
             </div>
             </div>
         </footer>
-    </div>
-    </div><!-- fin wrapper -->
+ </main><!-- fin wrapper -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript" async="" src="https://d2ueh8f0j2xol3.cloudfront.net/subtle-patterns-bookmarklet/static/js/all.js?cb=0.045623373906986564"></script>
 <?= $this->section('js') ?>
 	
 </body>

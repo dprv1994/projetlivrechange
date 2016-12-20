@@ -16,13 +16,11 @@
 /****** BODY ******/
 body {
   box-sizing: border-box;
-  max-width: 1260px;
-  width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   color: #392338;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  background-color: #F7EBE1;
+  background: url(../img/paven.png);
   font-size: 1.5em;
 }
 
@@ -88,6 +86,9 @@ label {
 
 /****** WRAPPER ******/
 #wrapper {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
   background: white; /*couleur d'arrière plan du contenu principal du wrapper*/
 }
 
@@ -283,6 +284,7 @@ section#contact .text-danger {
 footer {
   padding: 25px 0;
   background-color: #513856;
+
   
 }
 
