@@ -61,9 +61,9 @@
     					        </li>
     					        
     					        <li>
-    					        	<a href="<?=$this->url('actus')?>">
+    					        	<a href="<?=$this->url('updateMaps')?>">
                                     <i class="fa fa-globe" aria-hidden="true">   
-                                    </i>Actus</a>
+                                    </i>Carte</a>
     					        </li>
     					        <li>
     					        	<a target="_blank" href="<?=$this->url('default_home')?>" id="logout">
