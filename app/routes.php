@@ -15,8 +15,8 @@
 		['GET|POST', '/contact', 'Users#contact', 'contact'],
 
 		// Books
-		['GET|POST', '/search', 'Book#search', 'search_book'],
-		['GET|POST', '/ajoutlivres', 'Book#ajoutLivres', 'add_book'],
+		['GET|POST', '/search', 'Books#search', 'search_book'],
+		['GET|POST', '/ajoutlivres', 'Books#ajoutLivres', 'add_book'],
 		
 		// Actu
 		['GET|POST', '/actu', 'Default#actu', 'user_actu'],

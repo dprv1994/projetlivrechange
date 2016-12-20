@@ -4,7 +4,7 @@ namespace Controller;
 
 use \W\Controller\Controller;
 use Model\UsersModel;
-use Model\BookModel;  
+use Model\BooksModel;  
 
 
 // Si on utilise "respect/validation". Ne pas oublier de l'ajouter via composer
@@ -13,7 +13,7 @@ use \Respect\Validation\Validator as v;
 use Intervention\Image\ImageManagerStatic as Image;
 
 
-class BookController extends Controller 
+class BooksController extends Controller 
 {
 /*
 	*
@@ -30,7 +30,7 @@ class BookController extends Controller
 		else{
 
 			//On instancie le modèle pour communiquer avec la BDD
-			$BookModel = new BookModel();
+			$BooksModel = new BooksModel();
 
 			$errors = [];
 			$post = [];
@@ -101,7 +101,7 @@ class BookController extends Controller
 
 				$user = $this->getUser(); // contient l'utilisateur connecté
 						 
-					$insert = $BookModel->insert( [
+					$insert = $BooksModel->insert( [
 						'title'			=> $post['title'],
 						'author'		=> $post['author'],
 						'category'		=> $post['category'],
@@ -131,13 +131,13 @@ class BookController extends Controller
 
 	public function ListAllBooks()
 	{
-		$UsersModel = new UsersModel();
-		$books = $UsersModel->findAll();
+		$BooksModel = new BooksModel();
+		$books = $BooksModel->findAll();
 
 		$data = ['books' => $books];
 
 		if (!empty($_SESSION)) {
-			$this->show('default/admin/bookList', $data);
+			$this->show('default/profiluser', $data);
 		}
 		else{
 			$this->redirectToRoute('default_home');

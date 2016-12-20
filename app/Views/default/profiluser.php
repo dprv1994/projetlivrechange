@@ -42,18 +42,20 @@
 			</thead>
 
 			<tbody>
-				<?php foreach ($books as $book): ?>		
-					<tr>	
-						<td><?=$book['picture_book'];?>></td>
-						<td><?=$book['title'];?></td>
-						<td><?=$book['author'];?></td>
-						<td><?=$book['category'];?></td>
-						<td><?=$book['condition'];?></td>
-					</tr>
-				<?php endforeach; ?>
+				<?php if (!empty($books)): ?>
+					<?php foreach ($books as $book): ?>		
+						<tr>	
+							<td><?=$book['picture_book'];?>></td>
+							<td><?=$book['title'];?></td>
+							<td><?=$book['author'];?></td>
+							<td><?=$book['category'];?></td>
+							<td><?=$book['condition'];?></td>
+						</tr>
+					<?php endforeach; ?>
+				<?php endif; ?>
 			</tbody>
 		</table>
-
+		
 		<!-- Url Ajouter un livre -->
 		<a href="<?=$this->url('add_book')?>">Ajouter un livre</a>
 		<br><br>
