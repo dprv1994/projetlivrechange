@@ -14,21 +14,25 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Votre nom *" id="name" required data-validation-required-message=" SVP entrez votre nom...">
+                                <label for="lastname">Nom :</label>
+                                    <input type="text" class="form-control" placeholder="Votre nom *" id="lastname" required data-validation-required-message=" SVP entrez votre nom...">
                                     <p class="help-block text-danger"></p>
                                 </div>
+                                <label for="email">Email :</label>
                                 <div class="form-group">
                                     <input type="email" class="form-control" placeholder="Votre Email *" id="email" required data-validation-required-message="">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="L'objet de votre message *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <label for="object">Objet :</label>
+                                    <input type="tel" class="form-control" placeholder="L'objet de votre message *" id="object" required data-validation-required-message="SVP entrez un objet.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Votre Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <label for="message">Message :</label>
+                                    <textarea class="form-control" placeholder="Votre Message *" id="message" required data-validation-required-message="SVP saisissez votre message"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
