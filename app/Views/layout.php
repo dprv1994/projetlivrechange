@@ -18,15 +18,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700" rel="stylesheet"> 
 
     <!-- Theme CSS -->
-    
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/styles.css') ?>">
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/styles.css') ?>">
  
 </head>
 <body id="page-top" class="index">
+    <!-- Début du wrapper -->
+    <div id="wrapper">
     
-    			<!-- Navigation -->
-        	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-                <div class="container1">
+    	<!-- Navigation -->
+        <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+            <div class="container1">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
                     <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -40,86 +41,77 @@
 
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <?php if (!empty($_SESSION)): ?>
-                                    <a class="page-scroll" href="<?=$this->url('profilUser') ?>">Mon profil</a>
-                                <?php endif; ?>
-                            <li>
-                                <a class="page-scroll" href="<?=$this->url('search_book')?>">Recherche</a>
-                            </li>
-
-                            <li>
-                                <?php if (!empty($_SESSION)): ?>
-                                    <a class="page-scroll" href="<?=$this->url('maps')?>">Lieux d'échange</a>
-                                <?php endif; ?>  
-                            </li>
-
-                            <li>
-                                <a class="page-scroll" href="<?=$this->url('user_actu')?>">Actus</a> 
-                            </li>
-
-                            <li>
-                                <a class="page-scroll" href="<?=$this->url('dons')?>">Dons</a>
-                            </li>
-
-                            <li>
-                                <?php if (empty($_SESSION)): ?>
-                                    <a class="page-scroll" href="<?=$this->url('loginUser')?>">Se connecter</a>
-                                <?php else : ?>
-                                    <a class="page-scroll" href="<?=$this->url('logoutUser')?>">Se deconnecter</a>
-                                <?php endif; ?>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- fin div container1 -->
-            <!-- <div id="top-bar">
-                <div id="logo"></div>
-                <div id="name-site">LivrEchange</div>
-            </div> -->
-           </nav> 
-		
-        <main id="wrapper">
-
-            <header>
-                <div id="conteneur-accueil">
-                <img src="<?=$this->assetUrl('img/livre-ouvert.jpg');?>" class="img-responsive" alt="Responsive image">
-                </div>
-            </header>
-
-            <section id="section_main">
-                <?= $this->section('main_content') ?>
-            </section>
-            
-        
-		
-
-        <footer>
-            <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; LivrEchange-2016</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <?php if (!empty($_SESSION)): ?>
+                                <a class="page-scroll" href="<?=$this->url('profilUser') ?>">Mon profil</a>
+                            <?php endif; ?>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li>
+                            <a class="page-scroll" href="<?=$this->url('search_book')?>">Recherche</a>
+                        </li>
+                        <li>
+                            <?php if (!empty($_SESSION)): ?>
+                                <a class="page-scroll" href="<?=$this->url('maps')?>">Lieux d'échange</a>
+                            <?php endif; ?>  
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="<?=$this->url('user_actu')?>">Actus</a> 
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="<?=$this->url('dons')?>">Dons</a>
+                        </li>
+                        <li>
+                            <?php if (empty($_SESSION)): ?>
+                                <a class="page-scroll" href="<?=$this->url('loginUser')?>">Se connecter</a>
+                            <?php else : ?>
+                                <a class="page-scroll" href="<?=$this->url('logoutUser')?>">Se deconnecter</a>
+                            <?php endif; ?>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <div id="contact">
-                        <a href="<?=$this->url('contact')?>">Nous contacter</a>
-                    </div> 
+            </div><!-- fin div container1 -->
+        </nav><!-- Fin navigation --> 
+		
+        <!-- En-tête de l'accueil -->
+        <header>
+            <div id="conteneur-accueil">
+                <img src="<?=$this->assetUrl('img/livre-ouvert.jpg');?>" class="img-responsive" alt="Responsive image">
+            </div>
+        </header>
+
+        <!-- Contenu de l'accueil -->
+        <section id="section_main">
+            <?= $this->section('main_content') ?>
+        </section>
+        
+        <!-- Pied de page -->    
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; LivrEchange-2016</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="contact">
+                            <a href="<?=$this->url('contact')?>">Nous contacter</a>
+                        </div> 
+                    </div>
                 </div>
             </div>
-            </div>
         </footer>
- </main><!-- fin wrapper -->
+    </div><!-- fin wrapper -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script type="text/javascript" async="" src="https://d2ueh8f0j2xol3.cloudfront.net/subtle-patterns-bookmarklet/static/js/all.js?cb=0.045623373906986564"></script>
+
 <?= $this->section('js') ?>
 	
 </body>

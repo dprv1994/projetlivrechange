@@ -6,6 +6,7 @@
 
 
 /* Partis d'un Bootstrap, que nous avons totalement modifié */
+
 @font-face{
   font-family: "master_of_break";
     src: url('../font/master_of_break.ttf');
@@ -13,7 +14,7 @@
 
 /**************** STYLES GENERIQUES ******************/
 
-/****** BODY ******/
+/********** BODY **********/
 body {
   box-sizing: border-box;
   margin: 0;
@@ -24,7 +25,7 @@ body {
   font-size: 1.5em;
 }
 
-/****** LIENS ******/
+/********** LIENS **********/
 a {
   color: #FFCFA4;
 }
@@ -33,7 +34,7 @@ a:hover {
   color: #c1264e;
 }
 
-/****** h1/h2/h3... ******/
+/********** h1/h2/h3... **********/
 h1 {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -58,7 +59,7 @@ li {
   list-style: none;
 }
 
-/* boutons */
+/********** boutons **********/
 .btnsubmit {
   text-align: center;
   margin-top: 20px;
@@ -84,7 +85,7 @@ li {
 
 /********************* FIN STYLES GENERIQUES ****************/
 
-/****** WRAPPER ******/
+/********** WRAPPER **********/
 #wrapper {
   max-width: 1260px;
   width: 100%;
@@ -92,7 +93,7 @@ li {
   background: white; /*couleur d'arrière plan du contenu principal du wrapper*/
 }
 
-/****** NAV-BAR ******/
+/********** NAV-BAR **********/
 #mainNav {
   max-width: 1260px;
   margin: 0 auto;
@@ -114,7 +115,7 @@ li {
 
 }
 
-/********** Menu burger ***********/
+/********** Menu burger **********/
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
@@ -167,7 +168,7 @@ li {
   background-color: #fec503;
 }
 
-/****** RESPONSIVE NAVBAR ******/
+/********** RESPONSIVE NAVBAR **********/
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -197,13 +198,13 @@ li {
   }
 }
 
-/****** ACCUEIL ******/
+/********** ACCUEIL **********/
 #conteneur-accueil { /*conteneur de l'image d'arrière plan*/
     /*font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     margin-bottom: 2em;
 }
 
-/* Contenu section */
+/********* Contenu section ***********/
 #container-colonnes {
   display: flex;
   flex-direction: row;
@@ -219,19 +220,19 @@ li {
  
 }
 
-/****** SECTION PRINCIPALE******/
+/********** SECTION PRINCIPALE **********/
 #section_main {
   text-align: center;
   font-size: 1.2em;
 }
 
-/* div texte */
+/********** div texte ***********/
 #texte {
   margin-right: 7em;
   margin-left: 7em;
 }
 
-/********* FORMULAIRE DE CONTACT *********/
+/********** FORMULAIRE DE CONTACT **********/
 section#contact .form-group {
   margin-bottom: 25px;
 }
@@ -280,7 +281,7 @@ section#contact .text-danger {
 }
 
 
-/****** FOOTER ******/
+/********** FOOTER **********/
 footer {
   padding: 25px 0;
   background-color: #513856;
@@ -305,7 +306,7 @@ footer #contact{
   font-size: 1.5em;
 }
 
-/* dispo colonnes */
+/********** dispo colonnes **********/
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -314,7 +315,7 @@ footer #contact{
 
 }
 
-/* boutons réseaux sociaux */
+/********** boutons réseaux sociaux **********/
 ul.social-buttons {
   margin-bottom: 0;
   text-align: center;
@@ -349,7 +350,7 @@ ul.social-buttons li a:active {
 
 }
 
-/****** MAP ******/
+/********** MAP **********/
 #map {
  
   height: 600px;
@@ -359,6 +360,7 @@ ul.social-buttons li a:active {
   border-radius: 10px;
   /*box-shadow: 10px 10px 10px #595959;*/
 }
+
 #map_text {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
@@ -368,7 +370,7 @@ ul.social-buttons li a:active {
 }
 
 
-/* 404 */
+/********** 404 **********/
 #conteneur-accueil-404 { /*conteneur de l'image d'arrière plan*/
     background: url(../img/404-livre-ouvert.jpg); /* no-repeat pour les petites images et éviter l'effet mosaïque */
     background-size: cover; /* l'image remplira tjs le "conteneur-accueil"*/
@@ -377,6 +379,7 @@ ul.social-buttons li a:active {
     margin-bottom: 2em;
 }
 
+/********** STYLE DE LA RECHERCHE DE LIVRES **********/
 #search {
   width: 50%;
   height: 2.5em;
@@ -387,6 +390,7 @@ ul.social-buttons li a:active {
   font-size: 1.3em;
 }
 
+/********** STYLES FORMULAIRES AJOUTLIVRES ET SIGNIN**********/
 .add {
   width: 650px;
   margin: auto;
