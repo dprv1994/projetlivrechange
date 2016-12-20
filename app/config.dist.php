@@ -19,7 +19,7 @@ $w_config = [
 	'security_login_route_name' => 'login',			//nom de la route affichant le formulaire de connexion
 
 	// configuration globale
-	'site_name'	=> '', 								// contiendra le nom du site
+	'site_name'	=> 'livrechange', 					// contiendra le nom du site
 
 	'upload_dir' => '/uploads/',					//Répertoire de stokage des images uploadées		
 ];
