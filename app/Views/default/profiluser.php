@@ -1,12 +1,10 @@
 
-
 <?php $this->layout('layout', ['title' => 'Votre profil ']) ?>
 
 <?php $this->start('main_content') ?>
 
 
 	<!-- AFFICHAGE DE MES DONNEES -->
-
 	<?php if (!empty($user)): ?>
 		<div id="container-colonnes">
 
@@ -21,9 +19,8 @@
 			</div>
 
 			<div id="image"><h2>Avatar :<br> 
-			<img src="<?=$this->assetUrl($upload.$user['picture'])?>"></h2> 
-			</div>
-					
+				<img src="<?=$this->assetUrl($upload.$user['picture'])?>"></h2> 
+			</div>			
 		</div>
 		
 		<a href="">Modifier mon profil</a>
@@ -37,6 +34,7 @@
 	<?php endif; ?>
 
 	<!-- AFFICHAGE DE MES LIVRES -->
+	<?php var_dump($this->e($books)); ?>
 
 	<?php if(!empty($books)): ?>
 		<h2>Liste des Livres</h2>
@@ -57,6 +55,7 @@
 				
 					<?php foreach ($books as $book): ?>		
 						<tr>	
+
 							<td><?=$book['picture_book'];?>></td>
 							<td><?=$book['title'];?></td>
 							<td><?=$book['author'];?></td>
@@ -77,7 +76,5 @@
 		<a href="<?=$this->url('add_book')?>">Ajouter un livre</a>
 		<br><br>
 
-	
-	
 
 <?php $this->stop('main_content') ?>

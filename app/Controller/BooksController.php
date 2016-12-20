@@ -132,19 +132,19 @@ class BooksController extends Controller
 	public function ListAllBooks()
 	{
 		$BooksModel = new BooksModel();
-		$books = $BooksModel->findAll();
+		$book = $BooksModel->Mybook();
 
-		$data = ['books' => $books];
+		$books = ['books' => $book];
 
 		if (!empty($_SESSION)) {
-			$this->show('default/profiluser', $data);
+			$this->show('default/profiluser', $books);
 		}
 		else{
 			$this->redirectToRoute('default_home');
 		}
 
 	}
-
+	
 	/**
 	 * Page Recherche livre
 	*/
