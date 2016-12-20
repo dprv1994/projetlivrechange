@@ -99,6 +99,7 @@ class UsersController extends Controller
 			//Permet de gérer l'affichage
 			$data = [
 				'user' => $user, 
+				'upload' => getApp()->getConfig('upload_dir'),
 			];
 		$this->show('default/profiluser', $data);
 		}
@@ -251,6 +252,12 @@ class UsersController extends Controller
 			$errors = [];
 			$post = [];
 			$success = false;
+
+			$folderUpload = getApp()->getConfig('upload_dir'); // Récupère la valeur de la clé "upload_dir" du fichier config
+			// Retournera : /chemin/vers/repertoire/framework/public/assets/uploads/
+			// $_SERVER['DOCUMENT_ROOT'] => Racine du site web.. en local, htdocs
+			// $_SERVER['W_BASE'] => Racine du framework (spécifique à W)
+			$fullFolderUpload = $_SERVER['DOCUMENT_ROOT'].$_SERVER['W_BASE'].'/assets'.$folderUpload;
 
 			if (!empty($_POST)) {
 				$post = array_map('trim', array_map('strip_tags',$_POST));
