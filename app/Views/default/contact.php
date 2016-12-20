@@ -5,7 +5,8 @@
     
     
     <h1> <i class="fa fa-paper-plane" aria-hidden="true"></i> Laissez-nous un message</h1>
-               
+    
+<form method="post">           
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -46,7 +47,8 @@
             </div>
         </div>
     </section>
-   <br><br>
+</form>
+<br><br>
 
 
 <?php $this->stop('main_content') ?>
