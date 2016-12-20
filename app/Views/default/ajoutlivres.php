@@ -41,7 +41,7 @@
 		<input type="file" id="picture" name="picture" placeholder="Votre image">
 		<br><br>
 
-		<label for="condition">Etat du Livre :&nbsp;</label>
+		<label for="s">Etat du Livre :&nbsp;</label>
 		<input type="text" id="condition" name="condition">
 		<br><br>
 

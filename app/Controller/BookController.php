@@ -27,7 +27,8 @@ class BookController extends Controller
 			$this->showNotFound();
 		}
 		else{
-
+			
+			//On instancie le modèle pour communiquer avec la BDD
 			$UsersModel = new UsersModel();
 
 			$errors = [];
@@ -51,7 +52,7 @@ class BookController extends Controller
 					$errors[] = 'le nom de l\'auteur doit faire entre 3 et 25 caractères';
 				}
 
-				if (!v::length(4, 20)->validate($post['category'])) {
+				if (!v::in($categ = ['Polar','SF','Romance', 'Biographie'])->validate($post['category'])) {
 					$errors[] = 'Il faut selectionné une catégories';
 				}
 
@@ -99,10 +100,7 @@ class BookController extends Controller
 
 				$user = $this->getUser(); // contient l'utilisateur connecté
 						 
-					//On instancie le modèle pour communiquer avec la BDD
-					$UserModel = new UsersModel();
-
-					$insert = $UserModel->insert( [
+					$insert = $UsersModel->insert( [
 						'title'			=> $post['title'],
 						'author'		=> $post['author'],
 						'category'		=> $post['category'],
@@ -129,6 +127,22 @@ class BookController extends Controller
 
 			$this->show('default/ajoutlivres', $params);
 		}	
+	}
+
+	public function ListAllBooks()
+	{
+		$UsersModel = new UsersModel();
+		$books = $UsersModel->findAll();
+
+		$data = ['books' => $books];
+
+		if (!empty($_SESSION)) {
+			$this->show('default/admin/bookList', $data);
+		}
+		else{
+			$this->redirectToRoute('default_home');
+		}
+
 	}
 
 	/**
