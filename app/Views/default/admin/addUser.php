@@ -1,9 +1,3 @@
-<?php session_start();
-	if (empty($_SESSION)){
-	header('Location: admin/login');
-	} 
- ?>
-
 <?php $this->layout('layoutBack', ['title' => 'Ajout d\'un utilisateur  ']) ?>
 
 <?php $this->start('main_content') ?>

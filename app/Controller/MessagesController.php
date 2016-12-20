@@ -14,6 +14,21 @@ use Intervention\Image\ImageManagerStatic as Image;
 
 class MessagesController extends Controller 
 {
+
+	/**
+	 * 
+	 * Page de messages reçu
+	**/
+	public function messages()
+	{
+		$this->show('default/admin/messages');
+
+	}
+	
+	/**
+	 * 
+	 * Page de envoyer messages 
+	**/
 	public function sendMessages()
 	{
 		$UsersModel = new UsersModel();
@@ -38,8 +53,40 @@ class MessagesController extends Controller
 				$errors[] = 'Votre objet doit faire entre 4 et 30 caractères';
 			}
 
+			if (!v::length(4, 30)->validate($post['message'])) {
+				$errors[] = 'Votre objet doit faire entre 4 et 30 caractères';
+			}
+
+			if (count($errors) === 0 ) {
+
+				//On instancie le modèle pour communiquer avec la BDD
+				$UserModel = new UsersModel();
+
+				$insert = $UsersModel->insert([
+					'name' => $post['name'],
+					'email' => $post['email'],
+					'subject' => $post['subjet'],
+					'message' => $post['message'],
+					]);
+
+				if ($insert) {
+					$success = true;
+				}
+				else{
+					$errors[] = 'Erreur lors de l\'ajout en BDD';
+				}
+			}
+		}
+
+		// Après le !empty($_POST) on envoi la vue et les éventuels paramètres
+		$params = [
+			'errors'  => $errors,
+			'success' => $success,
+		];
+
+		$this->show('default/signin', $params);	
 	}
 
 
-
 }
+
