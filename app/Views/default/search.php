@@ -7,7 +7,7 @@
 	<input type="text" id="search" name="search" placeholder="Titre ou auteur du livre...">
 	<br><br>
 	<div class="btnsubmit">
-	<input type="submit" class="linebuttons" value="Rechercher">
+	<input type="submit" id="submit" class="linebuttons" value="Rechercher">
 	<div>
 	<br><br>
 
