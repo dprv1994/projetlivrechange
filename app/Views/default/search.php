@@ -7,50 +7,44 @@
 	<input type="text" id="search" name="search" placeholder="Titre ou auteur du livre...">
 	<br><br>
 	<div class="btnsubmit">
-	<input type="submit" class="linebuttons" value="Rechercher">
+		<input type="submit" class="linebuttons" value="Rechercher">
 	<div>
 	<br><br>
 
+
+<div id="results"></div>
+
 <?php $this->stop('main_content') ?>
 
-	<div id="results"></div>
-	
-
-
 <!-- SCRIPTS JQuery DE LA PAGE POUR RECHERCHE LIVRE -->
-<?php $this->start('js') ?>
-
 <script>
 
 	function bookSearch(){
-		var search = document.getElementById('search').value
-		document.getElementById('results').innerHTML = ""
-		console.log(search);
+	var search = document.getElementById('search').value
+	document.getElementById('results').innerHTML = ""
+	console.log(search);
 
-		$.ajax({
-			url: "https://www.googleapis.com/books/v1/volumes?q=" + search,
-			dataType:"json",
+	$.ajax({
+		url: "https://www.googleapis.com/books/v1/volumes?q=" + search,
+		dataType:"json",
 
-			success:function(data){
+		success:function(data){
+			for(i = 0; i < data.items.length; i++){
+				results.innerHTML += "<h2>Title:" + data.items[i].volumeInfo.title + "</h2>"
+				results.innerHTML += "<h3>Authors:" + data.items[i].volumeInfo.authors  + "</h3>" 
+				results.innerHTML += "<h4>Publisher:" + data.items[i].volumeInfo.publisher  + "</h4>"  
+				results.innerHTML += "<p>published Date:" + data.items[i].volumeInfo.publishedDate + "</p>"
+				results.innerHTML += "<p>Categories:" + data.items[i].volumeInfo.categories + "</p>"
+				results.innerHTML += "<p>img:" + '<img src="' + data.items[i].volumeInfo.imageLinks.thumbnail + '">' + "</p>"
+			}
+		},
 
-				for(i = 0; i < data.items.length; i++){
-					results.innerHTML += "<h2>Title:" + data.items[i].volumeInfo.title + "</h2>"
-					results.innerHTML += "<h3>Authors:" + data.items[i].volumeInfo.authors  + "</h3>" 
-					results.innerHTML += "<h4>Publisher:" + data.items[i].volumeInfo.publisher  + "</h4>"  
-					results.innerHTML += "<p>published Date:" + data.items[i].volumeInfo.publishedDate + "</p>"
-					results.innerHTML += "<p>Categories:" + data.items[i].volumeInfo.categories + "</p>"
-					results.innerHTML += "<p>img:" + '<img src="' + data.items[i].volumeInfo.imageLinks.thumbnail + '">' + "</p>"
-					results.innerHTML += "<p>ISBN:" + data.items[i].volumeInfo.industryIdentifiers.identifier + "</p>"
-				}console.log(results);
-			},
-
-			type:'GET'
-		});
-	}
+		type:'GET'
+	});
+}
 
 document.getElementById('submit').addEventListener('click', bookSearch, false);
 
-	
 </script>
 
 <!-- ...................................APPEL A API GOOGLE BOOKS............................................... -->
