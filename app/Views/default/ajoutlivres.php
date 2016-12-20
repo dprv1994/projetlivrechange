@@ -18,7 +18,7 @@
 <h1>AJOUTER UN LIVRE</h1>
 
 <br>
-<div id="addbook">
+<div class="add">
 	<form method="post" enctype="multipart/form-data">
 
 		<label  for="title">Titre :&nbsp;</label>
@@ -51,7 +51,9 @@
 		<br><br>
 
 		<label for="s">Etat du Livre :&nbsp;</label>
+		<div class="center">
 		<input type="text" id="condition" name="condition">
+		</div>
 		<br><br>
 
 		<div class="btnsubmit">

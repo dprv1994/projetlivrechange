@@ -58,10 +58,6 @@ li {
   list-style: none;
 }
 
-label {
-  padding-right: 1em;
-}
-
 /* boutons */
 .btnsubmit {
   text-align: center;
@@ -391,13 +387,13 @@ ul.social-buttons li a:active {
   font-size: 1.3em;
 }
 
-#addbook {
-  width: 500px;
+.add {
+  width: 650px;
   margin: auto;
   text-align: left;
 }
 
 .center {
   float: right;
-  width: 70%
+  width: 70%;
 }
