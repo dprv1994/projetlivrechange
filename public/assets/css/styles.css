@@ -11,6 +11,8 @@
     src: url('../font/master_of_break.ttf');
 }
 
+/**************** STYLES GENERIQUES ******************/
+
 /****** BODY ******/
 body {
   box-sizing: border-box;
@@ -61,6 +63,28 @@ li {
 label {
   padding-right: 1em;
 }
+
+/* boutons */
+.btnsubmit {
+  text-align: center;
+  margin-top: 20px;
+}
+.linebuttons {
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 30px;
+  color: #FFCFA4;
+  background-color: #C1264E;
+  width: 200px;
+  height: 70px;
+}
+
+.linebuttons:hover {
+  color: #513856;
+}
+
+/********************* FIN STYLES GENERIQUES ****************/
 
 /****** WRAPPER ******/
 #wrapper {
@@ -158,11 +182,11 @@ label {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
-  /*.navbar-custom .navbar-nav > .active > a {
+  .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
-  }*/
+  }
 }
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: #222222;
     padding: 10px 0;
@@ -170,7 +194,7 @@ label {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
-}*/
+}
 
 /****** ACCUEIL ******/
 #conteneur-accueil { /*conteneur de l'image d'arrière plan*/
@@ -195,26 +219,6 @@ label {
  
 }
 
-/* bouton accueil */
-.btnsubmit {
-  text-align: center;
-  margin-top: 20px;
-}
-.linebuttons {
-  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-  border-radius: 8px;
-  font-size: 30px;
-  color: #FFCFA4;
-  background-color: #C1264E;
-  width: 200px;
-  height: 70px;
-}
-
-.linebuttons:hover {
-  color: #513856;
-}
-
 /****** SECTION PRINCIPALE******/
 #section_main {
   text-align: center;
@@ -227,8 +231,9 @@ label {
   margin-left: 7em;
 }
 
-section#contact .section-heading {
-  color: white;
+.section-heading {
+  color: black;
+  padding-bottom: 50px;
 }
 section#contact .form-group {
   margin-bottom: 25px;
@@ -248,27 +253,27 @@ section#contact .form-control:focus {
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact :-ms-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
