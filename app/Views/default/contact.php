@@ -2,7 +2,7 @@
 
 <?php $this->start('main_content') ?>
 
-<<<<<<< HEAD
+
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -48,7 +48,7 @@
     </section>
     <br><br>
     
-=======
+
 <div class="form">
 
     <h1>LAISSEZ-NOUS UN MESSAGE</h1>
@@ -83,5 +83,5 @@
         
 </div>
 
->>>>>>> origin/master
+
 <?php $this->stop('main_content') ?>
