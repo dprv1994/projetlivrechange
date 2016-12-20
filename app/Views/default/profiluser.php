@@ -5,7 +5,8 @@
 <?php $this->start('main_content') ?>
 
 
-	
+	<!-- AFFICHAGE DE MES DONNEES -->
+
 	<?php if (!empty($user)): ?>
 		<div id="container-colonnes">
 
@@ -28,6 +29,16 @@
 		<a href="">Modifier mon profil</a>
 		<br><br>
 
+	<?php else: ?>
+
+		<div class="alert alert-danger">
+			L'utilisateur n'existe pas
+		</div>
+	<?php endif; ?>
+
+	<!-- AFFICHAGE DE MES LIVRES -->
+
+	<?php if(!empty($books)): ?>
 		<h2>Liste des Livres</h2>
 		<br>
 		<!-- tableeau contenant les utilisateurset permettant d'accéder aux options -->
@@ -43,6 +54,7 @@
 			</thead>
 
 			<tbody>
+				
 					<?php foreach ($books as $book): ?>		
 						<tr>	
 							<td><?=$book['picture_book'];?>></td>
@@ -54,16 +66,18 @@
 					<?php endforeach; ?>
 			</tbody>
 		</table>
+	<?php else: ?>
+
+		<div class="alert alert-danger">
+			Vous n'avez pas de livres ajoutés
+		</div>
+	<?php endif; ?>
 		
 		<!-- Url Ajouter un livre -->
 		<a href="<?=$this->url('add_book')?>">Ajouter un livre</a>
 		<br><br>
 
-	<?php else: ?>
-		<div class="alert alert-danger">
-			L'utilisateur n'existe pas
-		</div>
-	<?php endif; ?>
+	
 	
 
 <?php $this->stop('main_content') ?>

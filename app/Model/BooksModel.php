@@ -6,12 +6,14 @@ class BooksModel extends \W\Model\Model
 
 	public function MyBooks()
 	{	
-		$requete = $bdd->prepare('SELECT books.title, users.username
-		FROM  users
+		$select = $bdd->prepare('SELECT books.title, users.username FROM users
 		INNER JOIN books
-		ON books.id_users = users.id')
+		ON books.id_users = users.id');
 
-		$requete->execute();
+		if ($select->execute()) {
+			$books = $select->fetchAll(PDO::FETCH_ASSOC);
+		}
+		
 	}
 
 }

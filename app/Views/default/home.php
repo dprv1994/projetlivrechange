@@ -28,14 +28,16 @@
 			</div>
 		</section>
 
-		<br><br><br><br>
-		<div class="btnsubmit">
-		<a href="<?=$this->url('user_signIn')?>">
-		<button type="submit" class="linebuttons" name="register">S'INSCRIRE</button>
-		</a>
-		</div>
+		<?php if (empty($_SESSION)): ?>
+			<br><br>
+			<div class="btnsubmit">
+				<a href="<?=$this->url('user_signIn')?>">
+				<button type="submit" class="linebuttons" name="register">S'INSCRIRE</button>
+				</a>
+			</div>
+		<?php endif; ?>
 		
-
+		
 		<!-- <br><br>
 		<section id="zone2">
 			<div class="colonne">
@@ -51,7 +53,6 @@
 				</div>
 			</div>
 		</section> -->
-
-		<br><br><br><br>
+		<br><br>
 
 <?php $this->stop('main_content') ?>

@@ -32,6 +32,7 @@
 
 		<label for="picture">Image:</label>
 		<input type="file" id="picture" name="picture" placeholder="Votre image">
+		<small id="fileHelp" class="form-text text-muted">256 x 256</small>
 		<br><br>
 
 		<label for="email">Email:</label>
