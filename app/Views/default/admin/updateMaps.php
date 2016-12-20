@@ -1,3 +1,8 @@
+<?php
+ 	if (empty($_SESSION)) {
+		$this->url('login');
+	} 
+	?>
 
 <?php $this->layout('layoutBack', ['title' => 'Gestion de la carte google maps']) ?>
 
