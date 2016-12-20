@@ -9,6 +9,8 @@ use \W\Security\AuthentificationModel;
 // Si on utilise "respect/validation". Ne pas oublier de l'ajouter via composer
 use \Respect\Validation\Validator as v;
 
+use Intervention\Image\ImageManagerStatic as Image;
+
 
 class UsersController extends Controller 
 {
@@ -205,7 +207,7 @@ class UsersController extends Controller
 				 	'firstname' => $post['firstname'],
 				 	'lastname'	=> $post['lastname'],
 				 	'username'	=> $post['username'],
-				 	'picture'	=> 'image',
+				 	'picture'	=> $imgName,
 				 	'email'		=> $post['email'],
 				 	'password'	=> $authModel->hashPassword($post['password']),
 				 	'role'		=> 'user',
