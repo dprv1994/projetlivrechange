@@ -2,6 +2,18 @@
 
 <?php $this->start('main_content') ?>
 
+<?php if(isset($errors) && !empty($errors)):?>
+	<div class="alert alert-danger">
+		<?=implode('<br>', $errors); ?>
+	</div>
+<?php endif; ?>
+
+<?php if(isset($success) && $success == true):?>
+	<div class="alert alert-success">
+		Vous avais bien été ajouté !
+	</div>
+<?php endif; ?>
+
 	<h2>Ajouter un utlisateur</h2>
 
 	<form method="post" enctype="multipart/form-data">

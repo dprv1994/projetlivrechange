@@ -64,7 +64,7 @@ Class AdminController extends Controller
 			//Deconnecte L'utilisateur 
 			$authModel->logUserOut();
 			
-			$this->show('default/admin/login');
+			$this->redirectToRoute('default_home');
 		}
 		//Si la SESSION EST VIDE 
 		$this->redirectToRoute('login');
@@ -155,7 +155,7 @@ Class AdminController extends Controller
 			$this->showNotFound();
 		}
 		else{
-			
+
 			$UsersModel = new UsersModel();
 
 			$errors = [];
@@ -273,7 +273,7 @@ Class AdminController extends Controller
 				'success' => $success,
 			];
 
-			$this->show('default/addUser', $params);
+			$this->show('default/admin/addUser', $params);
 		}
 	}
 
