@@ -82,6 +82,10 @@ label {
   color: #513856;
 }
 
+#user {
+  text-align: left;
+}
+
 /********************* FIN STYLES GENERIQUES ****************/
 
 /****** WRAPPER ******/

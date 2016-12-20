@@ -11,7 +11,7 @@
 
 			<div id="profil">
 				<h2>Mon profil :</h2>
-					<ul>
+					<ul id="user">
 						<li>Pseudo : <?=$user['username'];?></li>
 						<li>Prénom : <?=$user['firstname'];?></li>
 						<li>Nom : <?=$user['lastname'];?></li>
@@ -19,7 +19,8 @@
 					</ul>
 			</div>
 
-			<div id="image"><h2>Avatar : <img src="<?=$this->assetUrl($upload.$user['picture'])?>"></h2> 
+			<div id="image"><h2>Avatar :<br> 
+			<img src="<?=$this->assetUrl($upload.$user['picture'])?>"></h2> 
 			</div>
 					
 		</div>
