@@ -24,6 +24,7 @@ class BooksModel extends \W\Model\Model
 
 		$sql = 'SELECT * FROM books 
 				INNER JOIN users
+				WHERE users.id = books.id_user';
 
 		$select = $bdd->prepare($sql);
 
