@@ -2,6 +2,13 @@
 
 <?php $this->start('main_content') ?>
 
+<!-- AFFICHE LES ERREUR -->
+<?php if (isset($errors) && !empty($errors)): ?>
+	<div class="alert alert-danger">
+		<?=$errors;?>
+	</div>
+<?php endif; ?>
+
 <h1>AJOUTER UN LIVRE</h1>
 
 <br>
