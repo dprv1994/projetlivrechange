@@ -198,7 +198,6 @@ label {
 
 /****** ACCUEIL ******/
 #conteneur-accueil { /*conteneur de l'image d'arrière plan*/
-    height: 59em;/* hauteur exprimée en em pour le responsive design */
     /*font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     margin-bottom: 2em;
 }

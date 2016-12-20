@@ -26,16 +26,16 @@ class MessagesController extends Controller
 		if (!empty($_POST)) {
 			$post = array_map('trim', array_map('strip_tags',$_POST));
 		
-			if (!v::length(3, 25)->validate($post['firstname'])) {
-				$errors[] = 'Votre prénom doit faire entre 3 et 25 caractères';
+			if (!v::length(3, 50)->validate($post['name'])) {
+				$errors[] = 'Votre nom complet doit faire entre 3 et 50 caractères';
 			}
 
-			if (!v::length(3, 25)->validate($post['lastname'])) {
-				$errors[] = 'Votre nom doit faire entre 3 et 25 caractères';
+			if (!v::email()->validate($post['email'])) {
+				$errors[] = 'Votre e-mail n\'est pas valide';
 			}
 
-			if (!v::length(4, 20)->validate($post['username'])) {
-				$errors[] = 'Votre nom d\'utilisateur doit faire entre 4 et 20 caractères';
+			if (!v::length(4, 30)->validate($post['subject'])) {
+				$errors[] = 'Votre objet doit faire entre 4 et 30 caractères';
 			}
 
 	}
