@@ -24,8 +24,8 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                <label for="object">Objet :</label>
-                                    <input type="tel" class="form-control" placeholder="L'objet de votre message *" id="object" required data-validation-required-message="SVP entrez un objet.">
+                                <label for="subject">Objet :</label>
+                                    <input type="tel" class="form-control" placeholder="L'objet de votre message *" id="subject" required data-validation-required-message="SVP entrez un objet.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
