@@ -12,11 +12,11 @@
 		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
 		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
 		['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
-		['GET|POST', '/ajoutlivres', 'Users#ajoutLivres', 'add_book'],
 		['GET|POST', '/contact', 'Users#contact', 'contact'],
 
 		// Books
-		['GET|POST', '/search', 'Default#search', 'search_book'],
+		['GET|POST', '/search', 'Book#search', 'search_book'],
+		['GET|POST', '/ajoutlivres', 'Book#ajoutLivres', 'add_book'],
 		
 
 		// Actu
@@ -33,7 +33,7 @@
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],
-		['GET|POST', '/admin/logout', 'Admin#logOut', 'logout'],
+		['GET|POST', '/admin/logout', 'Admin#logout', 'logout'],
 		['GET|POST', '/admin/indexBack', 'Admin#indexBack', 'indexBack'],
 
 		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],

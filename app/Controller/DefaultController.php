@@ -24,14 +24,6 @@ class DefaultController extends Controller
 		$this->show('default/loginuser');
 	}
 
-	/**
-	 * Page Recherche livre
-	*/
-	public function search()
-	{
-		$this->show('default/search');
-
-	}
 
 	/**
 	 * Page actualités
