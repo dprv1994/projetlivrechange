@@ -3,8 +3,9 @@
 namespace Controller;
 
 use \W\Controller\Controller;
-use \W\Model\UsersModel; //as Users;
-use  Model\AdminModel;
+use Model\UsersModel;
+use Model\BookModel;  
+
 
 // Si on utilise "respect/validation". Ne pas oublier de l'ajouter via composer
 use \Respect\Validation\Validator as v;
@@ -27,9 +28,9 @@ class BookController extends Controller
 			$this->showNotFound();
 		}
 		else{
-			
+
 			//On instancie le modèle pour communiquer avec la BDD
-			$UsersModel = new UsersModel();
+			$BookModel = new BookModel();
 
 			$errors = [];
 			$post = [];
@@ -52,7 +53,7 @@ class BookController extends Controller
 					$errors[] = 'le nom de l\'auteur doit faire entre 3 et 25 caractères';
 				}
 
-				if (!v::in($categ = ['Polar','SF','Romance', 'Biographie'])->validate($post['category'])) {
+				if (!v::in(['Polar','SF','Romance', 'Biographie'])->validate($post['category'])) {
 					$errors[] = 'Il faut selectionné une catégories';
 				}
 
@@ -100,7 +101,7 @@ class BookController extends Controller
 
 				$user = $this->getUser(); // contient l'utilisateur connecté
 						 
-					$insert = $UsersModel->insert( [
+					$insert = $BookModel->insert( [
 						'title'			=> $post['title'],
 						'author'		=> $post['author'],
 						'category'		=> $post['category'],
@@ -114,7 +115,6 @@ class BookController extends Controller
 					else{
 
 						$errors[] = 'Erreur lors de l\'ajout en BDD';
-						var_dump($errors);
 					}
 				}
 			}
