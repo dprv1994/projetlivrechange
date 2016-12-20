@@ -15,7 +15,7 @@
 Liste des utilisateurs</h2>
 		<br>
 
-	<!-- tableeau contenant les utilisateurset permettant d'accéder aux options -->
+	<!-- tableau contenant les utilisateurs et permettant d'accéder aux options -->
 		<table class="table">
 			<thead>
 				<tr>
@@ -26,7 +26,7 @@ Liste des utilisateurs</h2>
 					<th>Email</th>
 					<th>Rôle</th>
 					<th>Profil</th>
-					<th>Action</th>
+					<th colspan="2">Action</th>
 				</tr>
 			</thead>
 			<tbody>
