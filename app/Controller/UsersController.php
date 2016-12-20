@@ -143,7 +143,7 @@ class UsersController extends Controller
 			}
 
 			if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
-				$errors[] = 'L\'image n\'est pas valide';
+				$errors[] = 'Le fichier envoyé n\'est pas une image valide';
 			}
 
 			if (!v::email()->validate($post['email'])) {
@@ -159,14 +159,49 @@ class UsersController extends Controller
 				$errors[] = 'Le mot de passe doit avoir au moins 7 caractères';
 			}
 
+			// Vérifie que l'image a bien été uploadée
+			if(!v::uploaded()->validate($_FILES['picture']['tmp_name'])){
+				$errors[] = 'Une erreur est survenue lors de l\'upload de l\'image';
+			}
+
 			if (count($errors) === 0 ) {
-				 
-				 $authModel = new AuthentificationModel(); // Permet d'utiliser la fonction de hash de password
 
-				 //On instancie le modèle pour communiquer avec la BDD
-				 $UserModel = new UsersModel();
+				// dossier des images => /public/assets/upload/
+				// Créer le dossier des images si inexistant
+				if(!is_dir($fullFolderUpload)){
+					mkdir($fullFolderUpload, 0755);
+				}
 
-				 $insert = $UserModel->insert( [
+				$img = Image::make($_FILES['picture']['tmp_name']);
+
+				// On définit l'extension de l'image en fonction de son mimeType
+				switch($img->mime()){
+					case 'image/jpg':
+					case 'image/jpeg':
+						$extension = '.jpg';
+					break;
+					case 'image/png':
+						$extension = '.png';
+					break;
+					case 'image/gif':
+						$extension = '.gif';
+					break;
+
+				}
+
+				// Le nom de l'image + son extension
+				$imgName = uniqid('art_').$extension;
+				// On sauvegarde l'image 
+				$img->save($fullFolderUpload.$imgName);
+
+				$user = $this->getUser(); // contient l'utilisateur connecté
+
+				$authModel = new AuthentificationModel(); // Permet d'utiliser la fonction de hash de password
+
+				//On instancie le modèle pour communiquer avec la BDD
+				$UserModel = new UsersModel();
+
+				$insert = $UserModel->insert([
 				 	'firstname' => $post['firstname'],
 				 	'lastname'	=> $post['lastname'],
 				 	'username'	=> $post['username'],
@@ -174,7 +209,7 @@ class UsersController extends Controller
 				 	'email'		=> $post['email'],
 				 	'password'	=> $authModel->hashPassword($post['password']),
 				 	'role'		=> 'user',
-				 ]);
+				]);
 
 				if ($insert) {
 					$success = true;
