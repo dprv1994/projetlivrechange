@@ -391,6 +391,13 @@ ul.social-buttons li a:active {
   font-size: 1.3em;
 }
 
-#book {
+#addbook {
+  width: 500px;
+  margin: auto;
   text-align: left;
+}
+
+.center {
+  float: right;
+  width: 70%
 }
