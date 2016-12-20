@@ -10,7 +10,7 @@
 
 	<h2>Ajouter un utlisateur</h2>
 
-	<form method="POST">
+	<form method="post" enctype="multipart/form-data">
 		
 		<label  for="firstname">Prénom:</label>
 		<input type="text" id="firstname" name="firstname">

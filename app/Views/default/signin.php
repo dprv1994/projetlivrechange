@@ -16,7 +16,7 @@
 	
 	<h2>Page D'inscription</h2>
 		
-	<form method="post">
+	<form method="post" enctype="multipart/form-data">
 
 		<label  for="firstname">Prénom:</label>
 		<input type="text" id="firstname" name="firstname">

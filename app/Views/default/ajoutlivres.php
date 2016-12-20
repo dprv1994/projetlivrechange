@@ -3,16 +3,22 @@
 <?php $this->start('main_content') ?>
 
 <!-- AFFICHE LES ERREUR -->
-<?php if (isset($errors) && !empty($errors)): ?>
+<?php if(isset($errors) && !empty($errors)):?>
 	<div class="alert alert-danger">
-		<?=$errors;?>
+		<?=implode('<br>', $errors); ?>
+	</div>
+<?php endif; ?>
+
+<?php if(isset($success) && $success == true):?>
+	<div class="alert alert-success">
+		Vous avais bien été ajouté !
 	</div>
 <?php endif; ?>
 
 <h1>AJOUTER UN LIVRE</h1>
 
 <br>
-<form method="post">
+<form method="post" enctype="multipart/form-data">
 
 		<label  for="title">Titre :&nbsp;</label>
 		<input type="text" id="title" name="title">

@@ -16,6 +16,7 @@
 					<li>Prénom : <?=$user['firstname'];?></li>
 					<li>Nom : <?=$user['lastname'];?></li>
 					<li>Email : <?=$user['email'];?></li>
+					<li>Avatar: <img src="<?='/uploads/'.$this->assetUrl($user['picture'])?>"> </li>
 				</ul>
 				<a href="">Modifier mon profil</a>
 			</div>

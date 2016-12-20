@@ -20,6 +20,8 @@ $w_config = [
 
 	// configuration globale
 	'site_name'	=> '', 								// contiendra le nom du site
+
+	'upload_dir' => '/uploads/',					//Répertoire de stokage des images uploadées		
 ];
 
 require('routes.php');

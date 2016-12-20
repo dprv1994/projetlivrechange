@@ -115,6 +115,13 @@ class UsersController extends Controller
 		$post = [];
 		$success = false;
 
+		$folderUpload = getApp()->getConfig('upload_dir'); // Récupère la valeur de la clé "upload_dir" du fichier config
+		// Retournera : /chemin/vers/repertoire/framework/public/assets/uploads/
+		// $_SERVER['DOCUMENT_ROOT'] => Racine du site web.. en local, htdocs
+		// $_SERVER['W_BASE'] => Racine du framework (spécifique à W)
+		$fullFolderUpload = $_SERVER['DOCUMENT_ROOT'].$_SERVER['W_BASE'].'/assets'.$folderUpload;
+
+
 		if (!empty($_POST)) {
 			$post = array_map('trim', array_map('strip_tags',$_POST));
 		
@@ -135,9 +142,9 @@ class UsersController extends Controller
 				$errors[] = 'Le pseudo est déjà utilisé';
 			}
 
-			/*if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
+			if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
 				$errors[] = 'L\'image n\'est pas valide';
-			}*/
+			}
 
 			if (!v::email()->validate($post['email'])) {
 				$errors[] = 'Votre e-mail n\'est pas valide';
@@ -163,7 +170,7 @@ class UsersController extends Controller
 				 	'firstname' => $post['firstname'],
 				 	'lastname'	=> $post['lastname'],
 				 	'username'	=> $post['username'],
-				 	/*'picture'	=> $_FILES['picture'],*/
+				 	'picture'	=> 'image',
 				 	'email'		=> $post['email'],
 				 	'password'	=> $authModel->hashPassword($post['password']),
 				 	'role'		=> 'user',
@@ -196,65 +203,73 @@ class UsersController extends Controller
 	public function ajoutlivres()
 	{
 
-	$UsersModel = new UsersModel();
-
-	$errors = [];
-	$post = [];
-	$success = false;
-
-		if (!empty($_POST)) {
-			$post = array_map('trim', array_map('strip_tags',$_POST));
-		
-			if (!v::length(3, 25)->validate($post['title'])) {
-				$errors[] = 'Le titre doit faire entre 3 et 25 caractères';
-			}
-
-			if (!v::length(3, 25)->validate($post['author'])) {
-				$errors[] = 'le nom de l\'auteur doit faire entre 3 et 25 caractères';
-			}
-
-			if (!v::length(4, 20)->validate($post['category'])) {
-				$errors[] = 'la catégories doit faire entre 4 et 20 caractères';
-			}
-
-			/*if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
-				$errors[] = 'L\'image n\'est pas valide';
-			}*/
-
-			if (!v::length(3,null)->validate($post['condition'])) {
-				$errors[] = 'L\'etat du livre doit avoir au moins 3 caractères';
-			}
-
-			if (count($errors) === 0 ) {
-				 
-				 //On instancie le modèle pour communiquer avec la BDD
-				 $UserModel = new UsersModel();
-
-				 $insert = $UserModel->insert( [
-				 	'title'		=> $post['title'],
-				 	'author'	=> $post['author'],
-				 	'category'	=> $post['category'],
-				 	/*'picture'	=> $_FILES['picture'],*/
-				 	'condition'		=> $post['condition'],
-				 	
-				 ]);
-
-				if ($insert) {
-					$success = true;
-				}
-				else{
-					$errors[] = 'Erreur lors de l\'ajout en BDD';
-				}
-			}
+		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
+		if (empty($_SESSION)){
+			$this->showNotFound();
 		}
+		else{
 
-		// Après le !empty($_POST) on envoi la vue et les éventuels paramètres
-		$params = [
-			'errors'  => $errors,
-			'success' => $success,
-		];
-		$this->show('default/ajoutlivres', $params);
-		
+			$UsersModel = new UsersModel();
+
+			$errors = [];
+			$post = [];
+			$success = false;
+
+			if (!empty($_POST)) {
+				$post = array_map('trim', array_map('strip_tags',$_POST));
+				
+				if (!v::length(3, 25)->validate($post['title'])) {
+					$errors[] = 'Le titre doit faire entre 3 et 25 caractères';
+				}
+
+				if (!v::length(3, 25)->validate($post['author'])) {
+					$errors[] = 'le nom de l\'auteur doit faire entre 3 et 25 caractères';
+				}
+
+				if (!v::length(4, 20)->validate($post['category'])) {
+					$errors[] = 'Il faut selectionné une catégories';
+				}
+
+				if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
+					$errors[] = 'L\'image n\'est pas valide';
+				}
+
+				if (!v::length(3,null)->validate($post['condition'])) {
+					$errors[] = 'L\'etat du livre doit avoir au moins 3 caractères';
+				}
+
+				if (count($errors) === 0 ) {
+						 
+					//On instancie le modèle pour communiquer avec la BDD
+					$UserModel = new UsersModel();
+
+					$insert = $UserModel->insert( [
+					'title'			=> $post['title'],
+					'author'		=> $post['author'],
+					'category'		=> $post['category'],
+					'picture_book'  => 'image',
+					'condition'		=> $post['condition'], 	
+					]);
+
+					if ($insert) {
+						$success = true;
+					}
+					else{
+
+						$errors[] = 'Erreur lors de l\'ajout en BDD';
+						var_dump($errors);
+					}
+				}
+			}
+
+			// Après le !empty($_POST) on envoi la vue et les éventuels paramètres
+			$params = [
+				'errors'  => $errors,
+				'success' => $success,
+			];
+
+			$this->show('default/ajoutlivres', $params);
+		}	
 	}
 
 	/**
