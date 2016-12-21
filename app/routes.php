@@ -23,10 +23,10 @@
 		// Actu
 		['GET|POST', '/actu', 'Default#actu', 'user_actu'],
 
-		['GET|POST', '/admin/actus', 'Admin#actus', 'actus'],
-		['GET|POST', '/admin/updateActu', 'Admin#updateActu', 'updateActu'],
-		['GET|POST', '/admin/addActu', 'Admin#addActu', 'addActu'],
-		['GET', '/admin/deleteActu', 'Admin#deleteActu', 'deleteActu'],
+		['GET|POST', '/admin/actus', 'Actu#actus', 'actus'],
+		['GET|POST', '/admin/updateActu', 'Actu#updateActu', 'updateActu'],
+		['GET|POST', '/admin/addActu', 'Actu#addActu', 'addActu'],
+		['GET', '/admin/deleteActu', 'Actu#deleteActu', 'deleteActu'],
 
 		// Dons
 		['GET', '/dons', 'Default#dons', 'dons'],
