@@ -1,10 +1,22 @@
 <!-- SI ADMIN PEUT, AUTRE NON -->
 
-<?php $this->layout('layoutBack', ['title' => 'Modifier un utilisateur  ']) ?>
+<?php $this->layout('layoutBack', ['title' => 'Modifier un utilisateur ']) ?>
 
 <?php $this->start('main_content') ?>
 
 <h2>Modifier un utlisateur</h2>
+
+<?php if(isset($errors) && !empty($errors)):?>
+	<div class="alert alert-danger">
+		<?=implode('<br>', $errors); ?>
+	</div>
+<?php endif; ?>
+
+<?php if(isset($success) && $success == true):?>
+	<div class="alert alert-success">
+		Votre profil a bien été modifié !
+	</div>
+<?php endif; ?>
 
 <br>
 <div class="add">
@@ -12,19 +24,13 @@
 		
 		<label  for="firstname">Prénom :</label>
 		<div class="center">
-		<input type="text" id="firstname" name="firstname">
+		<input type="text" id="firstname" name="firstname" placeholder="<?=$w_user['firstname'];?>">
 		</div>
 		<br><br>
 
 		<label for="lastname">Nom :</label>
 		<div class="center">
-		<input type="text" id="lastname" name="lastname">
-		</div>
-		<br><br>
-
-		<label for="username">Pseudo :</label>
-		<div class="center">
-		<input type="text" id="username" name="username">
+		<input type="text" id="lastname" name="lastname" placeholder="<?=$w_user['lastname'];?>">
 		</div>
 		<br><br>
 
@@ -36,19 +42,19 @@
 
 		<label for="email">Email:</label>
 		<div class="center">
-		<input type="email" id="email" name="email">
+		<input type="email" id="email" name="email" placeholder="<?=$w_user['email'];?>">
 		</div>
 		<br><br>
 
 
-		<label for="password">Mot de passe:</label>
+<!-- 		<label for="password">Mot de passe:</label>
 		<div class="center">
 		<input type="password" id="password" name="password">
 		</div>
-		<br><br>
+		<br><br> -->
 
 		
-		<label for="role">role:</label>
+		<label for="role">Rôle:</label>
 		<div class="center">
 		<select name="role">
 			<option>admin</option>

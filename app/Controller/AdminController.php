@@ -289,7 +289,7 @@ Class AdminController extends Controller
 		}
 	}
 
-	public function updateUser($id)
+	public function updateUserBack($id)
 	{
 		if (!empty($this->getUser())){
 				
@@ -370,7 +370,7 @@ Class AdminController extends Controller
 				'success' => $success,
 			];
 
-			$this->show('default/admin/list', $params);
+			$this->show('default/admin/updateUserBack', $params);
 		}
 		else{ 
 			$this->redirectToRoute('login');

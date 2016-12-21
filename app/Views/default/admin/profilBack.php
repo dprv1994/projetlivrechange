@@ -6,11 +6,10 @@
 
 
 	<div class="container-profil-back">
-		<?php if (!empty($user)): ?>
+		<?php if (!empty($w_user)): ?>
 
 			<h2>Utilisateur : <?=$user['username']?></h2>
-			<h5><a href="<?=$this->url('user_updateBack')?>"><i class="fa fa-cog" aria-hidden="true"></i>
- OPTIONS</a></h5>
+			<h5><a href="<?=$this->url('updateUserBack', ['id' => $user['id']])?>"><i class="fa fa-cog" aria-hidden="true"></i> Modifier</a></h5>
 
 			<h3><i class="fa fa-book" aria-hidden="true"></i>
  Informations :</h3>
@@ -23,7 +22,7 @@
 				<br>
 				<li><strong>Rôle :</strong> <?=$user['role'];?></li>
 				<br>
-				<li><strong>Photo :</strong> <br><?=$user['picture'];?></li>
+				<li><strong>Photo :</strong> <br><img src="<?=$this->assetUrl($upload.$user['picture'])?>"></li>
 			</ul>
 
 		<?php else: ?>
