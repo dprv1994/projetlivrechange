@@ -47,7 +47,7 @@
 						</select>
 					<br><br>
 
-					<label for="time">Heure :</label>
+					<label for="time">Quand :</label>
 						<select name="hour">
 							<option value="" selected disabled>Heure</option>
 							<?php for($i=0;$i<=23;$i++): ?>

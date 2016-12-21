@@ -22,7 +22,7 @@
 				</thead>
 
 				<tbody>
-				<?php foreach ($users as $user): ?>
+				<?php foreach ($actus as $actu): ?>
 					<tr>
 						<td><?=$actu['event'];?></td>
 						<td><?=$actu['who'];?></td>

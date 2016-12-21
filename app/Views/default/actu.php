@@ -25,12 +25,14 @@
 		</thead>
 
 		<tbody>
-			<tr>
-				<td>Rencontre/Dédicace</td>
-				<td>Guy Delisle/Christophe André</td>
-				<td>Bordeaux</td>
-				<td>03/02/17 à 17h</td>
-			</tr>
+			<?php foreach ($actus as $actu): ?>
+				<tr>
+					<td><?=$actu['event'];?></td>
+					<td><?=$actu['who'];?></td>
+					<td><?=$actu['place'];?></td>
+					<td><?=$actu['date'];?> à <?=$actu['time'];?></td>
+				</tr>
+			<?php endforeach; ?>
 		</tbody>
 	</table>
 

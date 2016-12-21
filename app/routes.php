@@ -24,7 +24,7 @@
 		['GET|POST', '/actu', 'Default#actu', 'user_actu'],
 
 		['GET|POST', '/admin/actus', 'Actu#actus', 'actus'],
-		['GET|POST', '/admin/updateActu', 'Actu#updateActu', 'updateActu'],
+		['GET|POST', '/admin/listActu', 'Actu#listActu', 'listActu'],
 		['GET|POST', '/admin/addActu', 'Actu#addActu', 'addActu'],
 		['GET', '/admin/deleteActu', 'Actu#deleteActu', 'deleteActu'],
 

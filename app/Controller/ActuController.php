@@ -23,12 +23,12 @@ Class ActuController extends Controller
 	}
 
 	/**
-	* Page de mise à jour des infos du site
+	* Page de liste et de mise à jour des infos du site
 	*
 	*/
-	public function updateActu()
+	public function listActu()
 	{
-		$this->show('default/admin/updateActu');
+		$this->show('default/admin/listActu');
 	}
 
 	/**
