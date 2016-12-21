@@ -17,6 +17,7 @@
 						<th>Qui ?</th>
 						<th>Lieu</th>
 						<th>Date</th>
+						<th>Action</th>
 					</tr>
 				</thead>
 
@@ -26,6 +27,10 @@
 						<td>Guy Delisle/Christophe André</td>
 						<td>Bordeaux</td>
 						<td>03/02/17 à 17h</td>
+						<td>
+						<a href="<?=$this->url('deleteActu', ['id' => $actu['id']]);?>">
+					Supprimer</a>
+						</td>
 					</tr>
 				</tbody>
 			</table>

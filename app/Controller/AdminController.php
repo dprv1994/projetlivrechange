@@ -389,5 +389,10 @@ Class AdminController extends Controller
 	{
 		$this->show('default/admin/addActu');
 	}
+
+	public function deleteActu()
+	{
+		$this->show('default/admin/deleteActu');
+	}
 }
 
