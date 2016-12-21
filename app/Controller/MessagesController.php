@@ -19,9 +19,16 @@ class MessagesController extends Controller
 	 * 
 	 * Page de messages reçu
 	**/
-	public function messages()
+	public function listmessages()
 	{
-		$this->show('default/admin/messages');
+		$listmsg = new MessagesModel();
+		$msg = $listmsg->findAll();
+
+		$data = [
+			'messages' => $msg
+		];
+
+		$this->show('default/admin/messages', $data);
 
 	}
 	
