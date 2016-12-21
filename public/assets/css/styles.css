@@ -59,6 +59,9 @@ li {
   list-style: none;
 }
 
+th {
+  text-align: center;
+}
 /********** boutons **********/
 .btnsubmit {
   text-align: center;
@@ -356,9 +359,8 @@ ul.social-buttons li a:active {
   height: 600px;
   width: 700px;
   margin-left: 270px;
-  border: 15px #E1214E solid;
-  border-radius: 10px;
-  /*box-shadow: 10px 10px 10px #595959;*/
+  border: 1px black solid;
+  box-shadow: 3px 3px 3px;
 }
 
 #map_text {

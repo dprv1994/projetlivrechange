@@ -17,7 +17,7 @@
 
 	<br>
 	
-	<strong>Rendez-vous <a href="https://www.recyclivre.com/donner-ses-livres.php" target="_blanck">ici</a> pour participer à leur projet !</strong></p>
+	<p><strong>Rendez-vous <a href="https://www.recyclivre.com/donner-ses-livres.php" target="_blanck">ici</a> pour participer à leur projet !</strong></p>
 </body>
 
 <br><br><br><br><br>
