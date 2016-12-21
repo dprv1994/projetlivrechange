@@ -2,9 +2,7 @@
 
 <?php $this->start('main_content') ?>
 
-    
-    
-    <h1> <i class="fa fa-paper-plane" aria-hidden="true"></i> Laissez-nous un message</h1>
+<h1> <i class="fa fa-paper-plane" aria-hidden="true"></i> Laissez-nous un message</h1>
     
 <form method="post">           
     <section id="contact">
@@ -16,7 +14,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                 <label for="name">Nom complet :</label>
-                                    <input type="text" class="form-control" placeholder="Votre nom *" id="name" name="name" required data-validation-required-message=" SVP entrez votre nom...">
+                                    <input type="text" class="form-control" placeholder="Votre nom complet" id="name" name="name" required data-validation-required-message=" SVP entrez votre nom...">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <label for="email">Email :</label>
@@ -39,7 +37,7 @@
                             </div>
                             <div class="col-lg-12 text-center">
                                 <div class="btnsubmit">
-                                <button type="submit" class="linebuttons">ENVOYER</button>
+                                <button type="submit" id="submit" class="linebuttons">ENVOYER</button>
                                 </div>
                             </div>
                     </form>

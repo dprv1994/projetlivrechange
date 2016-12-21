@@ -65,12 +65,13 @@ class MessagesController extends Controller
 				$insert = $UsersModel->insert([
 					'name' => $post['name'],
 					'email' => $post['email'],
-					'subject' => $post['subjet'],
+					'subject' => $post['subject'],
 					'message' => $post['message'],
 					]);
 
 				if ($insert) {
 					$success = true;
+					var_dump($insert);
 				}
 				else{
 					$errors[] = 'Erreur lors de l\'ajout en BDD';
@@ -84,7 +85,7 @@ class MessagesController extends Controller
 			'success' => $success,
 		];
 
-		$this->show('default/signin', $params);	
+		$this->show('default/contact', $params);	
 	}
 
 

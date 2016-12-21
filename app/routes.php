@@ -13,7 +13,7 @@
 		['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
 		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
 		['GET|POST', '/updateuser', 'Users#updateUser*', 'updateUser'],
-		['GET|POST', '/contact', 'Users#contact', 'contact'],
+		['GET|POST', '/contact', 'Messages#sendMessages', 'sendMessages'],
 
 
 		// Books
