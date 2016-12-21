@@ -6,6 +6,18 @@
 
 	<div class="container">
 
+	<?php if(isset($errors) && !empty($errors)):?>
+	<div class="alert alert-danger">
+		<?=implode('<br>', $errors); ?>
+	</div>
+	<?php endif; ?>
+
+	<?php if(isset($success) && $success == true):?>
+		<div class="alert alert-success">
+			L'actualité a bien été ajoutée !
+		</div>
+	<?php endif; ?>
+
 			<h3>Ajouter une actualité</h3>
 			<br>
 
