@@ -26,6 +26,8 @@
 			<button type="submit" class="linebuttons" name="register">CONNEXION</button>
 		</div>
 	</form>
+	<br>
+	<p>Pour toute demande veuillez contacter les administrateurs <a href="<?=$this->url('sendMessages')?>">ici</a></p>
 	<br><br>
 			
 <?php $this->stop('main_content') ?>

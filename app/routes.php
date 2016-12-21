@@ -13,7 +13,11 @@
 		['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
 		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
 		['GET|POST', '/updateUser/[i:id]', 'Users#updateUser', 'updateUser'],
+
+		// Messages
 		['GET|POST', '/contact', 'Messages#sendMessages', 'sendMessages'],
+		['GET|POST', '/admin/messages', 'Messages#listmessages', 'messages'],
+		['GET|POST', '/deleteMessage/[i:id]', 'Messages#deleteMessage', 'deleteMessage'],
 
 
 		// Books
@@ -47,7 +51,6 @@
 		
 		['GET', 	 '/admin/list', 'Admin#listAll', 'user_list'],
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
-		['GET|POST', '/admin/messages', 'Messages#listmessages', 'messages'],
 
 		
 		// Autres

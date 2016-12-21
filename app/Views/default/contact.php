@@ -4,7 +4,17 @@
 
 <h1> <i class="fa fa-paper-plane" aria-hidden="true"></i> Laissez-nous un message</h1>
 <br><br>
-    
+    <?php if(isset($errors) && !empty($errors)):?>
+        <div class="alert alert-danger">
+            <?=implode('<br>', $errors); ?>
+        </div>
+    <?php endif; ?>
+
+    <?php if(isset($success) && $success == true):?>
+        <div class="alert alert-success">
+            Votre message a bien été envoyé !
+        </div>
+    <?php endif; ?>
 <form method="post">           
     <section id="contact">
         <div class="container">

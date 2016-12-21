@@ -6,7 +6,7 @@
 <?php if (!empty($w_user)): ?>
 
 
-<h2>Modifier un utilisateur ( <?=$user['firstname'].' '.$user['lastname'];?> ) </h2>
+<h2>Modifier l'utilisateur </h2>
 
 	<?php if(isset($errors) && !empty($errors)):?>
 		<div class="alert alert-danger">
@@ -26,13 +26,13 @@
 		
 		<label  for="firstname">Prénom :</label>
 		<div class="center">
-		<input type="text" id="firstname" name="firstname" placeholder="<?=$user['firstname'];?>">
+		<input type="text" id="firstname" name="firstname" placeholder="">
 		</div>
 		<br><br>
 
 		<label for="lastname">Nom :</label>
 		<div class="center">
-		<input type="text" id="lastname" name="lastname" placeholder="<?=$w_user['lastname'];?>">
+		<input type="text" id="lastname" name="lastname" placeholder="">
 		</div>
 		<br><br>
 
@@ -44,7 +44,7 @@
 
 		<label for="email">Email:</label>
 		<div class="center">
-		<input type="email" id="email" name="email" placeholder="<?=$w_user['email'];?>">
+		<input type="email" id="email" name="email" placeholder="">
 		</div>
 		<br><br>
 

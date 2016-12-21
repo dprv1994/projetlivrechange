@@ -24,10 +24,13 @@
 		<input type="password" id="password" name="password">
 
 		<br><br>
-			<div class="btnsubmit">
-				<button type="submit" class="linebuttons" name="register">CONNEXION</button>
-			</div>
+		<div class="btnsubmit">
+			<button type="submit" class="linebuttons" name="register">CONNEXION</button>
+		</div>
+		<br>
+		<a href="<?=$this->url('sendMessages')?>">Mot de passe oublié?</a>
 		<br><br>
+
 	</form>
 
 </p>

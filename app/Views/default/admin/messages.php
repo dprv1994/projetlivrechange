@@ -2,11 +2,8 @@
 
 <?php $this->start('main_content') ?>
 
-<h2>
-<i class="fa fa-inbox" aria-hidden="true"></i> Messages</h2>
-
 <?php if(!empty($messages)): ?>
-		<h2>Liste des Messages</h2>
+		<h2><i class="fa fa-inbox" aria-hidden="true"></i> Vos messages</h2>
 		<br>
 		<!-- tableeau contenant les utilisateurset permettant d'accéder aux options -->
 		<table class="table">
@@ -16,16 +13,18 @@
 					<th>Email</th>
 					<th>Sujet</th>
 					<th>message</th>
+					<th>action</th>
 				</tr>
 			</thead>
 
 			<tbody>
 				<?php foreach ($messages as $message): ?>		
 					<tr>	
-						<td><?=$message['fullname']?></td>
+						<td><?=$message['name']?></td>
 						<td><?=$message['email'];?></td>
 						<td><?=$message['subject'];?></td>
 						<td><?=$message['message'];?></td>
+						<td><a href="<?=$this->url('deleteMessage', ['id' => $message['id']]);?>">Supprimer</a></td>
 					</tr>
 				<?php endforeach; ?>
 			</tbody>
