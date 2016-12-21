@@ -10,12 +10,14 @@
 
 <?php if(isset($success) && $success == true):?>
 	<div class="alert alert-success">
-		Vous avez bien été ajouté !
+		L'utilisateur a bien été ajouté !
 	</div>
 <?php endif; ?>
 
-	<h2>Ajouter un utlisateur</h2>
+	<h2><i class="fa fa-user-circle" aria-hidden="true"></i>
+ Ajouter un utilisateur</h2><br>
 
+	<div id="texte">
 	<form method="post" enctype="multipart/form-data">
 		
 		<label  for="firstname">Prénom:</label>
@@ -26,7 +28,7 @@
 		<input type="text" id="lastname" name="lastname">
 		<br><br>
 
-		<label for="username">Nom d'utilisateur:</label>
+		<label for="username">Pseudonyme:</label>
 		<input type="text" id="username" name="username">
 		<br><br>
 
@@ -55,7 +57,7 @@
 
 
 	</form>
-
+	</div>
 
 
 <?php $this->stop('main_content') ?>
