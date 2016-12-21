@@ -43,7 +43,7 @@
 
 		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],
 		['GET', 	 '/admin/delete/[i:id]', 'Admin#delete', 'user_delete'],
-		['GET', 	 '/admin/update/[i:id]', 'Admin#updateUser', 'user_update'],
+		['GET', 	 '/admin/update/', 'Admin#updateBack', 'updateBack'],
 		
 		['GET', 	 '/admin/list', 'Admin#listAll', 'user_list'],
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
