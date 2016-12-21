@@ -39,6 +39,7 @@ class MessagesController extends Controller
 	**/
 	public function sendMessages()
 	{
+
 		$MessagesModel = new MessagesModel();
 
 		$errors = [];
@@ -95,7 +96,7 @@ class MessagesController extends Controller
 
 		$this->show('default/contact', $params);	
 	}
-
-
 }
+
+
 
