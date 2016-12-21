@@ -47,7 +47,7 @@
 		
 		['GET', 	 '/admin/list', 'Admin#listAll', 'user_list'],
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
-		['GET|POST', '/admin/messages', 'Messages#messages', 'messages'],
+		['GET|POST', '/admin/messages', 'Messages#listmessages', 'messages'],
 
 		
 		// Autres

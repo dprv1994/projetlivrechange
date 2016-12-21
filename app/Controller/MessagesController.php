@@ -5,6 +5,7 @@ namespace Controller;
 use \W\Controller\Controller;
 use \W\Model\UsersModel; //as Users;
 use \W\Security\AuthentificationModel;
+use  Model\MessagesModel;
 
 // Si on utilise "respect/validation". Ne pas oublier de l'ajouter via composer
 use \Respect\Validation\Validator as v;
