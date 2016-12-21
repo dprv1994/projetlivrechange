@@ -93,6 +93,10 @@
 				  });
 				 
 				var marker;
+				
+
+				
+
 				function placeMarker(location) {
 				  if(marker){ //on vérifie si le marqueur existe
 				    marker.setPosition(location); //on change sa position
