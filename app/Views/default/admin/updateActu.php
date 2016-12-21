@@ -7,7 +7,7 @@
 	<div class="container">
 
 			
-			<h2>Modifier le contenu de votre site</h2>
+			<h2>Modifier les actualités de votre site</h2>
 			<br><br>
 
 			<div>
