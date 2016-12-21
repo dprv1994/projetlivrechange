@@ -234,7 +234,7 @@ class UsersController extends Controller
 		
 	}
 
-	public function updateUser()
+	public function updateUser($id)
 	{
 	$UsersModel = new UsersModel();
 
@@ -260,26 +260,12 @@ class UsersController extends Controller
 				$errors[] = 'Votre nom doit faire entre 3 et 25 caractères';
 			}
 
-			if (!v::length(4, 20)->validate($post['username'])) {
-				$errors[] = 'Votre nom d\'utilisateur doit faire entre 4 et 20 caractères';
-			}
-
-			//si l'username existe déjà en BDD renverra TRUE
-			if ($UsersModel->usernameExists($post['username'])) {
-				$errors[] = 'Le pseudo est déjà utilisé';
-			}
-
 			if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
 				$errors[] = 'Le fichier envoyé n\'est pas une image valide';
 			}
 
 			if (!v::email()->validate($post['email'])) {
 				$errors[] = 'Votre e-mail n\'est pas valide';
-			}
-
-			//si l'email existe déjà en BDD renverra TRUE
-			if ($UsersModel->emailExists($post['email'])) {
-				$errors[] = 'L\'adresse email et déjà utilisé';
 			}
 
 			if (!v::length(7,null)->validate($post['password'])) {
@@ -328,15 +314,16 @@ class UsersController extends Controller
 				//On instancie le modèle pour communiquer avec la BDD
 				$UserModel = new UsersModel();
 
-				$upload = $UserModel->upload([
+				var_dump($post);
+				var_dump($imgName);
+
+				$upload = $UserModel->update([
 				 	'firstname' => $post['firstname'],
 				 	'lastname'	=> $post['lastname'],
-				 	'username'	=> $post['username'],
 				 	'picture'	=> $imgName,
 				 	'email'		=> $post['email'],
 				 	'password'	=> $authModel->hashPassword($post['password']),
-				 	'role'		=> 'user',
-				]);
+				], $id);
 
 				if ($upload) {
 					$success = true;

@@ -310,7 +310,7 @@ Class AdminController extends Controller
 				}
 
 				if (!v::length(4, 20)->validate($post['username'])) {
-					$errors[] = 'Votre nom d\'utilisateur doit faire entre 4 e 20 caractères';
+					$errors[] = 'Votre nom d\'utilisateur doit faire entre 4 et 20 caractères';
 				}
 
 				//si l'username existe déjà en BDD renverra TRUE
@@ -328,7 +328,7 @@ Class AdminController extends Controller
 
 				//si l'email existe déjà en BDD renverra TRUE
 				if ($UsersModel->emailExists($post['email'])) {
-					$errors[] = 'L\'adresse email et déjà utilisé';
+					$errors[] = 'L\'adresse email est déjà utilisé';
 				}
 
 				if (!v::length(7,null)->validate($post['password'])) {

@@ -2,19 +2,33 @@
 
 <?php $this->start('main_content') ?>
 
-	<h2>Modifier un utilisateur</h2>
+	<h2>Modifier mon profil ( <?=$w_user['username'];?> )</h2>
+	<br><br>
 
-	<form method="POST">
+<?php if(isset($errors) && !empty($errors)):?>
+	<div class="alert alert-danger">
+		<?=implode('<br>', $errors); ?>
+	</div>
+<?php endif; ?>
+
+<?php if(isset($success) && $success == true):?>
+	<div class="alert alert-success">
+		Votre profil a bien été modifié !
+	</div>
+<?php endif; ?>
+
+
+	<form method="POST" enctype="multipart/form-data">
 		
 		<label  for="firstname">Prénom:</label>
 		<div class="center">
-		<input type="text" id="firstname" name="firstname">
+		<input type="text" id="firstname" name="firstname" placeholder="<?=$w_user['firstname'];?>">
 		</div>
 		<br><br>
 
 		<label for="lastname">Nom:</label>
 		<div class="center">
-		<input type="text" id="lastname" name="lastname">
+		<input type="text" id="lastname" name="lastname" placeholder="<?=$w_user['lastname'];?>">
 		</div>
 		<br><br>
 
@@ -28,7 +42,7 @@
 
 		<label for="email">Email:</label>
 		<div class="center">
-		<input type="email" id="email" name="email">
+		<input type="email" id="email" name="email" placeholder="<?=$w_user['email'];?>">
 		</div>
 		<br><br>
 
@@ -40,7 +54,6 @@
 		<br><br>
 
 		<input type="submit"  value="Enregistrer">
-
 
 	</form>
 

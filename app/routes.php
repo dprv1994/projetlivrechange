@@ -12,7 +12,7 @@
 		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
 		['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
 		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
-		['GET|POST', '/updateUser', 'Users#updateUser', 'updateUser'],
+		['GET|POST', '/updateUser/[i:id]', 'Users#updateUser', 'updateUser'],
 		['GET|POST', '/contact', 'Messages#sendMessages', 'sendMessages'],
 
 
@@ -43,7 +43,7 @@
 
 		['GET|POST', '/admin/profilBack/[i:id]', 'Admin#profilBack', 'profilBack'],
 		['GET', 	 '/admin/deleteUser/[i:id]', 'Admin#deleteUser', 'deleteUser'],
-		['GET', 	 '/admin/update/', 'Admin#updateBack', 'user_updateBack'],
+		['GET', 	 '/admin/update/[i:id]', 'Admin#updateBack', 'user_updateBack'],
 		
 		['GET', 	 '/admin/list', 'Admin#listAll', 'user_list'],
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
