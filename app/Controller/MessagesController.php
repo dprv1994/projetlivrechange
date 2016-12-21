@@ -68,9 +68,9 @@ class MessagesController extends Controller
 			if (count($errors) === 0 ) {
 
 				//On instancie le modèle pour communiquer avec la BDD
-				$UserModel = new UsersModel();
+				$MessagesModel = new MessagesModel();
 
-				$insert = $UsersModel->insert([
+				$insert = $MessagesModel->insert([
 					'name' => $post['fullname'],
 					'email' => $post['email'],
 					'subject' => $post['subject'],
@@ -93,7 +93,7 @@ class MessagesController extends Controller
 			'success' => $success,
 		];
 
-		$this->show('default/contact', $params);	
+		$this->show('default/admin/messages', $params);	
 	}
 
 

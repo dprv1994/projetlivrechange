@@ -14,16 +14,15 @@
 				<tr>
 					<th>Nom Complet</th>
 					<th>Email</th>
-					<th>Auteur</th>
-					<th>Catégories</th>
-					<th>Etat</th>
+					<th>Sujet</th>
+					<th>message</th>
 				</tr>
 			</thead>
 
 			<tbody>
 				<?php foreach ($messages as $message): ?>		
 					<tr>	
-						<td><?=$message['fullname'];?>></td>
+						<td><?=$message['fullname'];?></td>
 						<td><?=$message['email'];?></td>
 						<td><?=$message['subject'];?></td>
 						<td><?=$message['message'];?></td>

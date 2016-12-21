@@ -352,14 +352,13 @@ Class AdminController extends Controller
 					}
 				}
 			}
-			var_dump($errors);
 			// Après le !empty($_POST) on envoi la vue et les éventuels paramètres
 			$params = [
 				'errors'  => $errors,
 				'success' => $success,
 			];
 
-			$this->show('default/admin/updateUser', $params);
+			$this->show('default/admin/list', $params);
 		}
 		else{ 
 			$this->redirectToRoute('login');
