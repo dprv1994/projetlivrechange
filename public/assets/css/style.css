@@ -219,13 +219,11 @@ footer #contact{
 
 /****** MAP ******/
 #mapupdate {
- 
-  height: 600px;
-  max-width: 90%
-  margin-left: 270px;
-  
-  /*box-shadow: 10px 10px 10px #595959;*/
+  height: 340px;  
+  max-width: 1260px;
+  margin: 0 auto;
 }
+
 #map_text {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 3em;
