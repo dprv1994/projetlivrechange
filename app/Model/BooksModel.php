@@ -39,7 +39,7 @@ class BooksModel extends \W\Model\Model
 		$select->bindValue(':id', $id_user, \PDO::PARAM_INT);
 
 		if ($select->execute()) {
-			$books = $select->fetchAll(\PDO::FETCH_ASSOC);
+			return $select->fetchAll(\PDO::FETCH_ASSOC);
 		}
 	}
 }

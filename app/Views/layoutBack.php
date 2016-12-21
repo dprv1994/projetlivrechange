@@ -25,7 +25,7 @@
 
 <body id="page-top" class="index">
     <div id="wrapper">
-    <?php if (!empty($_SESSION)): ?>
+    <?php if (!empty($w_user)): ?>
     		<header>
 
             <div id="conteneur-accueil">
