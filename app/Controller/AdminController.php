@@ -130,25 +130,42 @@ Class AdminController extends Controller
 	}
 	
 	/**
-	 *Affiche tout les profil 
-	 *@param data table de user
-	 * Page de tout les profil
+	 * Suppression d'un utilisateur 
+	 *
 	 */
 	
-	public function delete($id)
+	public function deleteUser($id)
 	{
 		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
 		if (empty($this->getUser())){
 			$this->showNotFound();
 		}
-		else{
-			$UserDelete = new UsersModel();
-			$user = $UserDelete->delete($id);
 
+		if(!empty($id) && is_numeric($id)){
+			$UserModel = new UsersModel;
+
+
+			if($UserModel->delete($id)){
+				$success = true;
+			}
+			else {
+				$success = false;
+			}
+
+			$params = [
+				'success' => $success,
+			];
+
+			$this->show('default/admin/deleteUser', $params);
+		}
+		else {
 			$this->redirectToRoute('user_list');
-		}	
-	}
-		
+		}
+	}	
+	
+	/**
+	* Ajout d'un utilisateur
+	*/
 	public function add()
 	{
 		if (empty($this->getUser())){
