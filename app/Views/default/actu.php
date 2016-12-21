@@ -1,7 +1,7 @@
 <?php $this->layout('layout', ['title' => 'Actualités']) ?>
 
 <?php $this->start('main_content') ?>
-<br><br>
+<br>
 <body>
 	<h2>Actualités littéraires</h2>
 	
@@ -13,6 +13,7 @@
 		<br>
 	</div>
 	<br>
+
 	<table class="table">
 		<thead>
 			<tr>
@@ -25,10 +26,10 @@
 
 		<tbody>
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td>Rencontre/Dédicace</td>
+				<td>Guy Delisle/Christophe André</td>
+				<td>Bordeaux</td>
+				<td>03/02/17 à 17h</td>
 			</tr>
 		</tbody>
 	</table>
