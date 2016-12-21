@@ -1,5 +1,5 @@
 
-<?php $this->layout('layoutBack', ['title' => 'Modifier les informations du site']) ?>
+<?php $this->layout('layoutBack', ['title' => 'Modifier les actualités du site']) ?>
 
 <?php $this->start('main_content') ?>
 
