@@ -12,6 +12,26 @@
 		<br>Cette section est mise à jour régulièrement par nos administrateurs !
 		<br>
 	</div>
+	<br>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Evènement</th>
+				<th>Qui ?</th>
+				<th>Lieu</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
 
 </body>
 
