@@ -136,11 +136,6 @@ Class AdminController extends Controller
 	
 	public function deleteUser($id)
 	{
-		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
-		if (empty($this->getUser())){
-			$this->showNotFound();
-		}
-
 		if(!empty($id) && is_numeric($id)){
 			$UserModel = new UsersModel;
 

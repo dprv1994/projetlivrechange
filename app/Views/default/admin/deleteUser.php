@@ -1,16 +1,16 @@
 
-<?php $this->layout('layoutBack', ['title' => 'Supprimer une actualité']) ?>
+<?php $this->layout('layoutBack', ['title' => 'Supprimer un utilisateur']) ?>
 
 <?php $this->start('main_content') ?>
 
 
 	<div class="container">
 
-		<h1>Supprimer l'actualité'</h1>
+		<h1>Supprimer l'utilisateur</h1>
 	
 	<hr>
 
-		<p>Voulez-vous vraiment supprimer cette actualité?</p>
+		<p>Voulez-vous vraiment supprimer cet utilisateur?</p>
 
 		<form method="POST">
 			<!-- Annuler -->
@@ -18,6 +18,7 @@
 			<!-- Valider -->
 			<input type="submit" name="delete" value="Oui, je veux le supprimer" class="btn btn-danger">
 		</form>
+
 		<br><br>
 	</div>	
 

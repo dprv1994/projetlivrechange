@@ -46,7 +46,7 @@
 					</td>
 					<td>
 					<!-- Créer un url pour effacer un membre -->
-					<a href="<?=$this->url('user_delete', ['id' => $user['id']]);?>">
+					<a href="<?=$this->url('deleteUser', ['id' => $user['id']]);?>">
 					Effacer le profil</a>
 					</td>
 				</tr>
