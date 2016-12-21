@@ -380,9 +380,9 @@ Class AdminController extends Controller
 	* Page de mise à jour des infos du site
 	*
 	*/
-	public function updateInfo()
+	public function updateActu()
 	{
-		$this->show('default/admin/updateInfo');
+		$this->show('default/admin/updateActu');
 	}
 }
 

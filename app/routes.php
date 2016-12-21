@@ -43,8 +43,10 @@
 		['GET', 	 '/admin/list', 'Admin#listAll', 'user_list'],
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
 		['GET|POST', '/admin/messages', 'Messages#messages', 'messages'],
+		
+		// Actus
 		['GET|POST', '/admin/actus', 'Admin#actus', 'actus'],
-		['GET|POST', '/admin/updateInfo', 'Admin#updateInfo', 'updateInfo'],
+		['GET|POST', '/admin/updateActu', 'Admin#updateActu', 'updateActu'],
 		
 		// Autres
 		['GET', '/error/page404', 'Default#page404', 'page404'],

@@ -61,7 +61,7 @@
                                     </i>Carte</a>
                                 </li>
                                 <li>
-                                	<a href="<?=$this->url('updateInfo');?>">
+                                	<a href="<?=$this->url('updateActu');?>">
                                     <i class="fa fa-cogs" aria-hidden="true"> 
                                     </i>Actualités</a>
                                 </li>
