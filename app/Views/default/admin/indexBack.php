@@ -17,7 +17,7 @@
 	                <li><a href="<?=$this->url('listActu');?>">Gérer vos actualités</a></li>
 	                <li><a href="<?=$this->url('user_list')?>">Gérer vos utilisateurs</a></li>
 	                <li><a href="<?=$this->url('updateMaps')?>">Gérer votre carte Google maps</a></li>
-	                <li><a href=""> Lire les messages qui vous ont été envoyés dans la session "Contact"</a></li>
+	                <li><a href="<?=$this->url('messages')?>"> Lire les messages qui vous ont été envoyés dans la session "Contact"</a></li>
 	            </ul>
 	      	</p>
 	        </div>

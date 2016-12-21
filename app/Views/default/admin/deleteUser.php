@@ -16,7 +16,7 @@
 			<!-- Annuler -->
 			<input type="button" onclick="history.back();" value="Annuler" class="btn btn-default">
 			<!-- Valider -->
-			<input type="submit" name="delete" value="Oui, je veux le supprimer" class="btn btn-danger">
+			<input type="submit" name="delete" value="Oui, je veux le supprimer" class="btn btn-danger"></
 		</form>
 
 		<br><br>
