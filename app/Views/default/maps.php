@@ -14,7 +14,7 @@
  <div id="map"></div><!--  La carte s affichera dans cette div "map" -->
 
  	<br>
- 	<p>Vous souhaitez ajouter un lieu ? <strong>Rendez-vous<a href="<?=$this->url('sendMessages')?>"> ici !</a></p>
+ 	<p>Vous souhaitez devenir un lieu d'échange ? <strong>Rendez-vous<a href="<?=$this->url('sendMessages')?>"> ici !</a></p>
 
 <br><br>
 <table class="table">
