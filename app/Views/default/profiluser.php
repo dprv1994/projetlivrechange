@@ -42,7 +42,6 @@
 		<table class="table">
 			<thead>
 				<tr>
-					<th>Image</th>
 					<th>Titre</th>
 					<th>Auteur</th>
 					<th>Catégories</th>
@@ -53,7 +52,6 @@
 			<tbody>
 				<?php foreach ($books as $book): ?>		
 					<tr>	
-					
 						<td><?=$book['title'];?></td>
 						<td><?=$book['author'];?></td>
 						<td><?=$book['category'];?></td>
