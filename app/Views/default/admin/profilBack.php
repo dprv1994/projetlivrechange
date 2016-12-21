@@ -8,10 +8,8 @@
 	<div class="container-profil-back">
 		<?php if (!empty($user)): ?>
 
-			<!-- Inclure NAVBAR : soucis de liens href->404 si navbar incluse -->
-
 			<h2>Utilisateur : <?=$user['username']?></h2>
-			<h5><a href="<?=$this->url('user_update')?>"><i class="fa fa-cog" aria-hidden="true"></i>
+			<h5><a href="<?=$this->url('user_updateBack')?>"><i class="fa fa-cog" aria-hidden="true"></i>
  OPTIONS</a></h5>
 
 			<h3><i class="fa fa-book" aria-hidden="true"></i>
