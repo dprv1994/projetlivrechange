@@ -7,8 +7,7 @@
 
 		<h2><i class="fa fa-address-card" aria-hidden="true"></i>Liste des utilisateurs</h2>
 			<p>
-				<i class="fa fa-plus" aria-hidden="true"></i>
-				<a href="<?=$this->url('addUser');?>"> Ajouter un utilisateur</a>
+				<a href="<?=$this->url('addUser');?>"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter un utilisateur</a>
 			</p>
 		<br>
 

@@ -39,7 +39,7 @@
 
 			<br><br>
 
-			<h3><a href="<?=$this->url('addActu');?>">Ajouter une actualité</a></h3>
+			<h3><a href="<?=$this->url('addActu');?>"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter une actualité</a></h3>
 			<br>
 
 	</div>	
