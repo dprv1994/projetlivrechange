@@ -34,6 +34,7 @@
 	<?php endif; ?>
 
 	<!-- AFFICHAGE DE MES LIVRES -->
+	<?php var_dump($this->e($books)); ?>
 
 	<?php if(!empty($books)): ?>
 		<h2>Liste des Livres</h2>
