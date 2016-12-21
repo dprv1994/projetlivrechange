@@ -10,9 +10,11 @@
 	
 	<div id="list_users">
 
-		<h2><i class="fa fa-address-card" aria-hidden="true"></i>
-
-Liste des utilisateurs</h2>
+		<h2><i class="fa fa-address-card" aria-hidden="true"></i>Liste des utilisateurs</h2>
+			<p>
+				<i class="fa fa-plus" aria-hidden="true"></i>
+				<a href="<?=$this->url('addUser');?>"> Ajouter un utilisateur</a>
+			</p>
 		<br>
 
 	<!-- tableau contenant les utilisateurs et permettant d'accéder aux options -->
