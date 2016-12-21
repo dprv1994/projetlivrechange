@@ -10,7 +10,7 @@
 
 <?php if(isset($success) && $success == true):?>
 	<div class="alert alert-success">
-		Vous avais bien été ajouté !
+		Inscription réalisée avec succès !
 	</div>
 <?php endif; ?>
 	
