@@ -3,16 +3,16 @@
 
 <?php $this->start('main_content') ?>
 
-	<br><br>
 
- 	<div id="mapupdate"></div><!--  La carte s affichera dans cette div "map" -->
- 	<br>
-
- 	<hr>
- 	<br>
+ 	
+ 	
+<div id="mapupdate"></div><!--  La carte s affichera dans cette div "map" -->
+ 	
+ 	
 
  	<h3>ajouter un nouveau lieu d'échange</h3>
 
+ 	
  	<form method="POST">
 		<label for="adress"></label>
 		<input type="text" name="adress">
