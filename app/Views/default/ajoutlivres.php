@@ -11,7 +11,7 @@
 
 <?php if(isset($success) && $success == true):?>
 	<div class="alert alert-success">
-		Vous avais bien été ajouté !
+		Livre bien ajouté!
 	</div>
 <?php endif; ?>
 
