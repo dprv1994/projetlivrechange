@@ -46,6 +46,7 @@
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
 		['GET|POST', '/admin/messages', 'Messages#messages', 'messages'],
 		['GET|POST', '/admin/actus', 'Admin#actus', 'actus'],
+		['GET|POST', '/admin/updateInfo', 'Admin#updateInfo', 'updateInfo'],
 		
 		// Autres
 		['GET', '/error/page404', 'Default#page404', 'page404'],

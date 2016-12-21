@@ -375,5 +375,14 @@ Class AdminController extends Controller
 		$this->show('default/admin/actus');
 
 	}
+
+	/**
+	* Page de mise à jour des infos du site
+	*
+	*/
+	public function updateInfo()
+	{
+		$this->show('default/admin/updateInfo');
+	}
 }
 
