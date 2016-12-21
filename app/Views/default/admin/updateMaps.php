@@ -15,13 +15,13 @@
  	<br>
  	<form method="POST">
 		
- 		<label for="title">titre</label>
+ 		<label for="title">Lieu</label>
  		<input type="text" name="title" id="title">
 
 		<label for="inputLatitude">Latitude</label>
 		<input type="text" name="inputLatitude" id="inputLatitude">
 
-		<label for="inputLongitude">longitude</label>
+		<label for="inputLongitude">Longitude</label>
 		<input type="text" name="inputLongitude" id="inputLongitude">
 		
 		<input type="submit" value="Enregistrer">
@@ -51,8 +51,9 @@
 			<thead>
 				<tr>
 					<th>#</th>
-					<th>titre</th>
-					</tr>
+					<th>Lieux</th>
+					<th>Action</th>
+				</tr>
 			</thead>
 
 			<tbody>
