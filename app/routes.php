@@ -23,6 +23,10 @@
 		// Actu
 		['GET|POST', '/actu', 'Default#actu', 'user_actu'],
 
+		['GET|POST', '/admin/actus', 'Admin#actus', 'actus'],
+		['GET|POST', '/admin/updateActu', 'Admin#updateActu', 'updateActu'],
+		['GET|POST', '/admin/addActu', 'Admin#addActu', 'addActu'],
+
 		// Dons
 		['GET', '/dons', 'Default#dons', 'dons'],
 
@@ -43,10 +47,7 @@
 		['GET', 	 '/admin/list', 'Admin#listAll', 'user_list'],
 		['GET|POST', '/admin/addUser', 'Admin#add', 'addUser'],
 		['GET|POST', '/admin/messages', 'Messages#messages', 'messages'],
-		
-		// Actus
-		['GET|POST', '/admin/actus', 'Admin#actus', 'actus'],
-		['GET|POST', '/admin/updateActu', 'Admin#updateActu', 'updateActu'],
+
 		
 		// Autres
 		['GET', '/error/page404', 'Default#page404', 'page404'],

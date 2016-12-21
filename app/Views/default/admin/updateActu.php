@@ -10,51 +10,31 @@
 			<h2>Modifier les actualités de votre site</h2>
 			<br><br>
 
-			<div>
-				<form method="POST">
-					<label for="event">Evènement :</label>
-					<input type="text" name="event" id="event">
-					<br><br>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Evènement</th>
+						<th>Qui ?</th>
+						<th>Lieu</th>
+						<th>Date</th>
+					</tr>
+				</thead>
 
-					<label for="who">Qui :</label>
-					<input type="text" name="who" id="who">
-					<br><br>
+				<tbody>
+					<tr>
+						<td>Rencontre/Dédicace</td>
+						<td>Guy Delisle/Christophe André</td>
+						<td>Bordeaux</td>
+						<td>03/02/17 à 17h</td>
+					</tr>
+				</tbody>
+			</table>
 
-					<label for="place">Lieu :</label>
-					<input type="text" name="place" id="place">
-					<br><br>
+			<br><br>
 
-					
-					<label for="date">Date :</label>
-						<select name="date_day">
-							<option value="" selected disabled>Jour</option>
-							<?php for($i=1;$i<=31;$i++): ?>
-								<option value="<?=$i;?>"><?=$i;?></option>
-							<?php endfor; ?>
-						</select>
+			<h3><a href="<?=$this->url('addActu');?>">Ajouter une actualité</a></h3>
+			<br>
 
-						<select name="date_month">
-							<option value="" selected disabled>Mois</option>
-							<?php for($i=1;$i<=12;$i++): ?>
-								<option value="<?=$i;?>"><?=$i;?></option>
-							<?php endfor; ?>
-						</select>
-
-						<select name="date_year">
-							<option value="" selected disabled>Année</option>
-							<?php for($i=date('Y');$i>=date('Y');$i--): ?>
-								<option value="<?=$i;?>"><?=$i;?></option>
-							<?php endfor; ?>
-						</select>
-
-				
-					<br><br>
-
-
-					<input type="submit"  value="Enregistrer">
-
-				</form>
-	        </div>
 	</div>	
 
 <?php $this->stop('main_content') ?>

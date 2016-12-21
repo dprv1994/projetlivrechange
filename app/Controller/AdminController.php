@@ -384,5 +384,10 @@ Class AdminController extends Controller
 	{
 		$this->show('default/admin/updateActu');
 	}
+
+	public function addActu()
+	{
+		$this->show('default/admin/addActu');
+	}
 }
 
