@@ -24,7 +24,8 @@
 		<label for="inputLongitude">Longitude :</label>
 		<input type="text" name="inputLongitude" id="inputLongitude">
 		&nbsp;
-		<input type="submit" value="Enregistrer">
+			<button type="submit" class="linebuttons" name="register">ENREGISTRER</button>
+		
 		
 
 	</form>
