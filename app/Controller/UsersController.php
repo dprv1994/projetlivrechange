@@ -4,6 +4,7 @@ namespace Controller;
 
 use \W\Controller\Controller;
 use \W\Model\UsersModel; //as Users;
+use Model\BooksModel;
 use \W\Security\AuthentificationModel;
 
 // Si on utilise "respect/validation". Ne pas oublier de l'ajouter via composer
@@ -87,21 +88,21 @@ class UsersController extends Controller
 	**/
 	public function profilUser()
 	{
-		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
-		if (empty($_SESSION)){
-			$this->showNotFound();
-		}
-		else{
-			//Instancie la classe "Controller" qui permet de sélectionner un utilisateur
-			$userlogged = new AuthentificationModel();
-			$user = $userlogged->getLoggedUser();//$id correspond à l'id en URL
-
+		$user = $this->getUser();
+		if(!empty($user)){
+			$BooksModel = new BooksModel(); // On instancie la classe des livres
+			
 			//Permet de gérer l'affichage
 			$data = [
-				'user' => $user, 
+				'user' 	 => $user, 
 				'upload' => getApp()->getConfig('upload_dir'),
+				'books'  => $BooksModel->Mybook($user['id']), 
 			];
-		$this->show('default/profiluser', $data);
+			$this->show('default/profiluser', $data);
+		}
+		else{
+			//Si l'internaute accède à la page sans login, on le redirige vers la page 404
+			$this->showNotFound();
 		}
 	}
 

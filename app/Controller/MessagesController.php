@@ -41,7 +41,7 @@ class MessagesController extends Controller
 		if (!empty($_POST)) {
 			$post = array_map('trim', array_map('strip_tags',$_POST));
 		
-			if (!v::length(3, 50)->validate($post['name'])) {
+			if (!v::length(3, 50)->validate($post['fullname'])) {
 				$errors[] = 'Votre nom complet doit faire entre 3 et 50 caractères';
 			}
 
@@ -63,7 +63,7 @@ class MessagesController extends Controller
 				$UserModel = new UsersModel();
 
 				$insert = $UsersModel->insert([
-					'name' => $post['name'],
+					'name' => $post['fullname'],
 					'email' => $post['email'],
 					'subject' => $post['subject'],
 					'message' => $post['message'],

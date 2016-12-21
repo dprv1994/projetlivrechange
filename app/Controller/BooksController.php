@@ -128,22 +128,6 @@ class BooksController extends Controller
 			$this->show('default/ajoutlivres', $params);
 		}	
 	}
-
-	public function ListAllBooks()
-	{
-		$BooksModel = new BooksModel();
-		$book = $BooksModel->Mybook();
-
-		$books = ['books' => $book];
-
-		if (!empty($_SESSION)) {
-			$this->show('default/profiluser', $books);
-		}
-		else{
-			$this->redirectToRoute('default_home');
-		}
-
-	}
 	
 	/**
 	 * Page Recherche livre

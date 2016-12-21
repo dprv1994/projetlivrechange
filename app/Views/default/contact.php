@@ -14,8 +14,8 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                <label for="name">Nom complet :</label>
-                                    <input type="text" class="form-control" placeholder="Votre nom complet" id="name" name="name" required data-validation-required-message=" SVP entrez votre nom...">
+                                <label for="fullname">Nom complet :</label>
+                                    <input type="text" class="form-control" placeholder="Votre nom complet" id="fullname" name="fullname" required data-validation-required-message=" SVP entrez votre nom...">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <label for="email">Email :</label>
