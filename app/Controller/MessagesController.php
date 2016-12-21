@@ -39,7 +39,7 @@ class MessagesController extends Controller
 	**/
 	public function sendMessages()
 	{
-		$UsersModel = new UsersModel();
+		$MessagesModel = new MessagesModel();
 
 		$errors = [];
 		$post = [];
@@ -71,7 +71,7 @@ class MessagesController extends Controller
 				$MessagesModel = new MessagesModel();
 
 				$insert = $MessagesModel->insert([
-					'name' => $post['fullname'],
+					'fullname' => $post['fullname'],
 					'email' => $post['email'],
 					'subject' => $post['subject'],
 					'message' => $post['message'],

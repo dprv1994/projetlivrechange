@@ -22,7 +22,7 @@
 			<tbody>
 				<?php foreach ($messages as $message): ?>		
 					<tr>	
-						<td><?=$message['fullname'];?></td>
+						<td><?=$message['fullname']?></td>
 						<td><?=$message['email'];?></td>
 						<td><?=$message['subject'];?></td>
 						<td><?=$message['message'];?></td>

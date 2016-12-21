@@ -98,8 +98,6 @@ Class ActuController extends Controller
 
 				if (count($errors) === 0 ) {
 
-					
-
 					//On instancie le modèle pour communiquer avec la BDD
 					$ActuModel = new ActusModel();
 
