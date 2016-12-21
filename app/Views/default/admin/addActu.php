@@ -45,8 +45,22 @@
 								<option value="<?=$i;?>"><?=$i;?></option>
 							<?php endfor; ?>
 						</select>
+					<br><br>
 
-				
+					<label for="time">Heure :</label>
+						<select name="hour">
+							<option value="" selected disabled>Heure</option>
+							<?php for($i=0;$i<=23;$i++): ?>
+								<option value="<?=$i;?>"><?=$i;?> h</option>
+							<?php endfor; ?>
+						</select>
+
+						<select name="minute">
+							<option value="" selected disabled>Minute</option>
+							<?php for($i=1;$i<=59;$i++): ?>
+								<option value="<?=$i;?>"><?=$i;?> min</option>
+							<?php endfor; ?>
+						</select>
 					<br><br>
 
 					<input type="submit"  value="Ajouter">
