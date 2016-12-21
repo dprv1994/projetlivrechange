@@ -13,8 +13,8 @@
 					<ul id="user">
 						<li>Pseudo : <?=$user['username'];?></li>
 						<li>Prénom : <?=$user['firstname'];?></li>
-						<li>Nom : <?=$user['lastname'];?></li>
-						<li>Email : <?=$user['email'];?></li>
+						<li>Nom : 	 <?=$user['lastname'];?></li>
+						<li>Email :  <?=$user['email'];?></li>
 					</ul>
 			</div>
 
@@ -53,7 +53,7 @@
 			<tbody>
 				<?php foreach ($books as $book): ?>		
 					<tr>	
-						<td><?=$book['picture_book'];?>></td>
+					
 						<td><?=$book['title'];?></td>
 						<td><?=$book['author'];?></td>
 						<td><?=$book['category'];?></td>
