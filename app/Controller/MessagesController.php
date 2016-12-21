@@ -93,7 +93,7 @@ class MessagesController extends Controller
 			'success' => $success,
 		];
 
-		$this->show('default/admin/messages', $params);	
+		$this->show('default/contact', $params);	
 	}
 
 
