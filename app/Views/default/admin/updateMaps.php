@@ -87,15 +87,16 @@
 			  	map = new google.maps.Map(document.getElementById('mapupdate'), {/* Ici on crée notre objet map*/
 				    center: {lat: 44.8404400, lng:-0.5805000}, // centrage de la carte à l'affichage
 				    zoom: 13 // niveau de zoom
-			  });
+			  		});
+				
 				google.maps.event.addListener(map, 'click', function(event) {
 				    placeMarker(event.latLng);
-				  });
+				});
 				 
 				var marker;
 				
 
-				
+
 
 				function placeMarker(location) {
 				  if(marker){ //on vérifie si le marqueur existe
