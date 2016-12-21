@@ -103,7 +103,7 @@
                     </div>
                     <div class="col-md-4">
                         <div id="contact">
-                            <a href="<?=$this->url('contact')?>">Nous contacter</a>
+                            <a href="<?=$this->url('sendMessages')?>">Nous contacter</a>
                         </div> 
                     </div>
                 </div>
