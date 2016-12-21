@@ -13,7 +13,24 @@
 
  <div id="map"></div><!--  La carte s affichera dans cette div "map" -->
 
-<br><br><br><br><br>
+<br><br>
+<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>titre</th>
+					</tr>
+			</thead>
+
+			<tbody>
+				<?php foreach($markers as $marker): ?>
+				<tr>
+					<td><?=$marker['id'];?></td>
+					<td><?=$marker['title'];?></td>
+				</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
 
 <?php $this->stop('main_content') ?>
 
@@ -64,7 +81,7 @@
 				   icon: image, 
 				   
 					
-				   });
+				});
 				 // Création infobulle  
 	            	var infowindow = new google.maps.InfoWindow();  
 
@@ -74,7 +91,7 @@
 							infowindow.setContent('Echangez ! <b>' + locations[i][0]);
 							infowindow.open(map, marker);
 						}
-						})(marker, i));
+					})(marker, i));
 				
 					 
 
