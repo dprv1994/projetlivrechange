@@ -44,7 +44,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <?php if (!empty($_SESSION)): ?>
+                            <?php if (!empty($this->getUser())): ?>
                                 <a class="page-scroll" href="<?=$this->url('profilUser') ?>">Mon profil</a>
                             <?php endif; ?>
                         </li>
@@ -52,7 +52,7 @@
                             <a class="page-scroll" href="<?=$this->url('search_book')?>">Recherche</a>
                         </li>
                         <li>
-                            <?php if (!empty($_SESSION)): ?>
+                            <?php if (!empty($this->getUser())): ?>
                                 <a class="page-scroll" href="<?=$this->url('maps')?>">Lieux d'échange</a>
                             <?php endif; ?>  
                         </li>
@@ -63,7 +63,7 @@
                             <a class="page-scroll" href="<?=$this->url('dons')?>">Dons</a>
                         </li>
                         <li>
-                            <?php if (empty($_SESSION)): ?>
+                            <?php if (empty($this->getUser())): ?>
                                 <a class="page-scroll" href="<?=$this->url('loginUser')?>">Se connecter</a>
                             <?php else : ?>
                                 <a class="page-scroll" href="<?=$this->url('logoutUser')?>">Se deconnecter</a>
