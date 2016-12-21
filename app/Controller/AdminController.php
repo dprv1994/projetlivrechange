@@ -277,7 +277,7 @@ Class AdminController extends Controller
 		}
 	}
 
-	public function updateUser($id)
+	public function updateBack()
 	{
 		if (!empty($this->getUser())){
 				
@@ -306,9 +306,9 @@ Class AdminController extends Controller
 					$errors[] = 'Le pseudo et déjà utilisé';
 				}
 
-				/*if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
-					$errors[] = 'L\'image n\'est pas valide';
-				}*/
+				if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
+					$errors[] = 'Le fichier envoyé n\'est pas une image valide';
+				}
 
 				if (!v::email()->validate($post['email'])) {
 					$errors[] = 'Votre e-mail n\'est pas valide';
@@ -326,6 +326,11 @@ Class AdminController extends Controller
 				if(!v::notEmpty()->validate($post['role'])){
 					$errors[] = 'Vous devez choisir un rôle';
 				};	
+
+				// Vérifie que l'image a bien été uploadée
+				if(!v::uploaded()->validate($_FILES['picture']['tmp_name'])){
+					$errors[] = 'Une erreur est survenue lors de l\'upload de l\'image';
+				}
 
 				if (count($errors) === 0 ) {
 					 
@@ -359,7 +364,7 @@ Class AdminController extends Controller
 				'success' => $success,
 			];
 
-			$this->show('default/admin/updateUser', $params);
+			$this->show('default/admin/list', $params);
 		}
 		else{ 
 			$this->redirectToRoute('login');
