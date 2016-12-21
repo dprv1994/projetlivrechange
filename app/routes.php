@@ -21,7 +21,7 @@
 		['GET|POST', '/ajoutlivres', 'Books#ajoutLivres', 'add_book'],
 		
 		// Actu
-		['GET|POST', '/actu', 'Default#actu', 'user_actu'],
+		['GET|POST', '/actu', 'Actu#actu', 'user_actu'],
 
 		['GET|POST', '/admin/actus', 'Actu#actus', 'actus'],
 		['GET|POST', '/admin/listActu', 'Actu#listActu', 'listActu'],

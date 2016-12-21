@@ -37,6 +37,18 @@ Class ActuController extends Controller
 
 		$this->show('default/admin/listActu', $data);
 	}
+
+	public function actu()
+	{
+		$listActu = new ActusModel();
+		$actus = $listActu->findAll();
+
+		$data = [
+			'actus' => $actus
+		];
+
+		$this->show('default/actu', $data);
+	}
 	/**
 	* Ajout d'une actualité
 	*/
