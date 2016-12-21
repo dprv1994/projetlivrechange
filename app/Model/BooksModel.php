@@ -14,7 +14,7 @@ class BooksModel extends \W\Model\Model
 		$select = $bdd->prepare($sql);
 
 		if ($select->execute()) {
-			$books = $select->fetchAll(PDO::FETCH_ASSOC);
+			$books = $select->fetchAll(\PDO::FETCH_ASSOC);
 		}
 		
 	}
@@ -35,11 +35,11 @@ class BooksModel extends \W\Model\Model
 				ON users.id = books.id_user 
 				WHERE users.id = :id';
 
-		$select = getDbh()->prepare($sql);
+		$select = $this->dbh->prepare($sql);
 		$select->bindValue(':id', $id_user, \PDO::PARAM_INT);
 
 		if ($select->execute()) {
-			$books = $select->fetchAll(PDO::FETCH_ASSOC);
+			$books = $select->fetchAll(\PDO::FETCH_ASSOC);
 		}
 	}
 }
