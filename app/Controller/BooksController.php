@@ -106,7 +106,8 @@ class BooksController extends Controller
 						'author'		=> $post['author'],
 						'category'		=> $post['category'],
 						'picture_book'  => $imgName,
-						'condition'		=> $post['condition'], 	
+						'condition'		=> $post['condition'],
+						'id_user' 		=> $user['id'],
 					]);
 
 					if ($insert) {

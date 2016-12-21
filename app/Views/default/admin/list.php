@@ -1,8 +1,3 @@
-<?php
- 	if (empty($_SESSION)) {
-		$this->url('login');
-	} 
-	?>
 
 <?php $this->layout('layoutBack', ['title' => 'Liste des utilisateurs ']) ?>
 
