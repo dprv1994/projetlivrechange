@@ -31,7 +31,7 @@
 		['GET|POST', '/maps','Maps#getMarkers', 'maps'],
 		['GET|POST', '/admin/updateMaps', 'Maps#getMarkersBack', 'updateMaps'],
 		['GET|POST', '/admin/deleteMarker/[i:id]', 'Maps#deleteMarker', 'marker_delete'],
-
+		['GET|POST', '/admin/testgeocode', 'Maps#adressGeo', 'testgeocode'],
 
 		// Admin
 		['GET|POST', '/admin/login', 'Admin#logIn', 'login'],

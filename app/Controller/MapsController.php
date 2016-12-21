@@ -34,10 +34,6 @@ class MapsController extends Controller
 			$this->show('default/admin/updateMaps', $data); // envoie les données en paramètres 
 		
 		}
-		
-		
-
-
 		public function deleteMarker($id)
 		{
 			if (!is_numeric($id) || empty($id)) {
@@ -51,5 +47,9 @@ class MapsController extends Controller
 				$this->redirectToRoute('updateMaps');  
 			}
 		}
-	
+		
+		public function adressGeo()
+		{
+			$this->show('default/admin/testgeocode');
+		}
 }
