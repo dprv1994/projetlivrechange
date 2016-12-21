@@ -21,22 +21,29 @@
 			<h3>Ajouter une actualité</h3>
 			<br>
 
-			<div>
+			<div class="actu">
 				<form method="POST">
 					<label for="event">Evènement :</label>
+					<div class="center">
 					<input type="text" name="event" id="event">
+					</div>
 					<br><br>
 
 					<label for="who">Qui :</label>
+					<div class="center">
 					<input type="text" name="who" id="who">
+					</div>
 					<br><br>
 
 					<label for="place">Lieu :</label>
+					<div class="center">
 					<input type="text" name="place" id="place">
+					</div>
 					<br><br>
 
 					
 					<label for="date">Date :</label>
+					<div class="center">
 						<select name="date_day">
 							<option value="" selected disabled>Jour</option>
 							<?php for($i=1;$i<=31;$i++): ?>
@@ -57,9 +64,11 @@
 								<option value="<?=$i;?>"><?=$i;?></option>
 							<?php endfor; ?>
 						</select>
+					</div>
 					<br><br>
 
 					<label for="time">Quand :</label>
+					<div class="center">
 						<select name="hour">
 							<option value="" selected disabled>Heure</option>
 							<?php for($i=00;$i<=23;$i++): ?>
@@ -73,9 +82,12 @@
 								<option value="<?=$i;?>"><?=$i;?> min</option>
 							<?php endfor; ?>
 						</select>
+					</div>
 					<br><br>
 
-					<input type="submit"  value="Ajouter">
+					<div class="btnsubmit">
+						<input type="submit"  class="linebuttons" value="ENREGISTRER">
+					</div>
 					<br><br>
 
 				</form>

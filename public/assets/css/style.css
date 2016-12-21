@@ -281,3 +281,15 @@ footer #contact{
   float: right;
   width: 70%;
 }
+
+/* formulaire actu */
+.actu {
+  width: 350px;
+  margin: auto;
+  text-align: left;
+}
+
+.center {
+  float: right;
+  width: 60%;
+}
