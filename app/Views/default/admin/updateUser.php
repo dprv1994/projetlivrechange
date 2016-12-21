@@ -4,7 +4,7 @@
 
 <?php $this->start('main_content') ?>
 
-	<h2>Ajouter un utlisateur</h2>
+	<h2>Modifier un utlisateur</h2>
 
 	<form method="POST">
 		
