@@ -42,7 +42,7 @@
 					</td>
 					<td>
 					<!-- Créer un url pour effacer un membre -->
-					<a href="<?=$this->url('user_update', ['id' => $user['id']]);?>">
+					<a href="<?=$this->url('user_updateBack', ['id' => $user['id']]);?>">
 					Modifier le profil</a>
 					</td>
 					<td>
