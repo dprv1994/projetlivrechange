@@ -353,7 +353,7 @@ class UsersController extends Controller
 			'success' => $success,
 		];
 
-		$this->show('default/updateuser', $params);
+		$this->show('default/updateUser', $params);
 	}	
 	
 	
