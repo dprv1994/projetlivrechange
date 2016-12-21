@@ -69,7 +69,7 @@ class UsersController extends Controller
 
 	public function logoutUser()
 	{	//Si la SESSION N'EST PAS VIDE 
-		if (!empty($_SESSION)){
+		if (!empty($this->getUser())){
 			$authModel = new AuthentificationModel;
 
 			//Deconnecte L'utilisateur 

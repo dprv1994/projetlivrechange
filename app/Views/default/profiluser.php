@@ -34,7 +34,6 @@
 	<?php endif; ?>
 
 	<!-- AFFICHAGE DE MES LIVRES -->
-	<?php var_dump($this->e($books)); ?>
 
 	<?php if(!empty($books)): ?>
 		<h2>Liste des Livres</h2>
@@ -52,17 +51,15 @@
 			</thead>
 
 			<tbody>
-				
-					<?php foreach ($books as $book): ?>		
-						<tr>	
-
-							<td><?=$book['picture_book'];?>></td>
-							<td><?=$book['title'];?></td>
-							<td><?=$book['author'];?></td>
-							<td><?=$book['category'];?></td>
-							<td><?=$book['condition'];?></td>
-						</tr>
-					<?php endforeach; ?>
+				<?php foreach ($books as $book): ?>		
+					<tr>	
+						<td><?=$book['picture_book'];?>></td>
+						<td><?=$book['title'];?></td>
+						<td><?=$book['author'];?></td>
+						<td><?=$book['category'];?></td>
+						<td><?=$book['condition'];?></td>
+					</tr>
+				<?php endforeach; ?>
 			</tbody>
 		</table>
 	<?php else: ?>

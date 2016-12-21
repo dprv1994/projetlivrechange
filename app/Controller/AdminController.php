@@ -73,7 +73,7 @@ Class AdminController extends Controller
 
 	public function indexBack()
 	{	
-		if (empty($_SESSION)){
+		if (empty($this->getUser())){
 			$this->redirectToRoute('login');
 		}
 		else{
@@ -88,7 +88,7 @@ Class AdminController extends Controller
 	public function profilBack()
 	{
 		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
-		if (empty($_SESSION)){
+		if (empty($this->getUser())){
 			$this->showNotFound();
 		}
 		else{
@@ -118,7 +118,7 @@ Class AdminController extends Controller
 	//Permet de gérer l'affichage
 	$data = ['users' => $users];
 	
-	if (!empty($_SESSION)){
+	if (!empty($this->getUser())){
 
 			$this->show('default/admin/list', $data);
 		}
@@ -138,7 +138,7 @@ Class AdminController extends Controller
 	public function delete($id)
 	{
 		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
-		if (empty($_SESSION)){
+		if (empty($this->getUser())){
 			$this->showNotFound();
 		}
 		else{
@@ -151,7 +151,7 @@ Class AdminController extends Controller
 		
 	public function add()
 	{
-		if (empty($_SESSION)){
+		if (empty($this->getUser())){
 			$this->showNotFound();
 		}
 		else{
@@ -279,7 +279,7 @@ Class AdminController extends Controller
 
 	public function updateUser($id)
 	{
-		if (!empty($_SESSION)){
+		if (!empty($this->getUser())){
 				
 
 			$errors = [];

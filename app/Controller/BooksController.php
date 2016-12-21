@@ -24,7 +24,7 @@ class BooksController extends Controller
 	{
 
 		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
-		if (empty($_SESSION)){
+		if (empty($this->getUser())){
 			$this->showNotFound();
 		}
 		else{

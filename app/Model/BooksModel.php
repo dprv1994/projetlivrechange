@@ -35,7 +35,7 @@ class BooksModel extends \W\Model\Model
 				ON users.id = books.id_user 
 				WHERE users.id = :id';
 
-		$select = $bdd->prepare($sql);
+		$select = getDbh()->prepare($sql);
 		$select->bindValue(':id', $id_user, \PDO::PARAM_INT);
 
 		if ($select->execute()) {
