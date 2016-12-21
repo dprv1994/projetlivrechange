@@ -3,20 +3,22 @@
 <?php $this->layout('layoutBack', ['title' => 'Modifier un utilisateur ']) ?>
 
 <?php $this->start('main_content') ?>
+<?php if (!empty($w_user)): ?>
 
-<h2>Modifier un utlisateur</h2>
 
-<?php if(isset($errors) && !empty($errors)):?>
-	<div class="alert alert-danger">
-		<?=implode('<br>', $errors); ?>
-	</div>
-<?php endif; ?>
+<h2>Modifier un utilisateur ( <?=$user['firstname'].' '.$user['lastname'];?> ) </h2>
 
-<?php if(isset($success) && $success == true):?>
-	<div class="alert alert-success">
-		Votre profil a bien été modifié !
-	</div>
-<?php endif; ?>
+	<?php if(isset($errors) && !empty($errors)):?>
+		<div class="alert alert-danger">
+			<?=implode('<br>', $errors); ?>
+		</div>
+	<?php endif; ?>
+
+	<?php if(isset($success) && $success == true):?>
+		<div class="alert alert-success">
+			Le profil a bien été modifié !
+		</div>
+	<?php endif; ?>
 
 <br>
 <div class="add">
@@ -24,7 +26,7 @@
 		
 		<label  for="firstname">Prénom :</label>
 		<div class="center">
-		<input type="text" id="firstname" name="firstname" placeholder="<?=$w_user['firstname'];?>">
+		<input type="text" id="firstname" name="firstname" placeholder="<?=$user['firstname'];?>">
 		</div>
 		<br><br>
 
@@ -70,6 +72,6 @@
 		<br><br>
 	</form>
 </div>
-
+<?php endif; ?>
 
 <?php $this->stop('main_content') ?>

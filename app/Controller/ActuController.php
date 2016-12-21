@@ -112,7 +112,7 @@ Class ActuController extends Controller
 
 					if ($insert) {
 						$success = true;
-						$this->show('default/admin/listActu');
+						$this->redirectToRoute('listActu');
 					}
 					else{
 						$errors[] = 'Erreur lors de l\'ajout en BDD';
@@ -143,6 +143,7 @@ Class ActuController extends Controller
 
 			if($ActuModel->delete($id)){
 				$success = true;
+				$this->redirectToRoute('listActu');
 			}
 			else {
 				$success = false;

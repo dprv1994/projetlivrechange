@@ -3,7 +3,6 @@
 
 <?php $this->start('main_content') ?>
 
-
 	<div class="container">
 
 		<h1>Supprimer l'utilisateur</h1>
@@ -16,10 +15,11 @@
 			<!-- Annuler -->
 			<input type="button" onclick="history.back();" value="Annuler" class="btn btn-default">
 			<!-- Valider -->
-			<input type="submit" name="delete" value="Oui, je veux le supprimer" class="btn btn-danger"></
+			<a href="<?=$this->url('user_list');?>"><input type="submit" name="delete" value="Oui, je veux le supprimer" class="btn btn-danger"></a>
 		</form>
 
 		<br><br>
 	</div>	
 
 <?php $this->stop('main_content') ?>
+

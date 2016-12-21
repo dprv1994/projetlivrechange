@@ -85,7 +85,7 @@ Class AdminController extends Controller
 	 *EN BACK Affiche le profil d'un membre sélectionné 
 	 * Page de profil
 	**/
-	public function profilBack()
+	public function profilBack($id)
 	{
 		//Si l'internaute accède à la page sans login, on le redirige vers la page 404
 		if (empty($this->getUser())){
@@ -93,8 +93,8 @@ Class AdminController extends Controller
 		}
 		else{
 			//Instancie la classe "Controller" qui permet de sélectionner un utilisateur
-			$userlogged = new AdminModel();
-			$user = $userlogged->getLoggedUser();//$id correspond à l'id en URL
+			$oneUser = new UsersModel();
+			$user = $oneUser->findOneUser($id);// trouve l'utilisateur correspondant à celui choisi
 
 			//Permet de gérer l'affichage
 			$data = [
@@ -136,13 +136,17 @@ Class AdminController extends Controller
 	
 	public function deleteUser($id)
 	{
+		$success = false;
+
 		if(!empty($id) && is_numeric($id)){
 			$UserModel = new UsersModel;
 
 
-			if($UserModel->delete($id)){
+			if($UserModel->delete($id)){$
 				$success = true;
+				$this->redirectToRoute('user_list');
 			}
+
 			else {
 				$success = false;
 			}
@@ -291,8 +295,7 @@ Class AdminController extends Controller
 
 	public function updateUserBack($id)
 	{
-		if (!empty($this->getUser())){
-				
+		if (!empty($this->getUser($id))){	
 
 			$errors = [];
 			$post = [];
@@ -309,15 +312,6 @@ Class AdminController extends Controller
 					$errors[] = 'Votre nom doit faire entre 3 e 25 caractères';
 				}
 
-				if (!v::length(4, 20)->validate($post['username'])) {
-					$errors[] = 'Votre nom d\'utilisateur doit faire entre 4 et 20 caractères';
-				}
-
-				//si l'username existe déjà en BDD renverra TRUE
-				if ($UsersModel->usernameExists($post['username'])) {
-					$errors[] = 'Le pseudo et déjà utilisé';
-				}
-
 				/*if(!v::image()->validate($_FILES['picture']['tmp_name'])) {
 					$errors[] = 'L\'image n\'est pas valide';
 				}*/
@@ -326,33 +320,20 @@ Class AdminController extends Controller
 					$errors[] = 'Votre e-mail n\'est pas valide';
 				}
 
-				//si l'email existe déjà en BDD renverra TRUE
-				if ($UsersModel->emailExists($post['email'])) {
-					$errors[] = 'L\'adresse email est déjà utilisé';
-				}
-
-				if (!v::length(7,null)->validate($post['password'])) {
-					$errors[] = 'Le mot de passe doit avoir au moins 7 caractères';
-				}
-
 				if(!v::notEmpty()->validate($post['role'])){
 					$errors[] = 'Vous devez choisir un rôle';
 				};	
 
 				if (count($errors) === 0 ) {
-					 
-					 $authModel = new AdminModel(); // Permet d'utiliser la fonction de hash de password
 
 					 //On instancie le modèle pour communiquer avec la BDD
-					 $UserModel = new UserModel();
+					 $UserModel = new UsersModel();
 
 					 $update = $UserModel->update( [
 					 	'firstname' => $post['firstname'],
 					 	'lastname'	=> $post['lastname'],
-					 	'username'	=> $post['username'],
 					 	/*'picture'	=> $_FILES['picture'],*/
 					 	'email'		=> $post['email'],
-					 	'password'	=> $authModel->hashPassword($post['password']),
 					 	'role'		=> $post['role'],
 					 ],$id);
 

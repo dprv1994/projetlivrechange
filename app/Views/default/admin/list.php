@@ -40,8 +40,8 @@
 					Voir le profil</a>
 					</td>
 					<td>
-					<!-- Créer un url pour effacer un membre -->
-					<a href="<?=$this->url('updateUser', ['id' => $user['id']]);?>">
+					<!-- Créer un url pour mettre à jour un membre -->
+					<a href="<?=$this->url('updateUserBack', ['id' => $user['id']]);?>">
 					Modifier le profil</a>
 					</td>
 					<td>

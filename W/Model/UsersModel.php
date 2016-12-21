@@ -99,4 +99,12 @@ class UsersModel extends Model
 
 	    return false;
 	}
+
+	public function findOneUser($id){
+		$sql = 'SELECT * FROM '.$this->table.' WHERE id = :idUser';
+		$sth = $this->dbh->prepare($sql);
+		$sth->bindValue(':idUser', $id);
+		$sth->execute();
+		return $user = $sth->fetch();
+	}
 }
