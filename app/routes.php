@@ -12,7 +12,7 @@
 		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
 		['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
 		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
-		['GET|POST', '/updateuser', 'Users#updateUser*', 'updateUser'],
+		['GET|POST', '/updateuser', 'Users#updateUser', 'updateUser'],
 		['GET|POST', '/contact', 'Messages#sendMessages', 'sendMessages'],
 
 
