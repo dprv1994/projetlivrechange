@@ -92,6 +92,7 @@ class UsersController extends Controller
 		if(!empty($user)){
 			$BooksModel = new BooksModel(); // On instancie la classe des livres
 			
+			var_dump($user['id']);
 			//Permet de gérer l'affichage
 			$data = [
 				'user' 	 => $user, 

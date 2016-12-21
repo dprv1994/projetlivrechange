@@ -28,7 +28,7 @@
 			</div>
 		</section>
 
-		<?php if (empty($this->getUser())): ?>
+		<?php if (empty($w_user)): ?>
 			<br><br>
 			<div class="btnsubmit">
 				<a href="<?=$this->url('user_signIn')?>">
