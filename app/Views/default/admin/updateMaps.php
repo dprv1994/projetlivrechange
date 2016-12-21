@@ -12,11 +12,20 @@
 
  	<h3>ajouter un nouveau lieu d'échange</h3>
 
- 	
+ 	<br>
  	<form method="POST">
-		<label for="adress"></label>
-		<input type="text" name="adress">
-		<input type="submit" name="envoyer">
+		
+ 		<label for="title">titre</label>
+ 		<input type="text" name="title" id="title">
+
+		<label for="inputLatitude">Latitude</label>
+		<input type="text" name="inputLatitude" id="inputLatitude">
+
+		<label for="inputLongitude">longitude</label>
+		<input type="text" name="inputLongitude" id="inputLongitude">
+		
+		<input type="submit" value="Enregistrer">
+		
 
 	</form>
 
@@ -59,62 +68,41 @@
 			
 				function initMap() {
 			  	
-			  	/* --------------AFFICHAGE DE LA MAP--------------- */
-
 			  	var map;
 			  	
+
 			  	map = new google.maps.Map(document.getElementById('mapupdate'), {/* Ici on crée notre objet map*/
 				    center: {lat: 44.8404400, lng:-0.5805000}, // centrage de la carte à l'affichage
 				    zoom: 13 // niveau de zoom
-			  	});
-				
-			  	/* --------------AFFICHAGE DES MARQUEURS--------------- */
-
-
-
-				var locations = [
-					<?php foreach($markers as $marker): ?>
-						['<?=$marker['title'];?>', '<?=$marker['lat'];?>', '<?=$marker['lng'];?>'],
-					<?php endforeach; ?>
-				];
-
-				
-	             //Création de l'icone
-	            var image = {
-				  url: "<?=$this->assetUrl('img/logo.png');?>" ,
-				  size: new google.maps.Size(100, 100),
-				  origin: new google.maps.Point(0, 0),
-				  anchor: new google.maps.Point(17, 34),
-				  scaledSize: new google.maps.Size(40, 60),
-				};
-	            
-				    
-	    	     //Affichage du marqueur
-	            for(i=0;i<locations.length;i++) { 
-				   marker = new google.maps.Marker({
-				   position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-				   map: map,
-				   icon: image, 
-				   
-					
-				   });
-				 // Création infobulle  
-	            	var infowindow = new google.maps.InfoWindow();  
-
-					
-					google.maps.event.addListener(marker, 'click', (function(marker, i) {
-						return function() {
-							infowindow.setContent('Echangez ! <b>' + locations[i][0]);
-							infowindow.open(map, marker);
-						}
-						})(marker, i));
-				
-					 
-
-				};
-				  
-			}
+			  });
+				google.maps.event.addListener(map, 'click', function(event) {
+				    placeMarker(event.latLng);
+				  });
+				 
+				var marker;
+				function placeMarker(location) {
+				  if(marker){ //on vérifie si le marqueur existe
+				    marker.setPosition(location); //on change sa position
+				  }else{
+				    marker = new google.maps.Marker({ //on créé le marqueur
+				      position: location,
+				      map: map
+				    });
+				  }
+				  inputLatitude.value=location.lat();
+				  inputLongitude.value=location.lng();
+				}
 			
+
+
+
+			}
+
+
+	  
+
+
+	  </script>
 			</script>
 
 	  			<!-- .......................FIN DU SCRIPT MAPS................................... -->
