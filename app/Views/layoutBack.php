@@ -45,26 +45,26 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                	<a href="<?=$this->url('updateInfo');?>">
-                                    <i class="fa fa-cogs" aria-hidden="true"> 
-                                    </i> Infos</a>
-                                </li>
-    					        <li>
-    					        	<a href="<?=$this->url('user_list')?>">
+                                    <a href="<?=$this->url('user_list')?>">
                                     <i class="fa fa-user-plus" aria-hidden="true">   
                                     </i>Utilisateurs</a>
-    					        </li>
-    					        <li>
-    					        	<a href="<?=$this->url('messages')?>">
+                                </li>
+                                <li>
+                                    <a href="<?=$this->url('messages')?>">
                                     <i class="fa fa-envelope" aria-hidden="true">
                                     </i>Messages</a>
-    					        </li>
-    					        
-    					        <li>
-    					        	<a href="<?=$this->url('updateMaps')?>">
+                                </li>
+                                
+                                <li>
+                                    <a href="<?=$this->url('updateMaps')?>">
                                     <i class="fa fa-globe" aria-hidden="true">   
                                     </i>Carte</a>
-    					        </li>
+                                </li>
+                                <li>
+                                	<a href="<?=$this->url('updateInfo');?>">
+                                    <i class="fa fa-cogs" aria-hidden="true"> 
+                                    </i>Actualités</a>
+                                </li>
     					        <li>
     					        	<a target="_blank" href="<?=$this->url('default_home')?>" id="logout">
                                     <i class="fa fa-search" aria-hidden="true">
