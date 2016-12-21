@@ -10,7 +10,7 @@
  	
  	
 
- 	<h3>ajouter un nouveau lieu d'échange</h3>
+ 	<h3>Ajouter un nouveau lieu d'échange</h3>
 
  	<br>
  	<form method="POST">
@@ -29,6 +29,19 @@
 
 	</form>
 
+	<br>
+	<?php if(isset($errors) && !empty($errors)):?>
+		<div class="alert alert-danger">
+			<?=implode('<br>', $errors); ?>
+		</div>
+	<?php endif; ?>
+
+	<?php if(isset($success) && $success == true):?>
+		<div class="alert alert-success">
+			Le lieu a bien été ajouté !
+		</div>
+	<?php endif; ?>
+
 
  	<h3>Liste des points d'échange</h3>
 
@@ -38,7 +51,7 @@
 			<thead>
 				<tr>
 					<th>#</th>
-					<th>title</th>
+					<th>titre</th>
 					</tr>
 			</thead>
 
@@ -103,7 +116,6 @@
 
 
 	  </script>
-			</script>
 
 	  			<!-- .......................FIN DU SCRIPT MAPS................................... -->
 
