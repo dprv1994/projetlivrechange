@@ -3,8 +3,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
-use \W\Model\UsersModel; //as Users;
-use Model\AdminModel; 
+use Model\ActusModel; //as Actus;
 
 // Si on utilise "respect/validation". Ne pas oublier de l'ajouter via composer
 use \Respect\Validation\Validator as v;
@@ -24,13 +23,20 @@ Class ActuController extends Controller
 
 	/**
 	* Page de liste et de mise à jour des infos du site
+	* Appel à la Db et affichage
 	*
 	*/
 	public function listActu()
 	{
-		$this->show('default/admin/listActu');
-	}
+		$listActu = new ActusModel();
+		$actus = $listActu->findAll();
 
+		$data = [
+			'actus' => $actus
+		];
+
+		$this->show('default/admin/listActu', $data);
+	}
 	/**
 	* Ajout d'une actualité
 	*/
