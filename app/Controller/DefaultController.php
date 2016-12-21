@@ -51,11 +51,5 @@ class DefaultController extends Controller
 
 	}
 	
-	public function updateUser()
-	{
-		$this->show('default/edituser');
-
-	}
-	
 
 }
