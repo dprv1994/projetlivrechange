@@ -269,3 +269,14 @@ footer #contact{
 .container-profil-back{
 	text-align: justify;
 }
+
+.add {
+  width: 650px;
+  margin: auto;
+  text-align: left;
+}
+
+.center {
+  float: right;
+  width: 70%;
+}
