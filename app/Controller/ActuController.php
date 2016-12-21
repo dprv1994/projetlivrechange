@@ -4,6 +4,7 @@ namespace Controller;
 
 use \W\Controller\Controller;
 use Model\ActusModel; //as Actus;
+use W\Model\Model;
 
 // Si on utilise "respect/validation". Ne pas oublier de l'ajouter via composer
 use \Respect\Validation\Validator as v;
@@ -133,9 +134,28 @@ Class ActuController extends Controller
 	/**
 	* Suppression d'une actualité
 	*/
-	public function deleteActu()
+	public function deleteActu($id)
 	{
-		$this->show('default/admin/deleteActu');
+		if(!empty($id) && is_numeric($id)){
+			$ActuModel = new ActusModel;
+
+
+			if($ActuModel->delete($id)){
+				$success = true;
+			}
+			else {
+				$success = false;
+			}
+
+			$params = [
+				'success' => $success,
+			];
+
+			$this->show('default/admin/deleteActu', $params);
+		}
+		else {
+			// redirect vers une page
+		}
 	}
 }
 

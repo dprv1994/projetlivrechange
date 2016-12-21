@@ -26,7 +26,7 @@
 		['GET|POST', '/admin/actus', 'Actu#actus', 'actus'],
 		['GET|POST', '/admin/listActu', 'Actu#listActu', 'listActu'],
 		['GET|POST', '/admin/addActu', 'Actu#addActu', 'addActu'],
-		['GET', '/admin/deleteActu', 'Actu#deleteActu', 'deleteActu'],
+		['GET', '/admin/deleteActu/[i:id]', 'Actu#deleteActu', 'deleteActu'],
 
 		// Dons
 		['GET', '/dons', 'Default#dons', 'dons'],
