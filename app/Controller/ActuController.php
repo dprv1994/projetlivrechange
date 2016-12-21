@@ -155,7 +155,7 @@ Class ActuController extends Controller
 			$this->show('default/admin/deleteActu', $params);
 		}
 		else {
-			// redirect vers une page
+			$this->redirectToRoute('listActu');
 		}
 	}
 }
