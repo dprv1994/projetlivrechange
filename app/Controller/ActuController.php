@@ -107,8 +107,8 @@ Class ActuController extends Controller
 					 	'event' => $post['event'],
 					 	'who'	=> $post['who'],
 					 	'place'	=> $post['place'],
-					 	'date' => $post['date_day'].'/'.$post['date_month'].'/'.$post['date_year'],
-					 	'time' => $post['hour'].$post['minute'],
+					 	'date' => $post['date_year'].'/'.$post['date_month'].'/'.$post['date_day'],
+					 	'time' => $post['hour'].'h '.$post['minute'].'min',
 					]);
 
 					if ($insert) {
@@ -126,7 +126,7 @@ Class ActuController extends Controller
 				'success' => $success,
 			];
 
-			$this->show('default/admin/addActu', $params);
+			$this->show('default/admin/listActu', $params);
 		}
 	}
 

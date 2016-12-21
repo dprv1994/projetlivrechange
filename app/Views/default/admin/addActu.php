@@ -1,5 +1,5 @@
 
-<?php $this->layout('layoutBack', ['title' => 'Modifier les informations du site']) ?>
+<?php $this->layout('layoutBack', ['title' => 'Ajouter des actualités']) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -50,14 +50,14 @@
 					<label for="time">Quand :</label>
 						<select name="hour">
 							<option value="" selected disabled>Heure</option>
-							<?php for($i=0;$i<=23;$i++): ?>
+							<?php for($i=00;$i<=23;$i++): ?>
 								<option value="<?=$i;?>"><?=$i;?> h</option>
 							<?php endfor; ?>
 						</select>
 
 						<select name="minute">
 							<option value="" selected disabled>Minute</option>
-							<?php for($i=1;$i<=59;$i++): ?>
+							<?php for($i=00;$i<=59;$i++): ?>
 								<option value="<?=$i;?>"><?=$i;?> min</option>
 							<?php endfor; ?>
 						</select>
