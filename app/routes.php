@@ -10,9 +10,11 @@
 
 		['GET|POST', '/signin', 'Users#signIn', 'user_signIn'],
 		['GET|POST', '/loginuser', 'Users#loginUser', 'loginUser'],
-		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
 		['GET|POST', '/logout', 'Users#logOutUser', 'logoutUser'],
+		['GET|POST', '/profiluser', 'Users#profilUser', 'profilUser'],
+		['GET|POST', '/updateuser', 'Users#updateUser*', 'updateUser'],
 		['GET|POST', '/contact', 'Users#contact', 'contact'],
+
 
 		// Books
 		['GET|POST', '/search', 'Books#search', 'search_book'],
