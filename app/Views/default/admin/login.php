@@ -2,7 +2,7 @@
 
 <?php $this->start('main_content') ?>
 
-<!-- AFFICHE LES ERREUR -->
+<!-- AFFICHE LES ERREURS -->
 <?php if (isset($errors) && !empty($errors)): ?>
 	<div class="alert alert-danger">
 		<?=$errors;?>
@@ -14,11 +14,11 @@
 	<p>Bonjour !<br> Veuillez entrer vos identifiants pour vous connecter.</p>
 
 	<form method="POST">
-		<label for="username">User:</label><br>
+		<label for="username">Pseudo :</label><br>
 		<input type="text" id="username" name="username">
 
 		<br><br>
-		<label for="password">Mot de passe:</label><br>
+		<label for="password">Mot de passe :</label><br>
 		<input type="password" id="password" name="password">
 
 		<br><br>

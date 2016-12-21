@@ -3,6 +3,7 @@
 <?php $this->start('main_content') ?>
 
 <h1> <i class="fa fa-paper-plane" aria-hidden="true"></i> Laissez-nous un message</h1>
+<br><br>
     
 <form method="post">           
     <section id="contact">
