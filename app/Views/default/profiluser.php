@@ -23,7 +23,8 @@
 			</div>			
 		</div>
 		
-		<a href="">Modifier mon profil</a>
+		<a href="<?=$this->url('edituser', ['id' => $user['id']]);?>">
+					Modifier le profil</a>
 		<br><br>
 
 	<?php else: ?>

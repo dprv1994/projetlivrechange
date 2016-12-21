@@ -356,13 +356,7 @@ class UsersController extends Controller
 		$this->show('default/updateuser', $params);
 	}	
 	
-	/**
-	 * Page Contact
-	 */
-	public function contact()
-	{
-		$this->show('default/contact');
-	}
+	
 
 }
 
