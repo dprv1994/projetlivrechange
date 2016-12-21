@@ -365,34 +365,5 @@ Class AdminController extends Controller
 			$this->redirectToRoute('login');
 		}	
 	}
-
-	/**
-	 * 
-	 * Page de messages actus
-	**/
-	public function actus()
-	{
-		$this->show('default/admin/actus');
-
-	}
-
-	/**
-	* Page de mise à jour des infos du site
-	*
-	*/
-	public function updateActu()
-	{
-		$this->show('default/admin/updateActu');
-	}
-
-	public function addActu()
-	{
-		$this->show('default/admin/addActu');
-	}
-
-	public function deleteActu()
-	{
-		$this->show('default/admin/deleteActu');
-	}
 }
 
