@@ -21,7 +21,7 @@ body {
   padding: 0;
   color: #392338;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  background: url(../img/subtle_zebra3.jpg);
+  background: url(../img/wov.png);
   font-size: 1.5em;
 }
 
@@ -402,3 +402,4 @@ ul.social-buttons li a:active {
   float: right;
   width: 70%;
 }
+

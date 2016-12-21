@@ -18,7 +18,7 @@
 					</ul>
 			</div>
 
-			<div id="image"><h2>Avatar :<br> 
+			<div id="image"><h2>Avatar :<br><br>
 				<img src="<?=$this->assetUrl($upload.$user['picture'])?>"></h2> 
 			</div>			
 		</div>
