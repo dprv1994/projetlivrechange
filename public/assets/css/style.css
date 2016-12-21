@@ -90,7 +90,7 @@ th {
 #mainNav {
   max-width: 1260px;
   margin: 0 auto;
-  background-color: #C1264E;
+  background-color: #513856;
 }
 
 .navbar-custom .navbar-brand {
@@ -103,7 +103,7 @@ th {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color:#523957;
+  color:#c1264e;
 
 }
 
@@ -139,7 +139,7 @@ th {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #513856;
+  color: #c1264e;
   outline: none;
 
 }
